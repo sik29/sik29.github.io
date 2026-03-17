@@ -368,8 +368,35 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.game-team-name.winner { color: var(--green); font-weight: 600; }
-.game-team-name.loser { color: var(--text-dim); }
+
+/* Pick result states */
+.game-team-name.pick-correct { color: var(--green); font-weight: 600; }
+.game-team-name.pick-incorrect { color: var(--red); font-weight: 600; text-decoration: line-through; text-decoration-color: rgba(248,113,113,0.4); }
+.game-team-name.pick-pending { color: var(--text); font-weight: 600; }
+.game-team-name.pick-eliminated { color: var(--text-dim); font-weight: 500; text-decoration: line-through; text-decoration-color: rgba(92,106,130,0.5); }
+.game-team-name.pick-loser { color: var(--text-dim); font-weight: 400; }
+
+/* Game row background tints */
+.bracket-game.game-correct { background: var(--green-dim); }
+.bracket-game.game-incorrect { background: var(--red-dim); }
+.bracket-game.game-eliminated { opacity: 0.55; }
+
+/* Result badges */
+.result-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  border-radius: 50%;
+  margin-top: 2px;
+}
+.result-badge.correct { background: var(--green-dim); color: var(--green); }
+.result-badge.incorrect { background: var(--red-dim); color: var(--red); }
+.result-badge.pending { background: var(--blue-dim); color: var(--blue); }
+.result-badge.eliminated { background: transparent; color: var(--text-dim); }
 
 .game-vs {
   font-size: 11px;
@@ -733,22 +760,40 @@ function buildFinalFourView(bracket) {
 }
 
 function buildGameRow(game) {
-  // Extract team names without seed prefix for cleaner display
   const homeName = game.home_team;
   const awayName = game.away_team;
   const homeIsWinner = game.winner_id === game.home_team_id;
   const prob = game.winner_prob ? (game.winner_prob * 100).toFixed(0) + '%' : '';
+  const result = game.result || 'pending'; // correct, incorrect, pending, eliminated
+
+  // Result badge
+  const badges = {
+    'correct': '<span class="result-badge correct">✓</span>',
+    'incorrect': '<span class="result-badge incorrect">✗</span>',
+    'pending': '<span class="result-badge pending">—</span>',
+    'eliminated': '<span class="result-badge eliminated">✗</span>',
+  };
+  const badge = badges[result] || '';
+
+  // Winner team name styling based on result
+  const winnerClass = {
+    'correct': 'pick-correct',
+    'incorrect': 'pick-incorrect',
+    'pending': 'pick-pending',
+    'eliminated': 'pick-eliminated',
+  }[result] || '';
 
   return `
-    <div class="bracket-game">
+    <div class="bracket-game game-${result}">
       <div class="game-team">
-        <span class="game-team-name ${homeIsWinner ? 'winner' : 'loser'}">${esc(homeName)}</span>
+        <span class="game-team-name ${homeIsWinner ? winnerClass : 'pick-loser'}">${esc(homeName)}</span>
       </div>
       <div class="game-vs">
         <div class="game-prob">${prob}</div>
+        ${badge}
       </div>
       <div class="game-team away">
-        <span class="game-team-name ${!homeIsWinner ? 'winner' : 'loser'}">${esc(awayName)}</span>
+        <span class="game-team-name ${!homeIsWinner ? winnerClass : 'pick-loser'}">${esc(awayName)}</span>
       </div>
     </div>`;
 }
