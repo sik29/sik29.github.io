@@ -183,6 +183,13 @@ body {
   color: var(--text-dim);
 }
 
+.lb-ceiling {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--blue);
+  margin-top: 2px;
+}
+
 .lb-expand {
   color: var(--text-dim);
   font-size: 18px;
@@ -262,6 +269,24 @@ body {
   font-size: 12px;
   color: var(--text-muted);
   margin-top: 4px;
+}
+.score-cell.future {
+  opacity: 0.6;
+  border-style: dashed;
+}
+.score-cell .alive-count {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--green);
+  margin-top: 4px;
+  padding: 2px 6px;
+  background: var(--green-dim);
+  border-radius: 4px;
+  display: inline-block;
+}
+.score-cell .alive-count.pending {
+  color: var(--text-dim);
+  background: transparent;
 }
 
 /* Region tabs */
@@ -570,7 +595,8 @@ function render() {
         <div class="lb-score-area">
           <div>
             <div class="lb-score">${score.total_score}</div>
-            <div class="lb-max">/ ${score.max_total} pts</div>
+            <div class="lb-max">/ ${score.max_total} pts</div>${score.in_progress && score.max_possible !== score.max_total ? `
+            <div class="lb-ceiling">max possible: ${score.max_possible}</div>` : ''}
           </div>
           <div class="lb-expand">▼</div>
         </div>
@@ -619,11 +645,17 @@ function buildBracketDetail(entry) {
     const rd = score.round_breakdown[rn];
     if (!rd) return;
     const pct = rd.total_games > 0 ? Math.round(100 * rd.correct / rd.total_games) : 0;
+    const isFuture = score.in_progress && rd.round > score.rounds_completed;
+    const hasAlive = isFuture && rd.still_alive !== undefined;
+    const aliveHtml = hasAlive
+      ? `<div class="alive-count">${rd.still_alive} alive</div>`
+      : isFuture ? `<div class="alive-count pending">upcoming</div>` : '';
     scoreGridHtml += `
-      <div class="score-cell">
+      <div class="score-cell ${isFuture ? 'future' : ''}">
         <div class="round-label" style="color:${ROUND_COLORS[ri]}">${ROUND_SHORT[ri]}</div>
         <div class="correct">${rd.correct}<span style="color:var(--text-dim);font-size:13px">/${rd.total_games}</span></div>
         <div class="pts">${rd.points_earned} pts</div>
+        ${aliveHtml}
       </div>`;
   });
 
