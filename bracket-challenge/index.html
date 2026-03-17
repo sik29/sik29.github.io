@@ -562,7 +562,7 @@ let expandedIdx = null;
 
 async function init() {
   try {
-    const resp = await fetch('dashboard_data.json');
+    const resp = await fetch('dashboard_data.json?v=' + Date.now());
     if (!resp.ok) throw new Error('Could not load dashboard_data.json');
     DATA = await resp.json();
     render();
