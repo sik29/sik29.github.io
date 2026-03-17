@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>March Madness Bracket Challenge — Samuel King</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0c1118;
+  --surface: #151d2b;
+  --surface-raised: #1a2536;
+  --surface-hover: #1f2d42;
+  --border: #263044;
+  --border-light: #2d3a50;
+  --text: #e4e8ef;
+  --text-muted: #8893a7;
+  --text-dim: #5c6a82;
+  --accent: #f4a623;
+  --accent-glow: rgba(244, 166, 35, 0.15);
+  --green: #34d399;
+  --green-dim: rgba(52, 211, 153, 0.12);
+  --red: #f87171;
+  --red-dim: rgba(248, 113, 113, 0.12);
+  --blue: #60a5fa;
+  --blue-dim: rgba(96, 165, 250, 0.12);
+  --round-1: #60a5fa;
+  --round-2: #818cf8;
+  --round-3: #a78bfa;
+  --round-4: #c084fc;
+  --round-5: #e879f9;
+  --round-6: #f4a623;
+  --font: 'DM Sans', -apple-system, sans-serif;
+  --mono: 'DM Mono', 'SF Mono', monospace;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* ---- Top bar ---- */
+.topbar {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.topbar a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.15s;
+}
+.topbar a:hover { color: var(--text); }
+.topbar .sep { color: var(--text-dim); font-size: 12px; }
+.topbar .current { color: var(--text); font-weight: 600; }
+
+/* ---- Hero ---- */
+.hero {
+  text-align: center;
+  padding: 56px 24px 40px;
+  background: linear-gradient(180deg, var(--surface) 0%, var(--bg) 100%);
+  border-bottom: 1px solid var(--border);
+}
+.hero-emoji { font-size: 48px; margin-bottom: 12px; }
+.hero h1 {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 6px;
+}
+.hero .subtitle {
+  color: var(--text-muted);
+  font-size: 15px;
+}
+.hero .meta {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  font-size: 13px;
+  color: var(--text-dim);
+  font-family: var(--mono);
+}
+.hero .meta span { display: flex; align-items: center; gap: 6px; }
+
+/* ---- Container ---- */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 20px 64px;
+}
+
+/* ---- Leaderboard ---- */
+.section-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--text-dim);
+  margin-bottom: 16px;
+}
+
+.leaderboard { display: flex; flex-direction: column; gap: 8px; }
+
+.lb-entry {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px 20px;
+  display: grid;
+  grid-template-columns: 40px 1fr auto;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.lb-entry:hover {
+  background: var(--surface-hover);
+  border-color: var(--border-light);
+}
+.lb-entry.first {
+  border-color: var(--accent);
+  background: linear-gradient(135deg, var(--surface) 0%, var(--accent-glow) 100%);
+}
+.lb-entry.first:hover {
+  background: linear-gradient(135deg, var(--surface-hover) 0%, var(--accent-glow) 100%);
+}
+
+.lb-rank {
+  font-family: var(--mono);
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--text-muted);
+}
+.lb-entry.first .lb-rank { color: var(--accent); }
+
+.lb-info h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.lb-info .students {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+.lb-info .champion-pick {
+  font-size: 12px;
+  color: var(--text-dim);
+  font-family: var(--mono);
+  margin-top: 4px;
+}
+
+.lb-score-area {
+  text-align: right;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.lb-score {
+  font-family: var(--mono);
+  font-size: 28px;
+  font-weight: 700;
+}
+.lb-entry.first .lb-score { color: var(--accent); }
+
+.lb-max {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--text-dim);
+}
+
+.lb-expand {
+  color: var(--text-dim);
+  font-size: 18px;
+  transition: transform 0.2s;
+}
+.lb-entry.expanded .lb-expand { transform: rotate(180deg); }
+
+/* ---- Round breakdown bar ---- */
+.round-bars {
+  display: flex;
+  gap: 3px;
+  margin-top: 8px;
+  height: 6px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.round-bar {
+  flex: 1;
+  border-radius: 2px;
+  opacity: 0.25;
+  transition: opacity 0.15s;
+}
+.round-bar.has-points { opacity: 1; }
+
+/* ---- Expanded bracket detail ---- */
+.bracket-detail {
+  display: none;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  margin-top: -9px;
+  padding: 20px;
+  animation: slideDown 0.2s ease;
+}
+.bracket-detail.visible { display: block; }
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Score breakdown grid */
+.score-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.score-cell {
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 8px;
+  text-align: center;
+}
+.score-cell .round-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+.score-cell .correct {
+  font-family: var(--mono);
+  font-size: 18px;
+  font-weight: 700;
+}
+.score-cell .of-total {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text-dim);
+}
+.score-cell .pts {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+/* Region tabs */
+.region-tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+.region-tab {
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: var(--font);
+}
+.region-tab:hover { background: var(--surface-hover); color: var(--text); }
+.region-tab.active {
+  background: var(--accent-glow);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Bracket round columns */
+.bracket-region { display: none; }
+.bracket-region.visible { display: block; }
+
+.bracket-rounds {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.bracket-round-header {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-dim);
+  padding: 12px 0 6px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 4px;
+}
+
+.bracket-game {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  gap: 12px;
+}
+.bracket-game:nth-child(even) { background: var(--surface-raised); }
+
+.game-team {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.game-team.away { justify-content: flex-end; text-align: right; }
+
+.game-seed {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text-dim);
+  min-width: 20px;
+}
+.game-team.away .game-seed { order: 1; }
+
+.game-team-name {
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.game-team-name.winner { color: var(--green); font-weight: 600; }
+.game-team-name.loser { color: var(--text-dim); }
+
+.game-vs {
+  font-size: 11px;
+  color: var(--text-dim);
+  font-family: var(--mono);
+}
+.game-prob {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+/* Final four / championship section */
+.bracket-climax {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 2px solid var(--accent);
+}
+
+/* ---- Scoring legend ---- */
+.scoring-legend {
+  margin-top: 40px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+}
+.scoring-legend h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.scoring-legend table {
+  width: 100%;
+  font-size: 13px;
+  border-collapse: collapse;
+}
+.scoring-legend th {
+  text-align: left;
+  font-weight: 600;
+  color: var(--text-muted);
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--border);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.scoring-legend td {
+  padding: 6px 8px;
+  color: var(--text-muted);
+  font-family: var(--mono);
+  font-size: 12px;
+}
+.scoring-legend tr:nth-child(even) td { background: var(--surface-raised); }
+
+/* ---- Footer ---- */
+.dash-footer {
+  text-align: center;
+  padding: 32px 24px;
+  color: var(--text-dim);
+  font-size: 12px;
+}
+.dash-footer a { color: var(--text-muted); }
+
+/* ---- Loading state ---- */
+.loading {
+  text-align: center;
+  padding: 80px 24px;
+  color: var(--text-dim);
+  font-size: 15px;
+}
+.loading .spinner {
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin: 0 auto 16px;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.error-msg {
+  text-align: center;
+  padding: 60px 24px;
+  color: var(--red);
+  font-size: 14px;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 640px) {
+  .lb-entry { grid-template-columns: 32px 1fr auto; padding: 12px 14px; gap: 10px; }
+  .lb-score { font-size: 22px; }
+  .lb-rank { font-size: 16px; }
+  .score-grid { grid-template-columns: repeat(3, 1fr); }
+  .bracket-game { grid-template-columns: 1fr auto 1fr; font-size: 12px; gap: 6px; }
+  .hero h1 { font-size: 22px; }
+  .hero .meta { flex-direction: column; gap: 8px; }
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a href="https://samuel-king.org">Samuel King</a>
+  <span class="sep">›</span>
+  <span class="current">Bracket Challenge</span>
+</div>
+
+<div class="hero">
+  <div class="hero-emoji">🏀</div>
+  <h1>March Madness Bracket Challenge</h1>
+  <div class="subtitle">Intro to Programming in the Age of AI — Spring 2026</div>
+  <div class="meta" id="hero-meta">
+    <span>Loading...</span>
+  </div>
+</div>
+
+<div class="container">
+  <div id="app">
+    <div class="loading">
+      <div class="spinner"></div>
+      Loading bracket data...
+    </div>
+  </div>
+
+  <div class="scoring-legend">
+    <h3>Scoring System</h3>
+    <table>
+      <thead>
+        <tr><th>Round</th><th>Per Pick</th><th>Games</th><th>Max Pts</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Round of 64</td><td>1</td><td>32</td><td>32</td></tr>
+        <tr><td>Round of 32</td><td>2</td><td>16</td><td>32</td></tr>
+        <tr><td>Sweet 16</td><td>4</td><td>8</td><td>32</td></tr>
+        <tr><td>Elite 8</td><td>8</td><td>4</td><td>32</td></tr>
+        <tr><td>Final Four</td><td>16</td><td>2</td><td>32</td></tr>
+        <tr><td>Championship</td><td>32</td><td>1</td><td>32</td></tr>
+        <tr style="font-weight:700"><td style="color:var(--text)">Total</td><td></td><td>63</td><td style="color:var(--accent)">192</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="dash-footer">
+    Built for the class bracket competition.
+    <br>
+    <a href="https://samuel-king.org">← Back to main site</a>
+  </div>
+</div>
+
+<script>
+// ============================================================
+// Dashboard logic
+// ============================================================
+const ROUND_COLORS = ['var(--round-1)','var(--round-2)','var(--round-3)','var(--round-4)','var(--round-5)','var(--round-6)'];
+const ROUND_NAMES = ['Round of 64','Round of 32','Sweet 16','Elite 8','Final Four','Championship'];
+const ROUND_SHORT = ['R64','R32','S16','E8','F4','NCG'];
+
+let DATA = null;
+let expandedIdx = null;
+
+async function init() {
+  try {
+    const resp = await fetch('dashboard_data.json');
+    if (!resp.ok) throw new Error('Could not load dashboard_data.json');
+    DATA = await resp.json();
+    render();
+  } catch (e) {
+    document.getElementById('app').innerHTML =
+      `<div class="error-msg">Could not load bracket data.<br><small>${e.message}</small></div>`;
+  }
+}
+
+function render() {
+  // Update hero meta
+  const meta = document.getElementById('hero-meta');
+  const updated = DATA.last_updated ? new Date(DATA.last_updated) : null;
+  const updatedStr = updated
+    ? updated.toLocaleDateString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' })
+    : '—';
+  const statusLabel = {
+    'not_started': 'Not started',
+    'in_progress': 'In progress',
+    'completed': 'Complete',
+  }[DATA.tournament_status] || DATA.tournament_status;
+
+  meta.innerHTML = `
+    <span>Season ${DATA.season}</span>
+    <span>${DATA.entries.length} entries</span>
+    <span>Updated ${updatedStr}</span>
+  `;
+
+  // Sort entries by score descending
+  const entries = [...DATA.entries].sort((a, b) => b.score.total_score - a.score.total_score);
+
+  let html = `<div class="section-label">Leaderboard</div><div class="leaderboard">`;
+
+  entries.forEach((entry, i) => {
+    const rank = i + 1;
+    const isFirst = rank === 1;
+    const score = entry.score;
+    const champion = entry.bracket.champion ? entry.bracket.champion.display : '—';
+
+    // Round breakdown bars
+    let barsHtml = '';
+    ROUND_NAMES.forEach((rn, ri) => {
+      const rd = score.round_breakdown[rn];
+      const hasPts = rd && rd.points_earned > 0;
+      barsHtml += `<div class="round-bar ${hasPts ? 'has-points' : ''}" style="background:${ROUND_COLORS[ri]}" title="${rn}: ${rd ? rd.points_earned : 0} pts"></div>`;
+    });
+
+    html += `
+      <div class="lb-entry ${isFirst ? 'first' : ''}" onclick="toggleBracket(${i})" id="entry-${i}">
+        <div class="lb-rank">${rank}</div>
+        <div class="lb-info">
+          <h3>${esc(entry.team_name)}</h3>
+          <div class="students">${esc(entry.student_names)}</div>
+          <div class="champion-pick">Champion: ${esc(champion)}</div>
+          <div class="round-bars">${barsHtml}</div>
+        </div>
+        <div class="lb-score-area">
+          <div>
+            <div class="lb-score">${score.total_score}</div>
+            <div class="lb-max">/ ${score.max_total} pts</div>
+          </div>
+          <div class="lb-expand">▼</div>
+        </div>
+      </div>
+      <div class="bracket-detail" id="detail-${i}"></div>
+    `;
+  });
+
+  html += `</div>`;
+  document.getElementById('app').innerHTML = html;
+}
+
+function toggleBracket(idx) {
+  const entries = [...DATA.entries].sort((a, b) => b.score.total_score - a.score.total_score);
+  const detailEl = document.getElementById(`detail-${idx}`);
+  const entryEl = document.getElementById(`entry-${idx}`);
+
+  // Close previously open
+  if (expandedIdx !== null && expandedIdx !== idx) {
+    document.getElementById(`detail-${expandedIdx}`).classList.remove('visible');
+    document.getElementById(`entry-${expandedIdx}`).classList.remove('expanded');
+  }
+
+  if (detailEl.classList.contains('visible')) {
+    detailEl.classList.remove('visible');
+    entryEl.classList.remove('expanded');
+    expandedIdx = null;
+    return;
+  }
+
+  // Build detail content
+  const entry = entries[idx];
+  detailEl.innerHTML = buildBracketDetail(entry);
+  detailEl.classList.add('visible');
+  entryEl.classList.add('expanded');
+  expandedIdx = idx;
+}
+
+function buildBracketDetail(entry) {
+  const score = entry.score;
+  const bracket = entry.bracket;
+
+  // Score breakdown cells
+  let scoreGridHtml = '';
+  ROUND_NAMES.forEach((rn, ri) => {
+    const rd = score.round_breakdown[rn];
+    if (!rd) return;
+    const pct = rd.total_games > 0 ? Math.round(100 * rd.correct / rd.total_games) : 0;
+    scoreGridHtml += `
+      <div class="score-cell">
+        <div class="round-label" style="color:${ROUND_COLORS[ri]}">${ROUND_SHORT[ri]}</div>
+        <div class="correct">${rd.correct}<span style="color:var(--text-dim);font-size:13px">/${rd.total_games}</span></div>
+        <div class="pts">${rd.points_earned} pts</div>
+      </div>`;
+  });
+
+  // Region tabs + bracket views
+  const regionKeys = Object.keys(bracket.regions).sort();
+  const regionNames = bracket.region_names || {};
+
+  let tabsHtml = '';
+  let regionsHtml = '';
+
+  regionKeys.forEach((rk, ri) => {
+    const displayName = regionNames[rk] || rk;
+    const isActive = ri === 0;
+    tabsHtml += `<div class="region-tab ${isActive ? 'active' : ''}" onclick="switchRegion(this, '${entry.team_name.replace(/'/g,"\\'")}', '${rk}')">${displayName}</div>`;
+    regionsHtml += buildRegionView(bracket, rk, isActive);
+  });
+
+  // Add Final Four / Championship tab
+  tabsHtml += `<div class="region-tab" onclick="switchRegion(this, '${entry.team_name.replace(/'/g,"\\'")}', 'ff')">Final Four</div>`;
+  regionsHtml += buildFinalFourView(bracket);
+
+  return `
+    <div class="score-grid">${scoreGridHtml}</div>
+    <div class="region-tabs" id="tabs-${entry.team_name}">${tabsHtml}</div>
+    <div id="regions-${entry.team_name}">${regionsHtml}</div>
+  `;
+}
+
+function buildRegionView(bracket, regionKey, visible) {
+  const region = bracket.regions[regionKey];
+  const regionName = (bracket.region_names || {})[regionKey] || regionKey;
+  let html = `<div class="bracket-region ${visible ? 'visible' : ''}" data-region="${regionKey}">`;
+
+  region.rounds.forEach((roundGames, ri) => {
+    html += `<div class="bracket-round-header" style="color:${ROUND_COLORS[ri]}">${ROUND_NAMES[ri]}</div>`;
+    html += `<div class="bracket-rounds">`;
+    roundGames.forEach(game => {
+      html += buildGameRow(game);
+    });
+    html += `</div>`;
+  });
+
+  // Region winner
+  const winner = region.winner;
+  html += `<div style="padding:12px 0;text-align:center;font-weight:600;color:var(--accent);font-size:14px">
+    ★ ${esc(regionName)} Champion: ${esc(winner.display)}
+  </div>`;
+
+  html += `</div>`;
+  return html;
+}
+
+function buildFinalFourView(bracket) {
+  let html = `<div class="bracket-region" data-region="ff">`;
+
+  // Final Four
+  html += `<div class="bracket-round-header" style="color:${ROUND_COLORS[4]}">Final Four</div>`;
+  html += `<div class="bracket-rounds">`;
+  bracket.final_four.forEach(game => { html += buildGameRow(game); });
+  html += `</div>`;
+
+  // Championship
+  html += `<div class="bracket-round-header" style="color:${ROUND_COLORS[5]}">Championship</div>`;
+  html += `<div class="bracket-rounds">`;
+  html += buildGameRow(bracket.championship);
+  html += `</div>`;
+
+  // Champion
+  html += `<div style="padding:16px 0;text-align:center;font-size:18px;font-weight:700;color:var(--accent)">
+    🏆 ${esc(bracket.champion.display)}
+  </div>`;
+
+  html += `</div>`;
+  return html;
+}
+
+function buildGameRow(game) {
+  // Extract team names without seed prefix for cleaner display
+  const homeName = game.home_team;
+  const awayName = game.away_team;
+  const homeIsWinner = game.winner_id === game.home_team_id;
+  const prob = game.winner_prob ? (game.winner_prob * 100).toFixed(0) + '%' : '';
+
+  return `
+    <div class="bracket-game">
+      <div class="game-team">
+        <span class="game-team-name ${homeIsWinner ? 'winner' : 'loser'}">${esc(homeName)}</span>
+      </div>
+      <div class="game-vs">
+        <div class="game-prob">${prob}</div>
+      </div>
+      <div class="game-team away">
+        <span class="game-team-name ${!homeIsWinner ? 'winner' : 'loser'}">${esc(awayName)}</span>
+      </div>
+    </div>`;
+}
+
+function switchRegion(tabEl, teamName, regionKey) {
+  // Update tabs
+  const tabContainer = tabEl.parentElement;
+  tabContainer.querySelectorAll('.region-tab').forEach(t => t.classList.remove('active'));
+  tabEl.classList.add('active');
+
+  // Update regions
+  const regionContainer = tabContainer.nextElementSibling;
+  regionContainer.querySelectorAll('.bracket-region').forEach(r => {
+    r.classList.toggle('visible', r.dataset.region === regionKey);
+  });
+}
+
+function esc(str) {
+  const d = document.createElement('div');
+  d.textContent = str || '';
+  return d.innerHTML;
+}
+
+document.addEventListener('DOMContentLoaded', init);
+</script>
+</body>
+</html>
