@@ -229,6 +229,51 @@ body {
   margin-top: 2px;
 }
 
+/* Monte Carlo probability badges */
+.lb-mc {
+  display: flex;
+  gap: 6px;
+  margin-top: 6px;
+  flex-wrap: wrap;
+}
+.mc-pill {
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 4px;
+  white-space: nowrap;
+  letter-spacing: 0.3px;
+}
+.mc-pill.mc-1st {
+  background: rgba(244, 166, 35, 0.14);
+  color: var(--accent);
+  border: 1px solid rgba(244, 166, 35, 0.25);
+}
+.mc-pill.mc-top2 {
+  background: rgba(192, 192, 210, 0.10);
+  color: #b0b8c8;
+  border: 1px solid rgba(192, 192, 210, 0.18);
+}
+.mc-pill.mc-top3 {
+  background: rgba(205, 150, 100, 0.10);
+  color: #c8a07a;
+  border: 1px solid rgba(205, 150, 100, 0.18);
+}
+.mc-pill .mc-label {
+  opacity: 0.7;
+}
+
+/* MC metadata bar */
+.mc-meta-bar {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text-dim);
+  text-align: right;
+  margin-bottom: 8px;
+  padding: 6px 0;
+}
+
 .lb-expand {
   color: var(--text-dim);
   font-size: 18px;
@@ -696,13 +741,33 @@ function render() {
     return b.score.max_possible - a.score.max_possible;
   });
 
-  let html = `<div class="section-label">Leaderboard</div><div class="leaderboard">`;
+  let html = '';
+
+  // Show MC simulation metadata bar if available
+  const mcMeta = DATA.mc_meta;
+  if (mcMeta && !mcMeta.tournament_complete && mcMeta.games_remaining > 0) {
+    html += `<div class="mc-meta-bar">Simulated outcomes: ${mcMeta.n_simulations.toLocaleString()} runs · ${mcMeta.games_remaining} games remaining</div>`;
+  }
+
+  html += `<div class="section-label">Leaderboard</div><div class="leaderboard">`;
 
   entries.forEach((entry, i) => {
     const rank = i + 1;
     const isFirst = rank === 1;
     const score = entry.score;
     const champion = entry.bracket.champion ? entry.bracket.champion.display : '—';
+    const mc = entry.mc;
+
+    // Build MC probability pills if data exists
+    let mcHtml = '';
+    if (mc) {
+      const fmt = (p) => (p * 100).toFixed(1).replace(/\.0$/, '') + '%';
+      mcHtml = `<div class="lb-mc">`;
+      mcHtml += `<span class="mc-pill mc-1st"><span class="mc-label">1st</span> ${fmt(mc.p_first)}</span>`;
+      mcHtml += `<span class="mc-pill mc-top2"><span class="mc-label">T2</span> ${fmt(mc.p_top2)}</span>`;
+      mcHtml += `<span class="mc-pill mc-top3"><span class="mc-label">T3</span> ${fmt(mc.p_top3)}</span>`;
+      mcHtml += `</div>`;
+    }
 
     html += `
       <div class="lb-entry ${isFirst ? 'first' : ''}" onclick="toggleBracket(${i})" id="entry-${i}">
@@ -711,12 +776,14 @@ function render() {
           <h3>${esc(entry.team_name)}</h3>
           <div class="students">${esc(entry.student_names)}</div>
           <div class="champion-pick">Champion: ${esc(champion)}</div>
+          ${mcHtml}
         </div>
         <div class="lb-score-area">
           <div>
             <div class="lb-score">${score.total_score}</div>
             <div class="lb-max">/ ${score.max_total} pts</div>${score.in_progress && score.max_possible !== score.max_total ? `
-            <div class="lb-ceiling">max possible: ${score.max_possible}</div>` : ''}
+            <div class="lb-ceiling">max possible: ${score.max_possible}</div>` : ''}${mc ? `
+            <div class="lb-ceiling">E[score]: ${mc.expected_score.toFixed(1)}</div>` : ''}
           </div>
           <div class="lb-expand">▼</div>
         </div>

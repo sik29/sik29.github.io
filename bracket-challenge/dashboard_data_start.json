@@ -2542,6 +2542,12 @@
             "result": "pending"
           }
         ]
+      },
+      "mc": {
+        "p_first": 0.412,
+        "p_top2": 0.718,
+        "p_top3": 1.0,
+        "expected_score": 98.4
       }
     },
     {
@@ -5082,6 +5088,12 @@
             "result": "pending"
           }
         ]
+      },
+      "mc": {
+        "p_first": 0.296,
+        "p_top2": 0.614,
+        "p_top3": 1.0,
+        "expected_score": 91.7
       }
     },
     {
@@ -7622,7 +7634,19 @@
             "result": "pending"
           }
         ]
+      },
+      "mc": {
+        "p_first": 0.292,
+        "p_top2": 0.668,
+        "p_top3": 1.0,
+        "expected_score": 92.1
       }
     }
-  ]
+  ],
+  "mc_meta": {
+    "n_simulations": 10000,
+    "games_played": 0,
+    "games_remaining": 63,
+    "tournament_complete": false
+  }
 }
