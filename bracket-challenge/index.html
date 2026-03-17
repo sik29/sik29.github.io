@@ -102,6 +102,45 @@ body {
   padding: 32px 20px 64px;
 }
 
+/* ---- Snapshot selector ---- */
+.snapshot-selector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.snapshot-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--text-dim);
+  margin-right: 4px;
+}
+.snapshot-btn {
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: var(--font);
+}
+.snapshot-btn:hover { background: var(--surface-hover); color: var(--text); }
+.snapshot-btn.active {
+  background: var(--accent-glow);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.snapshot-btn.loading {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
 /* ---- Leaderboard ---- */
 .section-label {
   font-size: 11px;
@@ -196,23 +235,6 @@ body {
   transition: transform 0.2s;
 }
 .lb-entry.expanded .lb-expand { transform: rotate(180deg); }
-
-/* ---- Round breakdown bar ---- */
-.round-bars {
-  display: flex;
-  gap: 3px;
-  margin-top: 8px;
-  height: 6px;
-  border-radius: 3px;
-  overflow: hidden;
-}
-.round-bar {
-  flex: 1;
-  border-radius: 2px;
-  opacity: 0.25;
-  transition: opacity 0.15s;
-}
-.round-bar.has-points { opacity: 1; }
 
 /* ---- Expanded bracket detail ---- */
 .bracket-detail {
@@ -410,13 +432,6 @@ body {
   text-align: center;
 }
 
-/* Final four / championship section */
-.bracket-climax {
-  margin-top: 16px;
-  padding-top: 16px;
-  border-top: 2px solid var(--accent);
-}
-
 /* ---- Scoring legend ---- */
 .scoring-legend {
   margin-top: 40px;
@@ -496,6 +511,7 @@ body {
   .bracket-game { grid-template-columns: 1fr auto 1fr; font-size: 12px; gap: 6px; }
   .hero h1 { font-size: 22px; }
   .hero .meta { flex-direction: column; gap: 8px; }
+  .snapshot-selector { justify-content: center; }
 }
 </style>
 </head>
@@ -517,6 +533,7 @@ body {
 </div>
 
 <div class="container">
+  <div id="snapshot-bar"></div>
   <div id="app">
     <div class="loading">
       <div class="spinner"></div>
@@ -557,14 +574,101 @@ const ROUND_COLORS = ['var(--round-1)','var(--round-2)','var(--round-3)','var(--
 const ROUND_NAMES = ['Round of 64','Round of 32','Sweet 16','Elite 8','Final Four','Championship'];
 const ROUND_SHORT = ['R64','R32','S16','E8','F4','NCG'];
 
+// Snapshot file mapping: key -> filename
+// "latest" always points to dashboard_data.json (the current/live state)
+// Round snapshots are saved as dashboard_data_<key>.json
+const SNAPSHOT_FILES = {
+  'start':  'dashboard_data_start.json',
+  'r64':    'dashboard_data_r64.json',
+  'r32':    'dashboard_data_r32.json',
+  's16':    'dashboard_data_s16.json',
+  'e8':     'dashboard_data_e8.json',
+  'f4':     'dashboard_data_f4.json',
+  'final':  'dashboard_data_final.json',
+  'latest': 'dashboard_data.json',
+};
+
+const SNAPSHOT_LABELS = {
+  'start':  'Pre-Tournament',
+  'r64':    'After R64',
+  'r32':    'After R32',
+  's16':    'After S16',
+  'e8':     'After E8',
+  'f4':     'After F4',
+  'final':  'Final',
+  'latest': 'Latest',
+};
+
 let DATA = null;
 let expandedIdx = null;
+let currentSnapshot = 'latest';
+let availableSnapshots = []; // populated after probing
 
 async function init() {
+  // Probe which snapshot files exist
+  await probeSnapshots();
+  renderSnapshotBar();
+  await loadSnapshot('latest');
+}
+
+async function probeSnapshots() {
+  // Try to fetch each snapshot file with a HEAD request to see which exist
+  // Always include 'latest'
+  availableSnapshots = [];
+  const keys = ['start', 'r64', 'r32', 's16', 'e8', 'f4', 'final', 'latest'];
+
+  const probes = keys.map(async (key) => {
+    try {
+      const resp = await fetch(SNAPSHOT_FILES[key], { method: 'HEAD', cache: 'no-store' });
+      if (resp.ok) availableSnapshots.push(key);
+    } catch (e) {
+      // not available
+    }
+  });
+  await Promise.all(probes);
+
+  // Ensure ordering matches the keys array
+  availableSnapshots = keys.filter(k => availableSnapshots.includes(k));
+}
+
+function renderSnapshotBar() {
+  const bar = document.getElementById('snapshot-bar');
+  if (availableSnapshots.length <= 1) {
+    // Only "latest" exists — no point showing a selector
+    bar.innerHTML = '';
+    return;
+  }
+
+  let html = '<div class="snapshot-selector"><span class="snapshot-label">View as of:</span>';
+  for (const key of availableSnapshots) {
+    const isActive = key === currentSnapshot;
+    html += `<button class="snapshot-btn ${isActive ? 'active' : ''}" onclick="switchSnapshot('${key}')">${SNAPSHOT_LABELS[key]}</button>`;
+  }
+  html += '</div>';
+  bar.innerHTML = html;
+}
+
+async function switchSnapshot(key) {
+  if (key === currentSnapshot) return;
+
+  // Mark buttons as loading
+  document.querySelectorAll('.snapshot-btn').forEach(btn => btn.classList.add('loading'));
+
+  await loadSnapshot(key);
+
+  // Update active state
+  currentSnapshot = key;
+  renderSnapshotBar();
+}
+
+async function loadSnapshot(key) {
+  const file = SNAPSHOT_FILES[key] || 'dashboard_data.json';
   try {
-    const resp = await fetch('dashboard_data.json?v=' + Date.now());
-    if (!resp.ok) throw new Error('Could not load dashboard_data.json');
+    const resp = await fetch(file + '?v=' + Date.now());
+    if (!resp.ok) throw new Error(`Could not load ${file}`);
     DATA = await resp.json();
+    currentSnapshot = key;
+    expandedIdx = null;
     render();
   } catch (e) {
     document.getElementById('app').innerHTML =
@@ -579,11 +683,6 @@ function render() {
   const updatedStr = updated
     ? updated.toLocaleDateString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' })
     : '—';
-  const statusLabel = {
-    'not_started': 'Not started',
-    'in_progress': 'In progress',
-    'completed': 'Complete',
-  }[DATA.tournament_status] || DATA.tournament_status;
 
   meta.innerHTML = `
     <span>Season ${DATA.season}</span>
@@ -591,8 +690,11 @@ function render() {
     <span>Updated ${updatedStr}</span>
   `;
 
-  // Sort entries by score descending
-  const entries = [...DATA.entries].sort((a, b) => b.score.total_score - a.score.total_score);
+  // Sort entries by score descending, then by max_possible descending as tiebreak
+  const entries = [...DATA.entries].sort((a, b) => {
+    if (b.score.total_score !== a.score.total_score) return b.score.total_score - a.score.total_score;
+    return b.score.max_possible - a.score.max_possible;
+  });
 
   let html = `<div class="section-label">Leaderboard</div><div class="leaderboard">`;
 
@@ -602,14 +704,6 @@ function render() {
     const score = entry.score;
     const champion = entry.bracket.champion ? entry.bracket.champion.display : '—';
 
-    // Round breakdown bars
-    let barsHtml = '';
-    ROUND_NAMES.forEach((rn, ri) => {
-      const rd = score.round_breakdown[rn];
-      const hasPts = rd && rd.points_earned > 0;
-      barsHtml += `<div class="round-bar ${hasPts ? 'has-points' : ''}" style="background:${ROUND_COLORS[ri]}" title="${rn}: ${rd ? rd.points_earned : 0} pts"></div>`;
-    });
-
     html += `
       <div class="lb-entry ${isFirst ? 'first' : ''}" onclick="toggleBracket(${i})" id="entry-${i}">
         <div class="lb-rank">${rank}</div>
@@ -617,7 +711,6 @@ function render() {
           <h3>${esc(entry.team_name)}</h3>
           <div class="students">${esc(entry.student_names)}</div>
           <div class="champion-pick">Champion: ${esc(champion)}</div>
-          <div class="round-bars">${barsHtml}</div>
         </div>
         <div class="lb-score-area">
           <div>
@@ -637,7 +730,10 @@ function render() {
 }
 
 function toggleBracket(idx) {
-  const entries = [...DATA.entries].sort((a, b) => b.score.total_score - a.score.total_score);
+  const entries = [...DATA.entries].sort((a, b) => {
+    if (b.score.total_score !== a.score.total_score) return b.score.total_score - a.score.total_score;
+    return b.score.max_possible - a.score.max_possible;
+  });
   const detailEl = document.getElementById(`detail-${idx}`);
   const entryEl = document.getElementById(`entry-${idx}`);
 
@@ -671,7 +767,6 @@ function buildBracketDetail(entry) {
   ROUND_NAMES.forEach((rn, ri) => {
     const rd = score.round_breakdown[rn];
     if (!rd) return;
-    const pct = rd.total_games > 0 ? Math.round(100 * rd.correct / rd.total_games) : 0;
     const isFuture = score.in_progress && rd.round > score.rounds_completed;
     const hasAlive = isFuture && rd.still_alive !== undefined;
     const aliveHtml = hasAlive
@@ -693,21 +788,24 @@ function buildBracketDetail(entry) {
   let tabsHtml = '';
   let regionsHtml = '';
 
+  // Use a unique ID based on index to avoid collisions
+  const detailId = 'detail-content-' + Math.random().toString(36).slice(2, 8);
+
   regionKeys.forEach((rk, ri) => {
     const displayName = regionNames[rk] || rk;
     const isActive = ri === 0;
-    tabsHtml += `<div class="region-tab ${isActive ? 'active' : ''}" onclick="switchRegion(this, '${entry.team_name.replace(/'/g,"\\'")}', '${rk}')">${displayName}</div>`;
+    tabsHtml += `<div class="region-tab ${isActive ? 'active' : ''}" onclick="switchRegion(this, '${detailId}', '${rk}')">${displayName}</div>`;
     regionsHtml += buildRegionView(bracket, rk, isActive);
   });
 
   // Add Final Four / Championship tab
-  tabsHtml += `<div class="region-tab" onclick="switchRegion(this, '${entry.team_name.replace(/'/g,"\\'")}', 'ff')">Final Four</div>`;
+  tabsHtml += `<div class="region-tab" onclick="switchRegion(this, '${detailId}', 'ff')">Final Four</div>`;
   regionsHtml += buildFinalFourView(bracket);
 
   return `
     <div class="score-grid">${scoreGridHtml}</div>
-    <div class="region-tabs" id="tabs-${entry.team_name}">${tabsHtml}</div>
-    <div id="regions-${entry.team_name}">${regionsHtml}</div>
+    <div class="region-tabs">${tabsHtml}</div>
+    <div id="${detailId}">${regionsHtml}</div>
   `;
 }
 
@@ -764,7 +862,7 @@ function buildGameRow(game) {
   const awayName = game.away_team;
   const homeIsWinner = game.winner_id === game.home_team_id;
   const prob = game.winner_prob ? (game.winner_prob * 100).toFixed(0) + '%' : '';
-  const result = game.result || 'pending'; // correct, incorrect, pending, eliminated
+  const result = game.result || 'pending';
 
   // Result badge
   const badges = {
@@ -798,14 +896,14 @@ function buildGameRow(game) {
     </div>`;
 }
 
-function switchRegion(tabEl, teamName, regionKey) {
+function switchRegion(tabEl, containerId, regionKey) {
   // Update tabs
   const tabContainer = tabEl.parentElement;
   tabContainer.querySelectorAll('.region-tab').forEach(t => t.classList.remove('active'));
   tabEl.classList.add('active');
 
   // Update regions
-  const regionContainer = tabContainer.nextElementSibling;
+  const regionContainer = document.getElementById(containerId);
   regionContainer.querySelectorAll('.bracket-region').forEach(r => {
     r.classList.toggle('visible', r.dataset.region === regionKey);
   });

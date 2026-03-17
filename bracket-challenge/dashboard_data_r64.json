@@ -2,17 +2,17 @@
   "season": 2025,
   "last_updated": "2026-03-28T20:15:00Z",
   "tournament_status": "in_progress",
-  "rounds_completed": 3,
+  "rounds_completed": 1,
   "entries": [
     {
       "team_name": "Neural Nets",
       "student_names": "Alice & Bob",
       "logo": null,
       "score": {
-        "total_score": 56,
-        "max_possible": 96,
+        "total_score": 30,
+        "max_possible": 190,
         "max_total": 192,
-        "rounds_completed": 3,
+        "rounds_completed": 1,
         "in_progress": true,
         "round_breakdown": {
           "Round of 64": {
@@ -27,17 +27,19 @@
             "round": 2,
             "points_per_game": 2,
             "total_games": 16,
-            "correct": 11,
-            "points_earned": 22,
-            "max_points": 32
+            "correct": 0,
+            "points_earned": 0,
+            "max_points": 32,
+            "still_alive": 16
           },
           "Sweet 16": {
             "round": 3,
             "points_per_game": 4,
             "total_games": 8,
-            "correct": 1,
-            "points_earned": 4,
-            "max_points": 32
+            "correct": 0,
+            "points_earned": 0,
+            "max_points": 32,
+            "still_alive": 8
           },
           "Elite 8": {
             "round": 4,
@@ -46,7 +48,7 @@
             "correct": 0,
             "points_earned": 0,
             "max_points": 32,
-            "still_alive": 3
+            "still_alive": 4
           },
           "Final Four": {
             "round": 5,
@@ -55,7 +57,7 @@
             "correct": 0,
             "points_earned": 0,
             "max_points": 32,
-            "still_alive": 1
+            "still_alive": 2
           },
           "Championship": {
             "round": 6,
@@ -64,7 +66,7 @@
             "correct": 0,
             "points_earned": 0,
             "max_points": 32,
-            "still_alive": 0
+            "still_alive": 1
           }
         }
       },
@@ -252,7 +254,7 @@
                   "loser": "(9) Baylor",
                   "winner_prob": 0.5621,
                   "home_win_prob": 0.5621,
-                  "result": "correct"
+                  "result": "pending"
                 },
                 {
                   "round": 2,
@@ -271,7 +273,7 @@
                   "loser": "(4) Arizona",
                   "winner_prob": 0.51,
                   "home_win_prob": 0.49,
-                  "result": "incorrect"
+                  "result": "pending"
                 },
                 {
                   "round": 2,
@@ -290,7 +292,7 @@
                   "loser": "(3) Wisconsin",
                   "winner_prob": 0.6933,
                   "home_win_prob": 0.6933,
-                  "result": "correct"
+                  "result": "pending"
                 },
                 {
                   "round": 2,
@@ -309,7 +311,7 @@
                   "loser": "(7) St Mary's CA",
                   "winner_prob": 0.7706,
                   "home_win_prob": 0.7706,
-                  "result": "correct"
+                  "result": "pending"
                 }
               ],
               [
@@ -330,7 +332,7 @@
                   "loser": "(1) Duke",
                   "winner_prob": 0.51,
                   "home_win_prob": 0.49,
-                  "result": "incorrect"
+                  "result": "pending"
                 },
                 {
                   "round": 3,
@@ -349,7 +351,7 @@
                   "loser": "(6) BYU",
                   "winner_prob": 0.533,
                   "home_win_prob": 0.467,
-                  "result": "correct"
+                  "result": "pending"
                 }
               ],
               [
@@ -370,7 +372,7 @@
                   "loser": "(2) Alabama",
                   "winner_prob": 0.51,
                   "home_win_prob": 0.49,
-                  "result": "eliminated"
+                  "result": "pending"
                 }
               ]
             ],
@@ -553,7 +555,7 @@
                   "loser": "(16) SIUE",
                   "winner_prob": 0.8335,
                   "home_win_prob": 0.1665,
-                  "result": "incorrect"
+                  "result": "pending"
                 },
                 {
                   "round": 2,
@@ -572,7 +574,7 @@
                   "loser": "(12) McNeese St",
                   "winner_prob": 0.6645,
                   "home_win_prob": 0.6645,
-                  "result": "correct"
+                  "result": "pending"
                 },
                 {
                   "round": 2,
@@ -591,7 +593,7 @@
                   "loser": "(3) Kentucky",
                   "winner_prob": 0.5535,
                   "home_win_prob": 0.4465,
-                  "result": "incorrect"
+                  "result": "pending"
                 },
                 {
                   "round": 2,
@@ -610,7 +612,7 @@
                   "loser": "(7) UCLA",
                   "winner_prob": 0.5712,
                   "home_win_prob": 0.4288,
-                  "result": "correct"
+                  "result": "pending"
                 }
               ],
               [
@@ -631,7 +633,7 @@
                   "loser": "(4) Purdue",
                   "winner_prob": 0.51,
                   "home_win_prob": 0.51,
-                  "result": "incorrect"
+                  "result": "pending"
                 },
                 {
                   "round": 3,
@@ -650,7 +652,7 @@
                   "loser": "(6) Illinois",
                   "winner_prob": 0.6046,
                   "home_win_prob": 0.3954,
-                  "result": "incorrect"
+                  "result": "pending"
                 }
               ],
               [
@@ -854,7 +856,7 @@
                   "loser": "(9) Creighton",
                   "winner_prob": 0.5836,
                   "home_win_prob": 0.5836,
-                  "result": "correct"
+                  "result": "pending"
                 },
                 {
                   "round": 2,
@@ -873,7 +875,7 @@
                   "loser": "(4) Texas A&M",
                   "winner_prob": 0.51,
                   "home_win_prob": 0.51,
-                  "result": "correct"
+                  "result": "pending"
                 },
                 {
                   "round": 2,
@@ -892,7 +894,7 @@
                   "loser": "(6) Mississippi",
                   "winner_prob": 0.51,
                   "home_win_prob": 0.49,
-                  "result": "incorrect"
+                  "result": "pending"
                 },
                 {
                   "round": 2,
@@ -911,7 +913,7 @@
                   "loser": "(7) Marquette",
                   "winner_prob": 0.5911,
                   "home_win_prob": 0.4089,
-                  "result": "correct"
+                  "result": "pending"
                 }
               ],
               [
@@ -932,7 +934,7 @@
                   "loser": "(1) Auburn",
                   "winner_prob": 0.5563,
                   "home_win_prob": 0.4437,
-                  "result": "incorrect"
+                  "result": "pending"
                 },
                 {
                   "round": 3,
@@ -951,7 +953,7 @@
                   "loser": "(3) Iowa St",
                   "winner_prob": 0.5523,
                   "home_win_prob": 0.5523,
-                  "result": "incorrect"
+                  "result": "pending"
                 }
               ],
               [
@@ -1155,7 +1157,7 @@
                   "loser": "(1) Florida",
                   "winner_prob": 0.6747,
                   "home_win_prob": 0.3253,
-                  "result": "incorrect"
+                  "result": "pending"
                 },
                 {
                   "round": 2,
@@ -1174,7 +1176,7 @@
                   "loser": "(12) Colorado St",
                   "winner_prob": 0.8042,
                   "home_win_prob": 0.1958,
-                  "result": "correct"
+                  "result": "pending"
                 },
                 {
                   "round": 2,
@@ -1193,7 +1195,7 @@
                   "loser": "(11) Drake",
                   "winner_prob": 0.7211,
                   "home_win_prob": 0.7211,
-                  "result": "correct"
+                  "result": "pending"
                 },
                 {
                   "round": 2,
@@ -1212,7 +1214,7 @@
                   "loser": "(2) St John's",
                   "winner_prob": 0.6779,
                   "home_win_prob": 0.6779,
-                  "result": "correct"
+                  "result": "pending"
                 }
               ],
               [
@@ -1233,7 +1235,7 @@
                   "loser": "(8) Connecticut",
                   "winner_prob": 0.51,
                   "home_win_prob": 0.49,
-                  "result": "incorrect"
+                  "result": "pending"
                 },
                 {
                   "round": 3,
@@ -1252,7 +1254,7 @@
                   "loser": "(10) Arkansas",
                   "winner_prob": 0.7061,
                   "home_win_prob": 0.7061,
-                  "result": "incorrect"
+                  "result": "pending"
                 }
               ],
               [
@@ -1301,7 +1303,7 @@
             "loser": "(2) Tennessee",
             "winner_prob": 0.51,
             "home_win_prob": 0.49,
-            "result": "eliminated"
+            "result": "pending"
           },
           {
             "round": 5,
@@ -1340,7 +1342,7 @@
           "loser": "(2) Michigan St",
           "winner_prob": 0.5615,
           "home_win_prob": 0.4385,
-          "result": "eliminated"
+          "result": "pending"
         },
         "champion": {
           "team_id": 1332,
@@ -1516,7 +1518,7 @@
             "loser": "(9) Baylor",
             "winner_prob": 0.5621,
             "home_win_prob": 0.5621,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 2,
@@ -1535,7 +1537,7 @@
             "loser": "(4) Arizona",
             "winner_prob": 0.51,
             "home_win_prob": 0.49,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 2,
@@ -1554,7 +1556,7 @@
             "loser": "(3) Wisconsin",
             "winner_prob": 0.6933,
             "home_win_prob": 0.6933,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 2,
@@ -1573,7 +1575,7 @@
             "loser": "(7) St Mary's CA",
             "winner_prob": 0.7706,
             "home_win_prob": 0.7706,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 3,
@@ -1592,7 +1594,7 @@
             "loser": "(1) Duke",
             "winner_prob": 0.51,
             "home_win_prob": 0.49,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 3,
@@ -1611,7 +1613,7 @@
             "loser": "(6) BYU",
             "winner_prob": 0.533,
             "home_win_prob": 0.467,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 4,
@@ -1630,7 +1632,7 @@
             "loser": "(2) Alabama",
             "winner_prob": 0.51,
             "home_win_prob": 0.49,
-            "result": "eliminated"
+            "result": "pending"
           },
           {
             "round": 1,
@@ -1801,7 +1803,7 @@
             "loser": "(16) SIUE",
             "winner_prob": 0.8335,
             "home_win_prob": 0.1665,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 2,
@@ -1820,7 +1822,7 @@
             "loser": "(12) McNeese St",
             "winner_prob": 0.6645,
             "home_win_prob": 0.6645,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 2,
@@ -1839,7 +1841,7 @@
             "loser": "(3) Kentucky",
             "winner_prob": 0.5535,
             "home_win_prob": 0.4465,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 2,
@@ -1858,7 +1860,7 @@
             "loser": "(7) UCLA",
             "winner_prob": 0.5712,
             "home_win_prob": 0.4288,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 3,
@@ -1877,7 +1879,7 @@
             "loser": "(4) Purdue",
             "winner_prob": 0.51,
             "home_win_prob": 0.51,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 3,
@@ -1896,7 +1898,7 @@
             "loser": "(6) Illinois",
             "winner_prob": 0.6046,
             "home_win_prob": 0.3954,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 4,
@@ -2086,7 +2088,7 @@
             "loser": "(9) Creighton",
             "winner_prob": 0.5836,
             "home_win_prob": 0.5836,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 2,
@@ -2105,7 +2107,7 @@
             "loser": "(4) Texas A&M",
             "winner_prob": 0.51,
             "home_win_prob": 0.51,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 2,
@@ -2124,7 +2126,7 @@
             "loser": "(6) Mississippi",
             "winner_prob": 0.51,
             "home_win_prob": 0.49,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 2,
@@ -2143,7 +2145,7 @@
             "loser": "(7) Marquette",
             "winner_prob": 0.5911,
             "home_win_prob": 0.4089,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 3,
@@ -2162,7 +2164,7 @@
             "loser": "(1) Auburn",
             "winner_prob": 0.5563,
             "home_win_prob": 0.4437,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 3,
@@ -2181,7 +2183,7 @@
             "loser": "(3) Iowa St",
             "winner_prob": 0.5523,
             "home_win_prob": 0.5523,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 4,
@@ -2371,7 +2373,7 @@
             "loser": "(1) Florida",
             "winner_prob": 0.6747,
             "home_win_prob": 0.3253,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 2,
@@ -2390,7 +2392,7 @@
             "loser": "(12) Colorado St",
             "winner_prob": 0.8042,
             "home_win_prob": 0.1958,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 2,
@@ -2409,7 +2411,7 @@
             "loser": "(11) Drake",
             "winner_prob": 0.7211,
             "home_win_prob": 0.7211,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 2,
@@ -2428,7 +2430,7 @@
             "loser": "(2) St John's",
             "winner_prob": 0.6779,
             "home_win_prob": 0.6779,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 3,
@@ -2447,7 +2449,7 @@
             "loser": "(8) Connecticut",
             "winner_prob": 0.51,
             "home_win_prob": 0.49,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 3,
@@ -2466,7 +2468,7 @@
             "loser": "(10) Arkansas",
             "winner_prob": 0.7061,
             "home_win_prob": 0.7061,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 4,
@@ -2504,7 +2506,7 @@
             "loser": "(2) Tennessee",
             "winner_prob": 0.51,
             "home_win_prob": 0.49,
-            "result": "eliminated"
+            "result": "pending"
           },
           {
             "round": 5,
@@ -2542,7 +2544,7 @@
             "loser": "(2) Michigan St",
             "winner_prob": 0.5615,
             "home_win_prob": 0.4385,
-            "result": "eliminated"
+            "result": "pending"
           }
         ]
       }
@@ -2552,10 +2554,10 @@
       "student_names": "Charlie",
       "logo": null,
       "score": {
-        "total_score": 46,
-        "max_possible": 78,
+        "total_score": 24,
+        "max_possible": 178,
         "max_total": 192,
-        "rounds_completed": 3,
+        "rounds_completed": 1,
         "in_progress": true,
         "round_breakdown": {
           "Round of 64": {
@@ -2570,17 +2572,19 @@
             "round": 2,
             "points_per_game": 2,
             "total_games": 16,
-            "correct": 7,
-            "points_earned": 14,
-            "max_points": 32
+            "correct": 0,
+            "points_earned": 0,
+            "max_points": 32,
+            "still_alive": 13
           },
           "Sweet 16": {
             "round": 3,
             "points_per_game": 4,
             "total_games": 8,
-            "correct": 2,
-            "points_earned": 8,
-            "max_points": 32
+            "correct": 0,
+            "points_earned": 0,
+            "max_points": 32,
+            "still_alive": 8
           },
           "Elite 8": {
             "round": 4,
@@ -2589,7 +2593,7 @@
             "correct": 0,
             "points_earned": 0,
             "max_points": 32,
-            "still_alive": 2
+            "still_alive": 4
           },
           "Final Four": {
             "round": 5,
@@ -2598,7 +2602,7 @@
             "correct": 0,
             "points_earned": 0,
             "max_points": 32,
-            "still_alive": 1
+            "still_alive": 2
           },
           "Championship": {
             "round": 6,
@@ -2607,7 +2611,7 @@
             "correct": 0,
             "points_earned": 0,
             "max_points": 32,
-            "still_alive": 0
+            "still_alive": 1
           }
         }
       },
@@ -2795,7 +2799,7 @@
                   "loser": "(9) Baylor",
                   "winner_prob": 0.6534,
                   "home_win_prob": 0.3466,
-                  "result": "correct"
+                  "result": "pending"
                 },
                 {
                   "round": 2,
@@ -2814,7 +2818,7 @@
                   "loser": "(4) Arizona",
                   "winner_prob": 0.6333,
                   "home_win_prob": 0.6333,
-                  "result": "incorrect"
+                  "result": "eliminated"
                 },
                 {
                   "round": 2,
@@ -2833,7 +2837,7 @@
                   "loser": "(6) BYU",
                   "winner_prob": 0.51,
                   "home_win_prob": 0.51,
-                  "result": "incorrect"
+                  "result": "pending"
                 },
                 {
                   "round": 2,
@@ -2852,7 +2856,7 @@
                   "loser": "(7) St Mary's CA",
                   "winner_prob": 0.6033,
                   "home_win_prob": 0.6033,
-                  "result": "correct"
+                  "result": "pending"
                 }
               ],
               [
@@ -2873,7 +2877,7 @@
                   "loser": "(12) Liberty",
                   "winner_prob": 0.7756,
                   "home_win_prob": 0.2244,
-                  "result": "correct"
+                  "result": "pending"
                 },
                 {
                   "round": 3,
@@ -2892,7 +2896,7 @@
                   "loser": "(3) Wisconsin",
                   "winner_prob": 0.7676,
                   "home_win_prob": 0.2324,
-                  "result": "correct"
+                  "result": "pending"
                 }
               ],
               [
@@ -3096,7 +3100,7 @@
                   "loser": "(16) SIUE",
                   "winner_prob": 0.6769,
                   "home_win_prob": 0.3231,
-                  "result": "incorrect"
+                  "result": "pending"
                 },
                 {
                   "round": 2,
@@ -3115,7 +3119,7 @@
                   "loser": "(13) High Point",
                   "winner_prob": 0.6755,
                   "home_win_prob": 0.6755,
-                  "result": "incorrect"
+                  "result": "eliminated"
                 },
                 {
                   "round": 2,
@@ -3134,7 +3138,7 @@
                   "loser": "(6) Illinois",
                   "winner_prob": 0.572,
                   "home_win_prob": 0.572,
-                  "result": "correct"
+                  "result": "pending"
                 },
                 {
                   "round": 2,
@@ -3153,7 +3157,7 @@
                   "loser": "(2) Tennessee",
                   "winner_prob": 0.5595,
                   "home_win_prob": 0.4405,
-                  "result": "incorrect"
+                  "result": "pending"
                 }
               ],
               [
@@ -3174,7 +3178,7 @@
                   "loser": "(5) Clemson",
                   "winner_prob": 0.6807,
                   "home_win_prob": 0.3193,
-                  "result": "incorrect"
+                  "result": "pending"
                 },
                 {
                   "round": 3,
@@ -3193,7 +3197,7 @@
                   "loser": "(7) UCLA",
                   "winner_prob": 0.6083,
                   "home_win_prob": 0.6083,
-                  "result": "incorrect"
+                  "result": "pending"
                 }
               ],
               [
@@ -3214,7 +3218,7 @@
                   "loser": "(3) Kentucky",
                   "winner_prob": 0.5292,
                   "home_win_prob": 0.5292,
-                  "result": "eliminated"
+                  "result": "pending"
                 }
               ]
             ],
@@ -3397,7 +3401,7 @@
                   "loser": "(9) Creighton",
                   "winner_prob": 0.701,
                   "home_win_prob": 0.701,
-                  "result": "correct"
+                  "result": "pending"
                 },
                 {
                   "round": 2,
@@ -3416,7 +3420,7 @@
                   "loser": "(13) Yale",
                   "winner_prob": 0.6065,
                   "home_win_prob": 0.6065,
-                  "result": "correct"
+                  "result": "pending"
                 },
                 {
                   "round": 2,
@@ -3435,7 +3439,7 @@
                   "loser": "(6) Mississippi",
                   "winner_prob": 0.6941,
                   "home_win_prob": 0.6941,
-                  "result": "incorrect"
+                  "result": "pending"
                 },
                 {
                   "round": 2,
@@ -3454,7 +3458,7 @@
                   "loser": "(10) New Mexico",
                   "winner_prob": 0.6179,
                   "home_win_prob": 0.6179,
-                  "result": "correct"
+                  "result": "pending"
                 }
               ],
               [
@@ -3475,7 +3479,7 @@
                   "loser": "(1) Auburn",
                   "winner_prob": 0.5755,
                   "home_win_prob": 0.4245,
-                  "result": "incorrect"
+                  "result": "pending"
                 },
                 {
                   "round": 3,
@@ -3494,7 +3498,7 @@
                   "loser": "(2) Michigan St",
                   "winner_prob": 0.5154,
                   "home_win_prob": 0.5154,
-                  "result": "incorrect"
+                  "result": "pending"
                 }
               ],
               [
@@ -3515,7 +3519,7 @@
                   "loser": "(5) Michigan",
                   "winner_prob": 0.5557,
                   "home_win_prob": 0.5557,
-                  "result": "eliminated"
+                  "result": "pending"
                 }
               ]
             ],
@@ -3698,7 +3702,7 @@
                   "loser": "(16) Norfolk St",
                   "winner_prob": 0.5894,
                   "home_win_prob": 0.4106,
-                  "result": "incorrect"
+                  "result": "pending"
                 },
                 {
                   "round": 2,
@@ -3717,7 +3721,7 @@
                   "loser": "(4) Maryland",
                   "winner_prob": 0.7734,
                   "home_win_prob": 0.7734,
-                  "result": "incorrect"
+                  "result": "pending"
                 },
                 {
                   "round": 2,
@@ -3736,7 +3740,7 @@
                   "loser": "(6) Missouri",
                   "winner_prob": 0.5867,
                   "home_win_prob": 0.4133,
-                  "result": "correct"
+                  "result": "pending"
                 },
                 {
                   "round": 2,
@@ -3755,7 +3759,7 @@
                   "loser": "(2) St John's",
                   "winner_prob": 0.5713,
                   "home_win_prob": 0.4287,
-                  "result": "incorrect"
+                  "result": "eliminated"
                 }
               ],
               [
@@ -3776,7 +3780,7 @@
                   "loser": "(12) Colorado St",
                   "winner_prob": 0.5165,
                   "home_win_prob": 0.4835,
-                  "result": "incorrect"
+                  "result": "pending"
                 },
                 {
                   "round": 3,
@@ -3795,7 +3799,7 @@
                   "loser": "(7) Kansas",
                   "winner_prob": 0.5447,
                   "home_win_prob": 0.4553,
-                  "result": "incorrect"
+                  "result": "pending"
                 }
               ],
               [
@@ -3844,7 +3848,7 @@
             "loser": "(2) Alabama",
             "winner_prob": 0.51,
             "home_win_prob": 0.51,
-            "result": "eliminated"
+            "result": "pending"
           },
           {
             "round": 5,
@@ -3883,7 +3887,7 @@
           "loser": "(3) Texas Tech",
           "winner_prob": 0.51,
           "home_win_prob": 0.51,
-          "result": "eliminated"
+          "result": "pending"
         },
         "champion": {
           "team_id": 1211,
@@ -4059,7 +4063,7 @@
             "loser": "(9) Baylor",
             "winner_prob": 0.6534,
             "home_win_prob": 0.3466,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 2,
@@ -4078,7 +4082,7 @@
             "loser": "(4) Arizona",
             "winner_prob": 0.6333,
             "home_win_prob": 0.6333,
-            "result": "incorrect"
+            "result": "eliminated"
           },
           {
             "round": 2,
@@ -4097,7 +4101,7 @@
             "loser": "(6) BYU",
             "winner_prob": 0.51,
             "home_win_prob": 0.51,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 2,
@@ -4116,7 +4120,7 @@
             "loser": "(7) St Mary's CA",
             "winner_prob": 0.6033,
             "home_win_prob": 0.6033,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 3,
@@ -4135,7 +4139,7 @@
             "loser": "(12) Liberty",
             "winner_prob": 0.7756,
             "home_win_prob": 0.2244,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 3,
@@ -4154,7 +4158,7 @@
             "loser": "(3) Wisconsin",
             "winner_prob": 0.7676,
             "home_win_prob": 0.2324,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 4,
@@ -4344,7 +4348,7 @@
             "loser": "(16) SIUE",
             "winner_prob": 0.6769,
             "home_win_prob": 0.3231,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 2,
@@ -4363,7 +4367,7 @@
             "loser": "(13) High Point",
             "winner_prob": 0.6755,
             "home_win_prob": 0.6755,
-            "result": "incorrect"
+            "result": "eliminated"
           },
           {
             "round": 2,
@@ -4382,7 +4386,7 @@
             "loser": "(6) Illinois",
             "winner_prob": 0.572,
             "home_win_prob": 0.572,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 2,
@@ -4401,7 +4405,7 @@
             "loser": "(2) Tennessee",
             "winner_prob": 0.5595,
             "home_win_prob": 0.4405,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 3,
@@ -4420,7 +4424,7 @@
             "loser": "(5) Clemson",
             "winner_prob": 0.6807,
             "home_win_prob": 0.3193,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 3,
@@ -4439,7 +4443,7 @@
             "loser": "(7) UCLA",
             "winner_prob": 0.6083,
             "home_win_prob": 0.6083,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 4,
@@ -4458,7 +4462,7 @@
             "loser": "(3) Kentucky",
             "winner_prob": 0.5292,
             "home_win_prob": 0.5292,
-            "result": "eliminated"
+            "result": "pending"
           },
           {
             "round": 1,
@@ -4629,7 +4633,7 @@
             "loser": "(9) Creighton",
             "winner_prob": 0.701,
             "home_win_prob": 0.701,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 2,
@@ -4648,7 +4652,7 @@
             "loser": "(13) Yale",
             "winner_prob": 0.6065,
             "home_win_prob": 0.6065,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 2,
@@ -4667,7 +4671,7 @@
             "loser": "(6) Mississippi",
             "winner_prob": 0.6941,
             "home_win_prob": 0.6941,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 2,
@@ -4686,7 +4690,7 @@
             "loser": "(10) New Mexico",
             "winner_prob": 0.6179,
             "home_win_prob": 0.6179,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 3,
@@ -4705,7 +4709,7 @@
             "loser": "(1) Auburn",
             "winner_prob": 0.5755,
             "home_win_prob": 0.4245,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 3,
@@ -4724,7 +4728,7 @@
             "loser": "(2) Michigan St",
             "winner_prob": 0.5154,
             "home_win_prob": 0.5154,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 4,
@@ -4743,7 +4747,7 @@
             "loser": "(5) Michigan",
             "winner_prob": 0.5557,
             "home_win_prob": 0.5557,
-            "result": "eliminated"
+            "result": "pending"
           },
           {
             "round": 1,
@@ -4914,7 +4918,7 @@
             "loser": "(16) Norfolk St",
             "winner_prob": 0.5894,
             "home_win_prob": 0.4106,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 2,
@@ -4933,7 +4937,7 @@
             "loser": "(4) Maryland",
             "winner_prob": 0.7734,
             "home_win_prob": 0.7734,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 2,
@@ -4952,7 +4956,7 @@
             "loser": "(6) Missouri",
             "winner_prob": 0.5867,
             "home_win_prob": 0.4133,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 2,
@@ -4971,7 +4975,7 @@
             "loser": "(2) St John's",
             "winner_prob": 0.5713,
             "home_win_prob": 0.4287,
-            "result": "incorrect"
+            "result": "eliminated"
           },
           {
             "round": 3,
@@ -4990,7 +4994,7 @@
             "loser": "(12) Colorado St",
             "winner_prob": 0.5165,
             "home_win_prob": 0.4835,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 3,
@@ -5009,7 +5013,7 @@
             "loser": "(7) Kansas",
             "winner_prob": 0.5447,
             "home_win_prob": 0.4553,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 4,
@@ -5047,7 +5051,7 @@
             "loser": "(2) Alabama",
             "winner_prob": 0.51,
             "home_win_prob": 0.51,
-            "result": "eliminated"
+            "result": "pending"
           },
           {
             "round": 5,
@@ -5085,7 +5089,7 @@
             "loser": "(3) Texas Tech",
             "winner_prob": 0.51,
             "home_win_prob": 0.51,
-            "result": "eliminated"
+            "result": "pending"
           }
         ]
       }
@@ -5095,10 +5099,10 @@
       "student_names": "Diana & Eve",
       "logo": null,
       "score": {
-        "total_score": 42,
-        "max_possible": 106,
+        "total_score": 24,
+        "max_possible": 154,
         "max_total": 192,
-        "rounds_completed": 3,
+        "rounds_completed": 1,
         "in_progress": true,
         "round_breakdown": {
           "Round of 64": {
@@ -5113,17 +5117,19 @@
             "round": 2,
             "points_per_game": 2,
             "total_games": 16,
-            "correct": 7,
-            "points_earned": 14,
-            "max_points": 32
+            "correct": 0,
+            "points_earned": 0,
+            "max_points": 32,
+            "still_alive": 11
           },
           "Sweet 16": {
             "round": 3,
             "points_per_game": 4,
             "total_games": 8,
-            "correct": 1,
-            "points_earned": 4,
-            "max_points": 32
+            "correct": 0,
+            "points_earned": 0,
+            "max_points": 32,
+            "still_alive": 5
           },
           "Elite 8": {
             "round": 4,
@@ -5132,7 +5138,7 @@
             "correct": 0,
             "points_earned": 0,
             "max_points": 32,
-            "still_alive": 2
+            "still_alive": 3
           },
           "Final Four": {
             "round": 5,
@@ -5141,7 +5147,7 @@
             "correct": 0,
             "points_earned": 0,
             "max_points": 32,
-            "still_alive": 1
+            "still_alive": 2
           },
           "Championship": {
             "round": 6,
@@ -5338,7 +5344,7 @@
                   "loser": "(1) Duke",
                   "winner_prob": 0.7569,
                   "home_win_prob": 0.7569,
-                  "result": "incorrect"
+                  "result": "pending"
                 },
                 {
                   "round": 2,
@@ -5357,7 +5363,7 @@
                   "loser": "(4) Arizona",
                   "winner_prob": 0.5354,
                   "home_win_prob": 0.5354,
-                  "result": "incorrect"
+                  "result": "pending"
                 },
                 {
                   "round": 2,
@@ -5376,7 +5382,7 @@
                   "loser": "(6) BYU",
                   "winner_prob": 0.5854,
                   "home_win_prob": 0.5854,
-                  "result": "incorrect"
+                  "result": "pending"
                 },
                 {
                   "round": 2,
@@ -5395,7 +5401,7 @@
                   "loser": "(7) St Mary's CA",
                   "winner_prob": 0.6629,
                   "home_win_prob": 0.3371,
-                  "result": "correct"
+                  "result": "pending"
                 }
               ],
               [
@@ -5416,7 +5422,7 @@
                   "loser": "(5) Oregon",
                   "winner_prob": 0.5229,
                   "home_win_prob": 0.5229,
-                  "result": "incorrect"
+                  "result": "pending"
                 },
                 {
                   "round": 3,
@@ -5435,7 +5441,7 @@
                   "loser": "(2) Alabama",
                   "winner_prob": 0.516,
                   "home_win_prob": 0.516,
-                  "result": "incorrect"
+                  "result": "pending"
                 }
               ],
               [
@@ -5456,7 +5462,7 @@
                   "loser": "(3) Wisconsin",
                   "winner_prob": 0.6689,
                   "home_win_prob": 0.6689,
-                  "result": "eliminated"
+                  "result": "pending"
                 }
               ]
             ],
@@ -5639,7 +5645,7 @@
                   "loser": "(8) Gonzaga",
                   "winner_prob": 0.7129,
                   "home_win_prob": 0.7129,
-                  "result": "correct"
+                  "result": "pending"
                 },
                 {
                   "round": 2,
@@ -5658,7 +5664,7 @@
                   "loser": "(13) High Point",
                   "winner_prob": 0.6115,
                   "home_win_prob": 0.3885,
-                  "result": "incorrect"
+                  "result": "eliminated"
                 },
                 {
                   "round": 2,
@@ -5677,7 +5683,7 @@
                   "loser": "(6) Illinois",
                   "winner_prob": 0.5663,
                   "home_win_prob": 0.5663,
-                  "result": "incorrect"
+                  "result": "eliminated"
                 },
                 {
                   "round": 2,
@@ -5696,7 +5702,7 @@
                   "loser": "(2) Tennessee",
                   "winner_prob": 0.5935,
                   "home_win_prob": 0.5935,
-                  "result": "incorrect"
+                  "result": "eliminated"
                 }
               ],
               [
@@ -5717,7 +5723,7 @@
                   "loser": "(1) Houston",
                   "winner_prob": 0.5585,
                   "home_win_prob": 0.4415,
-                  "result": "incorrect"
+                  "result": "eliminated"
                 },
                 {
                   "round": 3,
@@ -5736,7 +5742,7 @@
                   "loser": "(14) Troy",
                   "winner_prob": 0.5973,
                   "home_win_prob": 0.4027,
-                  "result": "incorrect"
+                  "result": "eliminated"
                 }
               ],
               [
@@ -5940,7 +5946,7 @@
                   "loser": "(16) Alabama St",
                   "winner_prob": 0.7663,
                   "home_win_prob": 0.2337,
-                  "result": "incorrect"
+                  "result": "eliminated"
                 },
                 {
                   "round": 2,
@@ -5959,7 +5965,7 @@
                   "loser": "(4) Texas A&M",
                   "winner_prob": 0.51,
                   "home_win_prob": 0.51,
-                  "result": "correct"
+                  "result": "pending"
                 },
                 {
                   "round": 2,
@@ -5978,7 +5984,7 @@
                   "loser": "(3) Iowa St",
                   "winner_prob": 0.7265,
                   "home_win_prob": 0.7265,
-                  "result": "correct"
+                  "result": "pending"
                 },
                 {
                   "round": 2,
@@ -5997,7 +6003,7 @@
                   "loser": "(10) New Mexico",
                   "winner_prob": 0.5529,
                   "home_win_prob": 0.5529,
-                  "result": "correct"
+                  "result": "pending"
                 }
               ],
               [
@@ -6018,7 +6024,7 @@
                   "loser": "(5) Michigan",
                   "winner_prob": 0.51,
                   "home_win_prob": 0.51,
-                  "result": "incorrect"
+                  "result": "eliminated"
                 },
                 {
                   "round": 3,
@@ -6037,7 +6043,7 @@
                   "loser": "(6) Mississippi",
                   "winner_prob": 0.6188,
                   "home_win_prob": 0.6188,
-                  "result": "incorrect"
+                  "result": "pending"
                 }
               ],
               [
@@ -6241,7 +6247,7 @@
                   "loser": "(8) Connecticut",
                   "winner_prob": 0.6953,
                   "home_win_prob": 0.6953,
-                  "result": "correct"
+                  "result": "pending"
                 },
                 {
                   "round": 2,
@@ -6260,7 +6266,7 @@
                   "loser": "(13) Grand Canyon",
                   "winner_prob": 0.6888,
                   "home_win_prob": 0.6888,
-                  "result": "incorrect"
+                  "result": "eliminated"
                 },
                 {
                   "round": 2,
@@ -6279,7 +6285,7 @@
                   "loser": "(11) Drake",
                   "winner_prob": 0.6963,
                   "home_win_prob": 0.3037,
-                  "result": "correct"
+                  "result": "pending"
                 },
                 {
                   "round": 2,
@@ -6298,7 +6304,7 @@
                   "loser": "(10) Arkansas",
                   "winner_prob": 0.7018,
                   "home_win_prob": 0.7018,
-                  "result": "incorrect"
+                  "result": "pending"
                 }
               ],
               [
@@ -6319,7 +6325,7 @@
                   "loser": "(5) Memphis",
                   "winner_prob": 0.6529,
                   "home_win_prob": 0.6529,
-                  "result": "correct"
+                  "result": "pending"
                 },
                 {
                   "round": 3,
@@ -6338,7 +6344,7 @@
                   "loser": "(3) Texas Tech",
                   "winner_prob": 0.6433,
                   "home_win_prob": 0.6433,
-                  "result": "incorrect"
+                  "result": "pending"
                 }
               ],
               [
@@ -6387,7 +6393,7 @@
             "loser": "(5) Clemson",
             "winner_prob": 0.5361,
             "home_win_prob": 0.5361,
-            "result": "eliminated"
+            "result": "pending"
           },
           {
             "round": 5,
@@ -6602,7 +6608,7 @@
             "loser": "(1) Duke",
             "winner_prob": 0.7569,
             "home_win_prob": 0.7569,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 2,
@@ -6621,7 +6627,7 @@
             "loser": "(4) Arizona",
             "winner_prob": 0.5354,
             "home_win_prob": 0.5354,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 2,
@@ -6640,7 +6646,7 @@
             "loser": "(6) BYU",
             "winner_prob": 0.5854,
             "home_win_prob": 0.5854,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 2,
@@ -6659,7 +6665,7 @@
             "loser": "(7) St Mary's CA",
             "winner_prob": 0.6629,
             "home_win_prob": 0.3371,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 3,
@@ -6678,7 +6684,7 @@
             "loser": "(5) Oregon",
             "winner_prob": 0.5229,
             "home_win_prob": 0.5229,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 3,
@@ -6697,7 +6703,7 @@
             "loser": "(2) Alabama",
             "winner_prob": 0.516,
             "home_win_prob": 0.516,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 4,
@@ -6716,7 +6722,7 @@
             "loser": "(3) Wisconsin",
             "winner_prob": 0.6689,
             "home_win_prob": 0.6689,
-            "result": "eliminated"
+            "result": "pending"
           },
           {
             "round": 1,
@@ -6887,7 +6893,7 @@
             "loser": "(8) Gonzaga",
             "winner_prob": 0.7129,
             "home_win_prob": 0.7129,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 2,
@@ -6906,7 +6912,7 @@
             "loser": "(13) High Point",
             "winner_prob": 0.6115,
             "home_win_prob": 0.3885,
-            "result": "incorrect"
+            "result": "eliminated"
           },
           {
             "round": 2,
@@ -6925,7 +6931,7 @@
             "loser": "(6) Illinois",
             "winner_prob": 0.5663,
             "home_win_prob": 0.5663,
-            "result": "incorrect"
+            "result": "eliminated"
           },
           {
             "round": 2,
@@ -6944,7 +6950,7 @@
             "loser": "(2) Tennessee",
             "winner_prob": 0.5935,
             "home_win_prob": 0.5935,
-            "result": "incorrect"
+            "result": "eliminated"
           },
           {
             "round": 3,
@@ -6963,7 +6969,7 @@
             "loser": "(1) Houston",
             "winner_prob": 0.5585,
             "home_win_prob": 0.4415,
-            "result": "incorrect"
+            "result": "eliminated"
           },
           {
             "round": 3,
@@ -6982,7 +6988,7 @@
             "loser": "(14) Troy",
             "winner_prob": 0.5973,
             "home_win_prob": 0.4027,
-            "result": "incorrect"
+            "result": "eliminated"
           },
           {
             "round": 4,
@@ -7172,7 +7178,7 @@
             "loser": "(16) Alabama St",
             "winner_prob": 0.7663,
             "home_win_prob": 0.2337,
-            "result": "incorrect"
+            "result": "eliminated"
           },
           {
             "round": 2,
@@ -7191,7 +7197,7 @@
             "loser": "(4) Texas A&M",
             "winner_prob": 0.51,
             "home_win_prob": 0.51,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 2,
@@ -7210,7 +7216,7 @@
             "loser": "(3) Iowa St",
             "winner_prob": 0.7265,
             "home_win_prob": 0.7265,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 2,
@@ -7229,7 +7235,7 @@
             "loser": "(10) New Mexico",
             "winner_prob": 0.5529,
             "home_win_prob": 0.5529,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 3,
@@ -7248,7 +7254,7 @@
             "loser": "(5) Michigan",
             "winner_prob": 0.51,
             "home_win_prob": 0.51,
-            "result": "incorrect"
+            "result": "eliminated"
           },
           {
             "round": 3,
@@ -7267,7 +7273,7 @@
             "loser": "(6) Mississippi",
             "winner_prob": 0.6188,
             "home_win_prob": 0.6188,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 4,
@@ -7457,7 +7463,7 @@
             "loser": "(8) Connecticut",
             "winner_prob": 0.6953,
             "home_win_prob": 0.6953,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 2,
@@ -7476,7 +7482,7 @@
             "loser": "(13) Grand Canyon",
             "winner_prob": 0.6888,
             "home_win_prob": 0.6888,
-            "result": "incorrect"
+            "result": "eliminated"
           },
           {
             "round": 2,
@@ -7495,7 +7501,7 @@
             "loser": "(11) Drake",
             "winner_prob": 0.6963,
             "home_win_prob": 0.3037,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 2,
@@ -7514,7 +7520,7 @@
             "loser": "(10) Arkansas",
             "winner_prob": 0.7018,
             "home_win_prob": 0.7018,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 3,
@@ -7533,7 +7539,7 @@
             "loser": "(5) Memphis",
             "winner_prob": 0.6529,
             "home_win_prob": 0.6529,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 3,
@@ -7552,7 +7558,7 @@
             "loser": "(3) Texas Tech",
             "winner_prob": 0.6433,
             "home_win_prob": 0.6433,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 4,
@@ -7590,7 +7596,7 @@
             "loser": "(5) Clemson",
             "winner_prob": 0.5361,
             "home_win_prob": 0.5361,
-            "result": "eliminated"
+            "result": "pending"
           },
           {
             "round": 5,
