@@ -235,6 +235,7 @@ body {
   gap: 6px;
   margin-top: 6px;
   flex-wrap: wrap;
+  align-items: center;
 }
 .mc-pill {
   font-family: var(--mono);
@@ -244,6 +245,8 @@ body {
   border-radius: 4px;
   white-space: nowrap;
   letter-spacing: 0.3px;
+  position: relative;
+  cursor: default;
 }
 .mc-pill.mc-1st {
   background: rgba(244, 166, 35, 0.14);
@@ -263,6 +266,83 @@ body {
 .mc-pill .mc-label {
   opacity: 0.7;
 }
+.mc-pill .mc-tooltip {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--surface-raised);
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  padding: 10px 14px;
+  width: 260px;
+  font-family: var(--font);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text-muted);
+  letter-spacing: 0;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+  z-index: 50;
+  pointer-events: none;
+}
+.mc-pill .mc-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: var(--border-light);
+}
+.mc-pill:hover .mc-tooltip { display: block; }
+
+/* Calibration rank badge */
+.mc-cal {
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--green);
+  background: var(--green-dim);
+  padding: 2px 7px;
+  border-radius: 4px;
+  border: 1px solid rgba(52, 211, 153, 0.18);
+  white-space: nowrap;
+  position: relative;
+  cursor: default;
+}
+.mc-cal .mc-tooltip {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--surface-raised);
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  padding: 10px 14px;
+  width: 260px;
+  font-family: var(--font);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text-muted);
+  letter-spacing: 0;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+  z-index: 50;
+  pointer-events: none;
+}
+.mc-cal .mc-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: var(--border-light);
+}
+.mc-cal:hover .mc-tooltip { display: block; }
 
 /* MC metadata bar */
 .mc-meta-bar {
@@ -762,10 +842,15 @@ function render() {
     let mcHtml = '';
     if (mc) {
       const fmt = (p) => (p * 100).toFixed(1).replace(/\.0$/, '') + '%';
+      const nSims = DATA.mc_meta ? DATA.mc_meta.n_simulations.toLocaleString() : '?';
+      const gamesRem = DATA.mc_meta ? DATA.mc_meta.games_remaining : '?';
       mcHtml = `<div class="lb-mc">`;
-      mcHtml += `<span class="mc-pill mc-1st"><span class="mc-label">1st</span> ${fmt(mc.p_first)}</span>`;
-      mcHtml += `<span class="mc-pill mc-top2"><span class="mc-label">T2</span> ${fmt(mc.p_top2)}</span>`;
-      mcHtml += `<span class="mc-pill mc-top3"><span class="mc-label">T3</span> ${fmt(mc.p_top3)}</span>`;
+      mcHtml += `<span class="mc-pill mc-1st"><span class="mc-label">1st</span> ${fmt(mc.p_first)}<span class="mc-tooltip">Probability of finishing in 1st place, estimated from ${nSims} Monte Carlo simulations of the remaining ${gamesRem} tournament games.</span></span>`;
+      mcHtml += `<span class="mc-pill mc-top2"><span class="mc-label">T2</span> ${fmt(mc.p_top2)}<span class="mc-tooltip">Probability of finishing in the top 2. Each simulation plays out the remaining games using the model's predicted win probabilities, then ranks all brackets by final score.</span></span>`;
+      mcHtml += `<span class="mc-pill mc-top3"><span class="mc-label">T3</span> ${fmt(mc.p_top3)}<span class="mc-tooltip">Probability of finishing in the top 3. When brackets are tied on points, the tiebreaker is calibration rank (based on Round of 64 Brier score).</span></span>`;
+      if (mc.calibration_rank) {
+        mcHtml += `<span class="mc-cal">#${mc.calibration_rank} cal<span class="mc-tooltip">Calibration rank: #${mc.calibration_rank} of ${mc.calibration_of}. Measures how well this model's predicted win probabilities matched actual Round of 64 outcomes (via Brier score). Used as the tiebreaker when brackets have equal points.</span></span>`;
+      }
       mcHtml += `</div>`;
     }
 

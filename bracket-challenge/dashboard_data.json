@@ -2550,7 +2550,9 @@
         "p_first": 0.493,
         "p_top2": 0.831,
         "p_top3": 1.0,
-        "expected_score": 76.0
+        "expected_score": 76.0,
+        "calibration_rank": 1,
+        "calibration_of": 3
       }
     },
     {
@@ -5099,7 +5101,9 @@
         "p_first": 0.207,
         "p_top2": 0.47,
         "p_top3": 1.0,
-        "expected_score": 64.0
+        "expected_score": 64.0,
+        "calibration_rank": 3,
+        "calibration_of": 3
       }
     },
     {
@@ -7648,7 +7652,9 @@
         "p_first": 0.3,
         "p_top2": 0.699,
         "p_top3": 1.0,
-        "expected_score": 72.5
+        "expected_score": 72.5,
+        "calibration_rank": 2,
+        "calibration_of": 3
       }
     }
   ],
