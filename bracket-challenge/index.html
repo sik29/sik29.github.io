@@ -7,29 +7,29 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg: #0c1118;
-  --surface: #151d2b;
-  --surface-raised: #1a2536;
-  --surface-hover: #1f2d42;
-  --border: #263044;
-  --border-light: #2d3a50;
-  --text: #e4e8ef;
-  --text-muted: #8893a7;
-  --text-dim: #5c6a82;
-  --accent: #f4a623;
-  --accent-glow: rgba(244, 166, 35, 0.15);
-  --green: #34d399;
-  --green-dim: rgba(52, 211, 153, 0.12);
-  --red: #f87171;
-  --red-dim: rgba(248, 113, 113, 0.12);
-  --blue: #60a5fa;
-  --blue-dim: rgba(96, 165, 250, 0.12);
-  --round-1: #60a5fa;
-  --round-2: #818cf8;
-  --round-3: #a78bfa;
-  --round-4: #c084fc;
-  --round-5: #e879f9;
-  --round-6: #f4a623;
+  --bg: #020f21;
+  --surface: #0a1e38;
+  --surface-raised: #122a48;
+  --surface-hover: #183454;
+  --border: #1e3a5c;
+  --border-light: #274a6e;
+  --text: #dce2ea;
+  --text-muted: #8b9bb0;
+  --text-dim: #5a708e;
+  --accent: #8b9bb0;
+  --accent-glow: rgba(139, 155, 176, 0.15);
+  --green: #5a9fd4;
+  --green-dim: rgba(90, 159, 212, 0.12);
+  --red: #e07070;
+  --red-dim: rgba(224, 112, 112, 0.12);
+  --blue: #5a9fd4;
+  --blue-dim: rgba(90, 159, 212, 0.12);
+  --round-1: #5a9fd4;
+  --round-2: #7b8fc8;
+  --round-3: #9b82bc;
+  --round-4: #b07aaf;
+  --round-5: #c874a2;
+  --round-6: #8b9bb0;
   --font: 'DM Sans', -apple-system, sans-serif;
   --mono: 'DM Mono', 'SF Mono', monospace;
 }
@@ -73,12 +73,16 @@ body {
   background: linear-gradient(180deg, var(--surface) 0%, var(--bg) 100%);
   border-bottom: 1px solid var(--border);
 }
-.hero-emoji { font-size: 48px; margin-bottom: 12px; }
+.hero-emoji { font-size: 32px; vertical-align: middle; }
 .hero h1 {
   font-size: 28px;
   font-weight: 700;
   letter-spacing: -0.5px;
   margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
 }
 .hero .subtitle {
   color: var(--text-muted);
@@ -249,19 +253,19 @@ body {
   cursor: default;
 }
 .mc-pill.mc-1st {
-  background: rgba(244, 166, 35, 0.14);
-  color: var(--accent);
-  border: 1px solid rgba(244, 166, 35, 0.25);
+  background: rgba(90, 159, 212, 0.16);
+  color: #7dbde8;
+  border: 1px solid rgba(90, 159, 212, 0.30);
 }
 .mc-pill.mc-top2 {
-  background: rgba(192, 192, 210, 0.10);
-  color: #b0b8c8;
-  border: 1px solid rgba(192, 192, 210, 0.18);
+  background: rgba(160, 172, 192, 0.10);
+  color: #a0acbf;
+  border: 1px solid rgba(160, 172, 192, 0.18);
 }
 .mc-pill.mc-top3 {
-  background: rgba(205, 150, 100, 0.10);
-  color: #c8a07a;
-  border: 1px solid rgba(205, 150, 100, 0.18);
+  background: rgba(140, 130, 120, 0.10);
+  color: #a09585;
+  border: 1px solid rgba(140, 130, 120, 0.18);
 }
 .mc-pill .mc-label {
   opacity: 0.7;
@@ -309,7 +313,7 @@ body {
   background: var(--green-dim);
   padding: 2px 7px;
   border-radius: 4px;
-  border: 1px solid rgba(52, 211, 153, 0.18);
+  border: 1px solid rgba(90, 159, 212, 0.22);
   white-space: nowrap;
   position: relative;
   cursor: default;
@@ -653,8 +657,7 @@ body {
 </div>
 
 <div class="hero">
-  <div class="hero-emoji">🏀</div>
-  <h1>March Madness Bracket Challenge</h1>
+  <h1><span class="hero-emoji">🏀</span> March Madness Bracket Challenge <span class="hero-emoji">🏀</span></h1>
   <div class="subtitle">Intro to Programming in the Age of AI — Spring 2026</div>
   <div class="meta" id="hero-meta">
     <span>Loading...</span>
