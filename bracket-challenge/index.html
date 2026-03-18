@@ -7,29 +7,32 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg: #020f21;
-  --surface: #0a1e38;
-  --surface-raised: #122a48;
-  --surface-hover: #183454;
-  --border: #1e3a5c;
-  --border-light: #274a6e;
-  --text: #dce2ea;
-  --text-muted: #8b9bb0;
-  --text-dim: #5a708e;
-  --accent: #8b9bb0;
-  --accent-glow: rgba(139, 155, 176, 0.15);
-  --green: #5a9fd4;
-  --green-dim: rgba(90, 159, 212, 0.12);
-  --red: #e07070;
-  --red-dim: rgba(224, 112, 112, 0.12);
-  --blue: #5a9fd4;
-  --blue-dim: rgba(90, 159, 212, 0.12);
-  --round-1: #5a9fd4;
-  --round-2: #7b8fc8;
-  --round-3: #9b82bc;
-  --round-4: #b07aaf;
-  --round-5: #c874a2;
-  --round-6: #8b9bb0;
+  /* Georgetown official: Blue #041E42, Gray #63666A */
+  /* Secondary: 280 #012169, 293 #003DA5, CG4 #BBBCBC, Putty #D6D2C4 */
+  /* Tertiary: Sky #00B5E2, Red #862633, Green #5FA343 */
+  --bg: #021028;
+  --surface: #041E42;
+  --surface-raised: #0a2a54;
+  --surface-hover: #0f3362;
+  --border: #1a4178;
+  --border-light: #234d88;
+  --text: #D6D2C4;
+  --text-muted: #BBBCBC;
+  --text-dim: #63666A;
+  --accent: #003DA5;
+  --accent-glow: rgba(0, 61, 165, 0.20);
+  --green: #5FA343;
+  --green-dim: rgba(95, 163, 67, 0.14);
+  --red: #D50032;
+  --red-dim: rgba(213, 0, 50, 0.14);
+  --blue: #00B5E2;
+  --blue-dim: rgba(0, 181, 226, 0.14);
+  --round-1: #00B5E2;
+  --round-2: #3D90D0;
+  --round-3: #003DA5;
+  --round-4: #012169;
+  --round-5: #862633;
+  --round-6: #F8E08E;
   --font: 'DM Sans', -apple-system, sans-serif;
   --mono: 'DM Mono', 'SF Mono', monospace;
 }
@@ -174,11 +177,11 @@ body {
   border-color: var(--border-light);
 }
 .lb-entry.first {
-  border-color: var(--accent);
-  background: linear-gradient(135deg, var(--surface) 0%, var(--accent-glow) 100%);
+  border-color: #003DA5;
+  background: linear-gradient(135deg, var(--surface) 0%, rgba(0, 61, 165, 0.18) 100%);
 }
 .lb-entry.first:hover {
-  background: linear-gradient(135deg, var(--surface-hover) 0%, var(--accent-glow) 100%);
+  background: linear-gradient(135deg, var(--surface-hover) 0%, rgba(0, 61, 165, 0.18) 100%);
 }
 
 .lb-rank {
@@ -188,7 +191,7 @@ body {
   text-align: center;
   color: var(--text-muted);
 }
-.lb-entry.first .lb-rank { color: var(--accent); }
+.lb-entry.first .lb-rank { color: #00B5E2; }
 
 .lb-info h3 {
   font-size: 16px;
@@ -218,7 +221,7 @@ body {
   font-size: 28px;
   font-weight: 700;
 }
-.lb-entry.first .lb-score { color: var(--accent); }
+.lb-entry.first .lb-score { color: #00B5E2; }
 
 .lb-max {
   font-family: var(--mono);
@@ -253,19 +256,19 @@ body {
   cursor: default;
 }
 .mc-pill.mc-1st {
-  background: rgba(90, 159, 212, 0.16);
-  color: #7dbde8;
-  border: 1px solid rgba(90, 159, 212, 0.30);
+  background: rgba(0, 181, 226, 0.14);
+  color: #00B5E2;
+  border: 1px solid rgba(0, 181, 226, 0.30);
 }
 .mc-pill.mc-top2 {
-  background: rgba(160, 172, 192, 0.10);
-  color: #a0acbf;
-  border: 1px solid rgba(160, 172, 192, 0.18);
+  background: rgba(187, 188, 188, 0.10);
+  color: #BBBCBC;
+  border: 1px solid rgba(187, 188, 188, 0.18);
 }
 .mc-pill.mc-top3 {
-  background: rgba(140, 130, 120, 0.10);
-  color: #a09585;
-  border: 1px solid rgba(140, 130, 120, 0.18);
+  background: rgba(214, 210, 196, 0.10);
+  color: #a8a498;
+  border: 1px solid rgba(214, 210, 196, 0.18);
 }
 .mc-pill .mc-label {
   opacity: 0.7;
@@ -313,7 +316,7 @@ body {
   background: var(--green-dim);
   padding: 2px 7px;
   border-radius: 4px;
-  border: 1px solid rgba(90, 159, 212, 0.22);
+  border: 1px solid rgba(95, 163, 67, 0.22);
   white-space: nowrap;
   position: relative;
   cursor: default;
@@ -686,7 +689,7 @@ body {
         <tr><td>Elite 8</td><td>8</td><td>4</td><td>32</td></tr>
         <tr><td>Final Four</td><td>16</td><td>2</td><td>32</td></tr>
         <tr><td>Championship</td><td>32</td><td>1</td><td>32</td></tr>
-        <tr style="font-weight:700"><td style="color:var(--text)">Total</td><td></td><td>63</td><td style="color:var(--accent)">192</td></tr>
+        <tr style="font-weight:700"><td style="color:var(--text)">Total</td><td></td><td>63</td><td style="color:#00B5E2">192</td></tr>
       </tbody>
     </table>
   </div>
@@ -984,7 +987,7 @@ function buildRegionView(bracket, regionKey, visible) {
 
   // Region winner
   const winner = region.winner;
-  html += `<div style="padding:12px 0;text-align:center;font-weight:600;color:var(--accent);font-size:14px">
+  html += `<div style="padding:12px 0;text-align:center;font-weight:600;color:#00B5E2;font-size:14px">
     ★ ${esc(regionName)} Champion: ${esc(winner.display)}
   </div>`;
 
@@ -1008,7 +1011,7 @@ function buildFinalFourView(bracket) {
   html += `</div>`;
 
   // Champion
-  html += `<div style="padding:16px 0;text-align:center;font-size:18px;font-weight:700;color:var(--accent)">
+  html += `<div style="padding:16px 0;text-align:center;font-size:18px;font-weight:700;color:#F8E08E">
     🏆 ${esc(bracket.champion.display)}
   </div>`;
 
