@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "last_updated": "2026-03-19T12:57:32.954639+00:00",
+  "last_updated": "2026-03-19T14:57:03.845528+00:00",
   "tournament_status": "not_started",
   "rounds_completed": 0,
   "entries": [
@@ -2544,10 +2544,10 @@
         ]
       },
       "mc": {
-        "p_first": 0.0821,
-        "p_top2": 0.235,
-        "p_top3": 0.4125,
-        "expected_score": 79.05,
+        "p_first": 0.0874,
+        "p_top2": 0.2402,
+        "p_top3": 0.4121,
+        "expected_score": 81.06,
         "calibration_rank": 7,
         "calibration_of": 7
       }
@@ -5092,10 +5092,10 @@
         ]
       },
       "mc": {
-        "p_first": 0.1179,
-        "p_top2": 0.2831,
-        "p_top3": 0.4209,
-        "expected_score": 77.28,
+        "p_first": 0.1206,
+        "p_top2": 0.2938,
+        "p_top3": 0.4336,
+        "expected_score": 79.58,
         "calibration_rank": 6,
         "calibration_of": 7
       }
@@ -7640,10 +7640,10 @@
         ]
       },
       "mc": {
-        "p_first": 0.1608,
-        "p_top2": 0.2565,
-        "p_top3": 0.3808,
-        "expected_score": 78.79,
+        "p_first": 0.1667,
+        "p_top2": 0.2559,
+        "p_top3": 0.3751,
+        "expected_score": 80.88,
         "calibration_rank": 2,
         "calibration_of": 7
       }
@@ -10188,10 +10188,10 @@
         ]
       },
       "mc": {
-        "p_first": 0.1189,
-        "p_top2": 0.3055,
-        "p_top3": 0.4547,
-        "expected_score": 77.24,
+        "p_first": 0.1255,
+        "p_top2": 0.3136,
+        "p_top3": 0.464,
+        "expected_score": 79.47,
         "calibration_rank": 5,
         "calibration_of": 7
       }
@@ -12736,10 +12736,10 @@
         ]
       },
       "mc": {
-        "p_first": 0.2375,
-        "p_top2": 0.4146,
-        "p_top3": 0.5551,
-        "expected_score": 79.02,
+        "p_first": 0.2223,
+        "p_top2": 0.3964,
+        "p_top3": 0.5456,
+        "expected_score": 80.9,
         "calibration_rank": 1,
         "calibration_of": 7
       }
@@ -15284,10 +15284,10 @@
         ]
       },
       "mc": {
-        "p_first": 0.1314,
-        "p_top2": 0.2676,
-        "p_top3": 0.3994,
-        "expected_score": 78.59,
+        "p_first": 0.1263,
+        "p_top2": 0.2632,
+        "p_top3": 0.3873,
+        "expected_score": 80.4,
         "calibration_rank": 4,
         "calibration_of": 7
       }
@@ -17832,10 +17832,10 @@
         ]
       },
       "mc": {
-        "p_first": 0.1514,
-        "p_top2": 0.2377,
-        "p_top3": 0.3766,
-        "expected_score": 76.33,
+        "p_first": 0.1512,
+        "p_top2": 0.2369,
+        "p_top3": 0.3823,
+        "expected_score": 78.11,
         "calibration_rank": 3,
         "calibration_of": 7
       }
