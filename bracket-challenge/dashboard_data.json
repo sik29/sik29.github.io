@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "last_updated": "2026-03-22T14:08:26.160873+00:00",
+  "last_updated": "2026-03-22T23:42:25.097331+00:00",
   "tournament_status": "in_progress",
   "rounds_completed": 2,
   "entries": [
@@ -9,8 +9,8 @@
       "student_names": "Joshua",
       "logo": null,
       "score": {
-        "total_score": 40,
-        "max_possible": 164,
+        "total_score": 46,
+        "max_possible": 170,
         "max_total": 192,
         "rounds_completed": 2,
         "in_progress": true,
@@ -27,8 +27,8 @@
             "round": 2,
             "points_per_game": 2,
             "total_games": 16,
-            "correct": 7,
-            "points_earned": 14,
+            "correct": 10,
+            "points_earned": 20,
             "max_points": 32
           },
           "Sweet 16": {
@@ -273,7 +273,7 @@
                   "loser": "(4) Kansas",
                   "winner_prob": 0.5971,
                   "home_win_prob": 0.5971,
-                  "result": "pending"
+                  "result": "correct"
                 },
                 {
                   "round": 2,
@@ -913,7 +913,7 @@
                   "loser": "(10) Santa Clara",
                   "winner_prob": 0.6793,
                   "home_win_prob": 0.3207,
-                  "result": "pending"
+                  "result": "correct"
                 }
               ],
               [
@@ -1214,7 +1214,7 @@
                   "loser": "(7) Miami FL",
                   "winner_prob": 0.5686,
                   "home_win_prob": 0.4314,
-                  "result": "pending"
+                  "result": "correct"
                 }
               ],
               [
@@ -1537,7 +1537,7 @@
             "loser": "(4) Kansas",
             "winner_prob": 0.5971,
             "home_win_prob": 0.5971,
-            "result": "pending"
+            "result": "correct"
           },
           {
             "round": 2,
@@ -2145,7 +2145,7 @@
             "loser": "(10) Santa Clara",
             "winner_prob": 0.6793,
             "home_win_prob": 0.3207,
-            "result": "pending"
+            "result": "correct"
           },
           {
             "round": 3,
@@ -2430,7 +2430,7 @@
             "loser": "(7) Miami FL",
             "winner_prob": 0.5686,
             "home_win_prob": 0.4314,
-            "result": "pending"
+            "result": "correct"
           },
           {
             "round": 3,
@@ -2549,10 +2549,10 @@
         ]
       },
       "mc": {
-        "p_first": 0.0993,
-        "p_top2": 0.3026,
-        "p_top3": 0.4724,
-        "expected_score": 91.69,
+        "p_first": 0.1854,
+        "p_top2": 0.3958,
+        "p_top3": 0.5284,
+        "expected_score": 93.55,
         "calibration_rank": 6,
         "calibration_of": 8
       }
@@ -2562,8 +2562,8 @@
       "student_names": "Juliano",
       "logo": null,
       "score": {
-        "total_score": 37,
-        "max_possible": 165,
+        "total_score": 43,
+        "max_possible": 171,
         "max_total": 192,
         "rounds_completed": 2,
         "in_progress": true,
@@ -2580,8 +2580,8 @@
             "round": 2,
             "points_per_game": 2,
             "total_games": 16,
-            "correct": 6,
-            "points_earned": 12,
+            "correct": 9,
+            "points_earned": 18,
             "max_points": 32
           },
           "Sweet 16": {
@@ -2826,7 +2826,7 @@
                   "loser": "(4) Kansas",
                   "winner_prob": 0.5877,
                   "home_win_prob": 0.5877,
-                  "result": "pending"
+                  "result": "correct"
                 },
                 {
                   "round": 2,
@@ -3466,7 +3466,7 @@
                   "loser": "(7) Kentucky",
                   "winner_prob": 0.7474,
                   "home_win_prob": 0.2526,
-                  "result": "pending"
+                  "result": "correct"
                 }
               ],
               [
@@ -3767,7 +3767,7 @@
                   "loser": "(7) Miami FL",
                   "winner_prob": 0.5201,
                   "home_win_prob": 0.4799,
-                  "result": "pending"
+                  "result": "correct"
                 }
               ],
               [
@@ -4090,7 +4090,7 @@
             "loser": "(4) Kansas",
             "winner_prob": 0.5877,
             "home_win_prob": 0.5877,
-            "result": "pending"
+            "result": "correct"
           },
           {
             "round": 2,
@@ -4698,7 +4698,7 @@
             "loser": "(7) Kentucky",
             "winner_prob": 0.7474,
             "home_win_prob": 0.2526,
-            "result": "pending"
+            "result": "correct"
           },
           {
             "round": 3,
@@ -4983,7 +4983,7 @@
             "loser": "(7) Miami FL",
             "winner_prob": 0.5201,
             "home_win_prob": 0.4799,
-            "result": "pending"
+            "result": "correct"
           },
           {
             "round": 3,
@@ -5102,10 +5102,10 @@
         ]
       },
       "mc": {
-        "p_first": 0.1498,
-        "p_top2": 0.3575,
-        "p_top3": 0.4887,
-        "expected_score": 93.45,
+        "p_first": 0.1898,
+        "p_top2": 0.3958,
+        "p_top3": 0.4977,
+        "expected_score": 95.52,
         "calibration_rank": 5,
         "calibration_of": 8
       }
@@ -5115,8 +5115,8 @@
       "student_names": "Kristina & Marcos",
       "logo": null,
       "score": {
-        "total_score": 39,
-        "max_possible": 163,
+        "total_score": 45,
+        "max_possible": 169,
         "max_total": 192,
         "rounds_completed": 2,
         "in_progress": true,
@@ -5133,8 +5133,8 @@
             "round": 2,
             "points_per_game": 2,
             "total_games": 16,
-            "correct": 6,
-            "points_earned": 12,
+            "correct": 9,
+            "points_earned": 18,
             "max_points": 32
           },
           "Sweet 16": {
@@ -5379,7 +5379,7 @@
                   "loser": "(4) Kansas",
                   "winner_prob": 0.6232,
                   "home_win_prob": 0.6232,
-                  "result": "pending"
+                  "result": "correct"
                 },
                 {
                   "round": 2,
@@ -6019,7 +6019,7 @@
                   "loser": "(10) Santa Clara",
                   "winner_prob": 0.79,
                   "home_win_prob": 0.21,
-                  "result": "pending"
+                  "result": "correct"
                 }
               ],
               [
@@ -6320,7 +6320,7 @@
                   "loser": "(7) Miami FL",
                   "winner_prob": 0.6321,
                   "home_win_prob": 0.3679,
-                  "result": "pending"
+                  "result": "correct"
                 }
               ],
               [
@@ -6643,7 +6643,7 @@
             "loser": "(4) Kansas",
             "winner_prob": 0.6232,
             "home_win_prob": 0.6232,
-            "result": "pending"
+            "result": "correct"
           },
           {
             "round": 2,
@@ -7251,7 +7251,7 @@
             "loser": "(10) Santa Clara",
             "winner_prob": 0.79,
             "home_win_prob": 0.21,
-            "result": "pending"
+            "result": "correct"
           },
           {
             "round": 3,
@@ -7536,7 +7536,7 @@
             "loser": "(7) Miami FL",
             "winner_prob": 0.6321,
             "home_win_prob": 0.3679,
-            "result": "pending"
+            "result": "correct"
           },
           {
             "round": 3,
@@ -7655,10 +7655,10 @@
         ]
       },
       "mc": {
-        "p_first": 0.2076,
-        "p_top2": 0.2529,
-        "p_top3": 0.3836,
-        "expected_score": 94.03,
+        "p_first": 0.2008,
+        "p_top2": 0.2464,
+        "p_top3": 0.399,
+        "expected_score": 95.59,
         "calibration_rank": 1,
         "calibration_of": 8
       }
@@ -7668,8 +7668,8 @@
       "student_names": "Thomas & Ben",
       "logo": null,
       "score": {
-        "total_score": 38,
-        "max_possible": 162,
+        "total_score": 44,
+        "max_possible": 168,
         "max_total": 192,
         "rounds_completed": 2,
         "in_progress": true,
@@ -7686,8 +7686,8 @@
             "round": 2,
             "points_per_game": 2,
             "total_games": 16,
-            "correct": 6,
-            "points_earned": 12,
+            "correct": 9,
+            "points_earned": 18,
             "max_points": 32
           },
           "Sweet 16": {
@@ -7932,7 +7932,7 @@
                   "loser": "(4) Kansas",
                   "winner_prob": 0.5284,
                   "home_win_prob": 0.5284,
-                  "result": "pending"
+                  "result": "correct"
                 },
                 {
                   "round": 2,
@@ -8572,7 +8572,7 @@
                   "loser": "(7) Kentucky",
                   "winner_prob": 0.6134,
                   "home_win_prob": 0.3866,
-                  "result": "pending"
+                  "result": "correct"
                 }
               ],
               [
@@ -8873,7 +8873,7 @@
                   "loser": "(7) Miami FL",
                   "winner_prob": 0.5056,
                   "home_win_prob": 0.4944,
-                  "result": "pending"
+                  "result": "correct"
                 }
               ],
               [
@@ -9196,7 +9196,7 @@
             "loser": "(4) Kansas",
             "winner_prob": 0.5284,
             "home_win_prob": 0.5284,
-            "result": "pending"
+            "result": "correct"
           },
           {
             "round": 2,
@@ -9804,7 +9804,7 @@
             "loser": "(7) Kentucky",
             "winner_prob": 0.6134,
             "home_win_prob": 0.3866,
-            "result": "pending"
+            "result": "correct"
           },
           {
             "round": 3,
@@ -10089,7 +10089,7 @@
             "loser": "(7) Miami FL",
             "winner_prob": 0.5056,
             "home_win_prob": 0.4944,
-            "result": "pending"
+            "result": "correct"
           },
           {
             "round": 3,
@@ -10208,10 +10208,10 @@
         ]
       },
       "mc": {
-        "p_first": 0.1347,
-        "p_top2": 0.3308,
-        "p_top3": 0.4149,
-        "expected_score": 92.74,
+        "p_first": 0.1031,
+        "p_top2": 0.2819,
+        "p_top3": 0.3634,
+        "expected_score": 93.61,
         "calibration_rank": 7,
         "calibration_of": 8
       }
@@ -10221,8 +10221,8 @@
       "student_names": "Will",
       "logo": null,
       "score": {
-        "total_score": 38,
-        "max_possible": 154,
+        "total_score": 44,
+        "max_possible": 160,
         "max_total": 192,
         "rounds_completed": 2,
         "in_progress": true,
@@ -10239,8 +10239,8 @@
             "round": 2,
             "points_per_game": 2,
             "total_games": 16,
-            "correct": 6,
-            "points_earned": 12,
+            "correct": 9,
+            "points_earned": 18,
             "max_points": 32
           },
           "Sweet 16": {
@@ -10485,7 +10485,7 @@
                   "loser": "(4) Kansas",
                   "winner_prob": 0.5848,
                   "home_win_prob": 0.5848,
-                  "result": "pending"
+                  "result": "correct"
                 },
                 {
                   "round": 2,
@@ -11125,7 +11125,7 @@
                   "loser": "(10) Santa Clara",
                   "winner_prob": 0.7821,
                   "home_win_prob": 0.2179,
-                  "result": "pending"
+                  "result": "correct"
                 }
               ],
               [
@@ -11426,7 +11426,7 @@
                   "loser": "(7) Miami FL",
                   "winner_prob": 0.6524,
                   "home_win_prob": 0.3476,
-                  "result": "pending"
+                  "result": "correct"
                 }
               ],
               [
@@ -11749,7 +11749,7 @@
             "loser": "(4) Kansas",
             "winner_prob": 0.5848,
             "home_win_prob": 0.5848,
-            "result": "pending"
+            "result": "correct"
           },
           {
             "round": 2,
@@ -12357,7 +12357,7 @@
             "loser": "(10) Santa Clara",
             "winner_prob": 0.7821,
             "home_win_prob": 0.2179,
-            "result": "pending"
+            "result": "correct"
           },
           {
             "round": 3,
@@ -12642,7 +12642,7 @@
             "loser": "(7) Miami FL",
             "winner_prob": 0.6524,
             "home_win_prob": 0.3476,
-            "result": "pending"
+            "result": "correct"
           },
           {
             "round": 3,
@@ -12761,10 +12761,10 @@
         ]
       },
       "mc": {
-        "p_first": 0.0477,
-        "p_top2": 0.1243,
-        "p_top3": 0.3002,
-        "expected_score": 89.49,
+        "p_first": 0.0465,
+        "p_top2": 0.134,
+        "p_top3": 0.302,
+        "expected_score": 91.22,
         "calibration_rank": 3,
         "calibration_of": 8
       }
@@ -12774,8 +12774,8 @@
       "student_names": "Cassidy",
       "logo": null,
       "score": {
-        "total_score": 40,
-        "max_possible": 164,
+        "total_score": 46,
+        "max_possible": 170,
         "max_total": 192,
         "rounds_completed": 2,
         "in_progress": true,
@@ -12792,8 +12792,8 @@
             "round": 2,
             "points_per_game": 2,
             "total_games": 16,
-            "correct": 7,
-            "points_earned": 14,
+            "correct": 10,
+            "points_earned": 20,
             "max_points": 32
           },
           "Sweet 16": {
@@ -13038,7 +13038,7 @@
                   "loser": "(4) Kansas",
                   "winner_prob": 0.614,
                   "home_win_prob": 0.614,
-                  "result": "pending"
+                  "result": "correct"
                 },
                 {
                   "round": 2,
@@ -13678,7 +13678,7 @@
                   "loser": "(10) Santa Clara",
                   "winner_prob": 0.7019,
                   "home_win_prob": 0.2981,
-                  "result": "pending"
+                  "result": "correct"
                 }
               ],
               [
@@ -13979,7 +13979,7 @@
                   "loser": "(7) Miami FL",
                   "winner_prob": 0.5117,
                   "home_win_prob": 0.4883,
-                  "result": "pending"
+                  "result": "correct"
                 }
               ],
               [
@@ -14302,7 +14302,7 @@
             "loser": "(4) Kansas",
             "winner_prob": 0.614,
             "home_win_prob": 0.614,
-            "result": "pending"
+            "result": "correct"
           },
           {
             "round": 2,
@@ -14910,7 +14910,7 @@
             "loser": "(10) Santa Clara",
             "winner_prob": 0.7019,
             "home_win_prob": 0.2981,
-            "result": "pending"
+            "result": "correct"
           },
           {
             "round": 3,
@@ -15195,7 +15195,7 @@
             "loser": "(7) Miami FL",
             "winner_prob": 0.5117,
             "home_win_prob": 0.4883,
-            "result": "pending"
+            "result": "correct"
           },
           {
             "round": 3,
@@ -15314,10 +15314,10 @@
         ]
       },
       "mc": {
-        "p_first": 0.1598,
-        "p_top2": 0.254,
-        "p_top3": 0.356,
-        "expected_score": 91.13,
+        "p_first": 0.1741,
+        "p_top2": 0.2271,
+        "p_top3": 0.3386,
+        "expected_score": 92.04,
         "calibration_rank": 4,
         "calibration_of": 8
       }
@@ -15327,8 +15327,8 @@
       "student_names": "Jonathan",
       "logo": null,
       "score": {
-        "total_score": 42,
-        "max_possible": 166,
+        "total_score": 46,
+        "max_possible": 170,
         "max_total": 192,
         "rounds_completed": 2,
         "in_progress": true,
@@ -15345,8 +15345,8 @@
             "round": 2,
             "points_per_game": 2,
             "total_games": 16,
-            "correct": 7,
-            "points_earned": 14,
+            "correct": 9,
+            "points_earned": 18,
             "max_points": 32
           },
           "Sweet 16": {
@@ -15591,7 +15591,7 @@
                   "loser": "(4) Kansas",
                   "winner_prob": 0.5149,
                   "home_win_prob": 0.5149,
-                  "result": "pending"
+                  "result": "correct"
                 },
                 {
                   "round": 2,
@@ -16231,7 +16231,7 @@
                   "loser": "(7) Kentucky",
                   "winner_prob": 0.6604,
                   "home_win_prob": 0.3396,
-                  "result": "pending"
+                  "result": "correct"
                 }
               ],
               [
@@ -16532,7 +16532,7 @@
                   "loser": "(2) Purdue",
                   "winner_prob": 0.5537,
                   "home_win_prob": 0.5537,
-                  "result": "pending"
+                  "result": "incorrect"
                 }
               ],
               [
@@ -16855,7 +16855,7 @@
             "loser": "(4) Kansas",
             "winner_prob": 0.5149,
             "home_win_prob": 0.5149,
-            "result": "pending"
+            "result": "correct"
           },
           {
             "round": 2,
@@ -17463,7 +17463,7 @@
             "loser": "(7) Kentucky",
             "winner_prob": 0.6604,
             "home_win_prob": 0.3396,
-            "result": "pending"
+            "result": "correct"
           },
           {
             "round": 3,
@@ -17748,7 +17748,7 @@
             "loser": "(2) Purdue",
             "winner_prob": 0.5537,
             "home_win_prob": 0.5537,
-            "result": "pending"
+            "result": "incorrect"
           },
           {
             "round": 3,
@@ -17867,10 +17867,10 @@
         ]
       },
       "mc": {
-        "p_first": 0.2011,
-        "p_top2": 0.3302,
-        "p_top3": 0.4599,
-        "expected_score": 90.58,
+        "p_first": 0.1003,
+        "p_top2": 0.2725,
+        "p_top3": 0.4369,
+        "expected_score": 90.8,
         "calibration_rank": 8,
         "calibration_of": 8
       }
@@ -17880,8 +17880,8 @@
       "student_names": "Chris",
       "logo": null,
       "score": {
-        "total_score": 38,
-        "max_possible": 154,
+        "total_score": 44,
+        "max_possible": 160,
         "max_total": 192,
         "rounds_completed": 2,
         "in_progress": true,
@@ -17898,8 +17898,8 @@
             "round": 2,
             "points_per_game": 2,
             "total_games": 16,
-            "correct": 6,
-            "points_earned": 12,
+            "correct": 9,
+            "points_earned": 18,
             "max_points": 32
           },
           "Sweet 16": {
@@ -18144,7 +18144,7 @@
                   "loser": "(4) Kansas",
                   "winner_prob": 0.5848,
                   "home_win_prob": 0.5848,
-                  "result": "pending"
+                  "result": "correct"
                 },
                 {
                   "round": 2,
@@ -18784,7 +18784,7 @@
                   "loser": "(10) Santa Clara",
                   "winner_prob": 0.7821,
                   "home_win_prob": 0.2179,
-                  "result": "pending"
+                  "result": "correct"
                 }
               ],
               [
@@ -19085,7 +19085,7 @@
                   "loser": "(7) Miami FL",
                   "winner_prob": 0.6524,
                   "home_win_prob": 0.3476,
-                  "result": "pending"
+                  "result": "correct"
                 }
               ],
               [
@@ -19408,7 +19408,7 @@
             "loser": "(4) Kansas",
             "winner_prob": 0.5848,
             "home_win_prob": 0.5848,
-            "result": "pending"
+            "result": "correct"
           },
           {
             "round": 2,
@@ -20016,7 +20016,7 @@
             "loser": "(10) Santa Clara",
             "winner_prob": 0.7821,
             "home_win_prob": 0.2179,
-            "result": "pending"
+            "result": "correct"
           },
           {
             "round": 3,
@@ -20301,7 +20301,7 @@
             "loser": "(7) Miami FL",
             "winner_prob": 0.6524,
             "home_win_prob": 0.3476,
-            "result": "pending"
+            "result": "correct"
           },
           {
             "round": 3,
@@ -20420,10 +20420,10 @@
         ]
       },
       "mc": {
-        "p_first": 0.0477,
-        "p_top2": 0.1243,
-        "p_top3": 0.3002,
-        "expected_score": 89.49,
+        "p_first": 0.0465,
+        "p_top2": 0.134,
+        "p_top3": 0.302,
+        "expected_score": 91.22,
         "calibration_rank": 2,
         "calibration_of": 8
       }
@@ -20431,8 +20431,8 @@
   ],
   "mc_meta": {
     "n_simulations": 10000,
-    "games_played": 40,
-    "games_remaining": 23,
+    "games_played": 43,
+    "games_remaining": 20,
     "tournament_complete": false
   }
 }
