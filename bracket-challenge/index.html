@@ -826,9 +826,14 @@ function render() {
     <span>Updated ${updatedStr}</span>
   `;
 
-  // Sort entries by score descending, then by max_possible descending as tiebreak
+  // Sort entries by score descending, then by Brier score ascending (better
+  // calibration wins ties), then by max_possible descending as final fallback.
+  // Null Brier scores sort last (worst).
   const entries = [...DATA.entries].sort((a, b) => {
     if (b.score.total_score !== a.score.total_score) return b.score.total_score - a.score.total_score;
+    const aBrier = a.score.brier_score != null ? a.score.brier_score : Infinity;
+    const bBrier = b.score.brier_score != null ? b.score.brier_score : Infinity;
+    if (aBrier !== bBrier) return aBrier - bBrier;
     return b.score.max_possible - a.score.max_possible;
   });
 
@@ -895,6 +900,9 @@ function render() {
 function toggleBracket(idx) {
   const entries = [...DATA.entries].sort((a, b) => {
     if (b.score.total_score !== a.score.total_score) return b.score.total_score - a.score.total_score;
+    const aBrier = a.score.brier_score != null ? a.score.brier_score : Infinity;
+    const bBrier = b.score.brier_score != null ? b.score.brier_score : Infinity;
+    if (aBrier !== bBrier) return aBrier - bBrier;
     return b.score.max_possible - a.score.max_possible;
   });
   const detailEl = document.getElementById(`detail-${idx}`);
