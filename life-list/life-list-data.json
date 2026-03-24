@@ -34,35 +34,35 @@
       "scientific": "Eudocimus albus",
       "family": "Ibises and Spoonbills",
       "date": "2026-03-01",
-      "location": "Timbuck II Shopping Village Boardwalk, NC"
+      "location": "Duck, NC"
     },
     {
       "common": "Northern Gannet",
       "scientific": "Morus bassanus",
       "family": "Boobies and Gannets",
       "date": "2026-02-28",
-      "location": "Hampton Inn, NC"
+      "location": "Duck, NC"
     },
     {
       "common": "Lesser Black-backed Gull",
       "scientific": "Larus fuscus",
       "family": "Gulls, Terns, and Skimmers",
       "date": "2026-02-28",
-      "location": "Hampton Inn, NC"
+      "location": "Duck, NC"
     },
     {
       "common": "Sanderling",
       "scientific": "Calidris alba",
       "family": "Sandpipers and Allies",
       "date": "2026-02-28",
-      "location": "Hampton Inn, NC"
+      "location": "Duck, NC"
     },
     {
       "common": "Black Scoter",
       "scientific": "Melanitta americana",
       "family": "Ducks, Geese, and Swans",
       "date": "2026-02-28",
-      "location": "Hampton Inn, NC"
+      "location": "Duck, NC"
     },
     {
       "common": "American Black Duck",
@@ -111,7 +111,7 @@
       "scientific": "Urile pelagicus",
       "family": "Cormorants and Shags",
       "date": "2026-01-13",
-      "location": "Vancouver Convention Center, BC, Canada"
+      "location": "Vancouver, BC, Canada"
     },
     {
       "common": "Fox Sparrow",
@@ -447,14 +447,14 @@
       "scientific": "Sitta canadensis",
       "family": "Nuthatches",
       "date": "2025-11-25",
-      "location": "Yahn's House, PA"
+      "location": "Fairview, PA"
     },
     {
       "common": "Red-breasted Merganser",
       "scientific": "Mergus serrator",
       "family": "Ducks, Geese, and Swans",
       "date": "2025-11-23",
-      "location": "Mouth of Walnut Creek, PA"
+      "location": "Fairview, PA"
     },
     {
       "common": "Hermit Thrush",
@@ -587,14 +587,14 @@
       "scientific": "Cecropis badia",
       "family": "Swallows",
       "date": "2025-09-13",
-      "location": "Panan Resort, Krabi, Thailand"
+      "location": "Ao Nang, Krabi, Thailand"
     },
     {
       "common": "White-nest Swiftlet",
       "scientific": "Aerodramus fuciphagus",
       "family": "Swifts",
       "date": "2025-09-13",
-      "location": "Panan Resort, Krabi, Thailand"
+      "location": "Ao Nang, Krabi, Thailand"
     },
     {
       "common": "Brahminy Kite",
@@ -615,7 +615,7 @@
       "scientific": "Hirundo javanica",
       "family": "Swallows",
       "date": "2025-09-11",
-      "location": "Panan Resort, Krabi, Thailand"
+      "location": "Ao Nang, Krabi, Thailand"
     },
     {
       "common": "Scarlet-backed Flowerpecker",
@@ -881,112 +881,112 @@
       "scientific": "Parus major",
       "family": "Tits, Chickadees, and Titmice",
       "date": "2025-06-28",
-      "location": "Prague West, Czechia"
+      "location": "Prague, Czechia"
     },
     {
       "common": "Gray Heron",
       "scientific": "Ardea cinerea",
       "family": "Herons, Egrets, and Bitterns",
       "date": "2025-06-25",
-      "location": "Prague Downtown, Czechia"
+      "location": "Prague, Czechia"
     },
     {
       "common": "Eurasian Collared-Dove",
       "scientific": "Streptopelia decaocto",
       "family": "Pigeons and Doves",
       "date": "2025-06-25",
-      "location": "Prague Downtown, Czechia"
+      "location": "Prague, Czechia"
     },
     {
       "common": "Tufted Duck",
       "scientific": "Aythya fuligula",
       "family": "Ducks, Geese, and Swans",
       "date": "2025-06-25",
-      "location": "Prague Downtown, Czechia"
+      "location": "Prague, Czechia"
     },
     {
       "common": "Mute Swan",
       "scientific": "Cygnus olor",
       "family": "Ducks, Geese, and Swans",
       "date": "2025-06-25",
-      "location": "Prague Downtown, Czechia"
+      "location": "Prague, Czechia"
     },
     {
       "common": "Eurasian Jackdaw",
       "scientific": "Coloeus monedula",
       "family": "Crows, Jays, and Magpies",
       "date": "2025-06-25",
-      "location": "Prague West, Czechia"
+      "location": "Prague, Czechia"
     },
     {
       "common": "Common Chaffinch",
       "scientific": "Fringilla coelebs",
       "family": "Finches, Euphonias, and Allies",
       "date": "2025-06-25",
-      "location": "Vysehrad, Czechia"
+      "location": "Prague, Czechia"
     },
     {
       "common": "Common Redstart",
       "scientific": "Phoenicurus phoenicurus",
       "family": "Old World Flycatchers",
       "date": "2025-06-25",
-      "location": "Vysehrad, Czechia"
+      "location": "Prague, Czechia"
     },
     {
       "common": "Eurasian Jay",
       "scientific": "Garrulus glandarius",
       "family": "Crows, Jays, and Magpies",
       "date": "2025-06-25",
-      "location": "Vysehrad, Czechia"
+      "location": "Prague, Czechia"
     },
     {
       "common": "European Robin",
       "scientific": "Erithacus rubecula",
       "family": "Old World Flycatchers",
       "date": "2025-06-23",
-      "location": "Prague West, Czechia"
+      "location": "Prague, Czechia"
     },
     {
       "common": "Eurasian Blackbird",
       "scientific": "Turdus merula",
       "family": "Thrushes",
       "date": "2025-06-23",
-      "location": "Prague West, Czechia"
+      "location": "Prague, Czechia"
     },
     {
       "common": "Eurasian Magpie",
       "scientific": "Pica pica",
       "family": "Crows, Jays, and Magpies",
       "date": "2025-06-23",
-      "location": "Prague West, Czechia"
+      "location": "Prague, Czechia"
     },
     {
       "common": "Common Swift",
       "scientific": "Apus apus",
       "family": "Swifts",
       "date": "2025-06-23",
-      "location": "Prague West, Czechia"
+      "location": "Prague, Czechia"
     },
     {
       "common": "Common Wood-Pigeon",
       "scientific": "Columba palumbus",
       "family": "Pigeons and Doves",
       "date": "2025-06-23",
-      "location": "Prague West, Czechia"
+      "location": "Prague, Czechia"
     },
     {
       "common": "Eurasian Kestrel",
       "scientific": "Falco tinnunculus",
       "family": "Falcons and Caracaras",
       "date": "2025-06-22",
-      "location": "Prague West, Czechia"
+      "location": "Prague, Czechia"
     },
     {
       "common": "Red Kite",
       "scientific": "Milvus milvus",
       "family": "Hawks, Eagles, and Kites",
       "date": "2025-06-22",
-      "location": "Zurich Airport, Switzerland"
+      "location": "Zurich, Switzerland"
     },
     {
       "common": "Brown-headed Cowbird",
@@ -1014,63 +1014,63 @@
       "scientific": "Setophaga aestiva",
       "family": "Wood-Warblers",
       "date": "2025-05-26",
-      "location": "Smoke Hole, WV"
+      "location": "Upper Tract, WV"
     },
     {
       "common": "American Redstart",
       "scientific": "Setophaga ruticilla",
       "family": "Wood-Warblers",
       "date": "2025-05-26",
-      "location": "Smoke Hole, WV"
+      "location": "Upper Tract, WV"
     },
     {
       "common": "Orchard Oriole",
       "scientific": "Icterus spurius",
       "family": "Blackbirds",
       "date": "2025-05-26",
-      "location": "Smoke Hole, WV"
+      "location": "Upper Tract, WV"
     },
     {
       "common": "Wood Thrush",
       "scientific": "Hylocichla mustelina",
       "family": "Thrushes",
       "date": "2025-05-26",
-      "location": "Smoke Hole, WV"
+      "location": "Upper Tract, WV"
     },
     {
       "common": "Common Raven",
       "scientific": "Corvus corax",
       "family": "Crows, Jays, and Magpies",
       "date": "2025-05-26",
-      "location": "Smoke Hole, WV"
+      "location": "Upper Tract, WV"
     },
     {
       "common": "Red-eyed Vireo",
       "scientific": "Vireo olivaceus",
       "family": "Vireos",
       "date": "2025-05-26",
-      "location": "Smoke Hole, WV"
+      "location": "Upper Tract, WV"
     },
     {
       "common": "Eastern Wood-Pewee",
       "scientific": "Contopus virens",
       "family": "Tyrant Flycatchers",
       "date": "2025-05-26",
-      "location": "Smoke Hole, WV"
+      "location": "Upper Tract, WV"
     },
     {
       "common": "Yellow-billed Cuckoo",
       "scientific": "Coccyzus americanus",
       "family": "Cuckoos",
       "date": "2025-05-26",
-      "location": "Smoke Hole, WV"
+      "location": "Upper Tract, WV"
     },
     {
       "common": "Common Merganser",
       "scientific": "Mergus merganser",
       "family": "Ducks, Geese, and Swans",
       "date": "2025-05-26",
-      "location": "Smoke Hole, WV"
+      "location": "Upper Tract, WV"
     },
     {
       "common": "Scarlet Tanager",
@@ -1266,21 +1266,21 @@
       "scientific": "Quiscalus quiscula",
       "family": "Blackbirds",
       "date": "2025-03-10",
-      "location": "Bluemont Trail, VA"
+      "location": "Arlington, VA"
     },
     {
       "common": "Turkey Vulture",
       "scientific": "Cathartes aura",
       "family": "New World Vultures",
       "date": "2025-03-10",
-      "location": "Bluemont Trail, VA"
+      "location": "Arlington, VA"
     },
     {
       "common": "Horned Grebe",
       "scientific": "Podiceps auritus",
       "family": "Grebes",
       "date": "2025-03-08",
-      "location": "Tidal Basin, DC"
+      "location": "Washington, DC"
     },
     {
       "common": "Great Blue Heron",
@@ -1315,7 +1315,7 @@
       "scientific": "Melospiza melodia",
       "family": "New World Sparrows",
       "date": "2025-02-02",
-      "location": "Rocky Run Park, VA"
+      "location": "Arlington, VA"
     },
     {
       "common": "Brown Creeper",
@@ -1329,7 +1329,7 @@
       "scientific": "Haliaeetus leucocephalus",
       "family": "Hawks, Eagles, and Kites",
       "date": "2025-01-18",
-      "location": "Bowlero, VA"
+      "location": "Falls Church, VA"
     },
     {
       "common": "Swamp Sparrow",
@@ -1385,28 +1385,28 @@
       "scientific": "Sitta carolinensis",
       "family": "Nuthatches",
       "date": "2024-12-26",
-      "location": "Yahn's House, PA"
+      "location": "Fairview, PA"
     },
     {
       "common": "Hairy Woodpecker",
       "scientific": "Leuconotopicus villosus",
       "family": "Woodpeckers",
       "date": "2024-12-26",
-      "location": "Yahn's House, PA"
+      "location": "Fairview, PA"
     },
     {
       "common": "Ring-billed Gull",
       "scientific": "Larus delawarensis",
       "family": "Gulls, Terns, and Skimmers",
       "date": "2024-12-24",
-      "location": "Walnut Creek Access, PA"
+      "location": "Fairview, PA"
     },
     {
       "common": "Black-capped Chickadee",
       "scientific": "Poecile atricapillus",
       "family": "Tits, Chickadees, and Titmice",
       "date": "2024-12-22",
-      "location": "Walnut Creek Access, PA"
+      "location": "Fairview, PA"
     },
     {
       "common": "Carolina Wren",
@@ -1455,7 +1455,7 @@
       "scientific": "Corvus brachyrhynchos",
       "family": "Crows, Jays, and Magpies",
       "date": "2024-12-16",
-      "location": "Arlington Park, VA"
+      "location": "Arlington, VA"
     },
     {
       "common": "Red-shouldered Hawk",
@@ -1476,28 +1476,28 @@
       "scientific": "Cardinalis cardinalis",
       "family": "Cardinals and Allies",
       "date": "2024-12-09",
-      "location": "Rocky Run Park, VA"
+      "location": "Arlington, VA"
     },
     {
       "common": "Dark-eyed Junco",
       "scientific": "Junco hyemalis",
       "family": "New World Sparrows",
       "date": "2024-12-06",
-      "location": "Arlington Park, VA"
+      "location": "Arlington, VA"
     },
     {
       "common": "Tufted Titmouse",
       "scientific": "Baeolophus bicolor",
       "family": "Tits, Chickadees, and Titmice",
       "date": "2024-12-06",
-      "location": "Arlington Park, VA"
+      "location": "Arlington, VA"
     },
     {
       "common": "Cooper's Hawk",
       "scientific": "Astur cooperii",
       "family": "Hawks, Eagles, and Kites",
       "date": "2024-12-04",
-      "location": "Rocky Run Park, VA"
+      "location": "Arlington, VA"
     },
     {
       "common": "American Robin",
@@ -1511,35 +1511,35 @@
       "scientific": "Mimus polyglottos",
       "family": "Catbirds, Mockingbirds, and Thrashers",
       "date": "2024-12-01",
-      "location": "Rocky Run Park, VA"
+      "location": "Arlington, VA"
     },
     {
       "common": "Fish Crow",
       "scientific": "Corvus ossifragus",
       "family": "Crows, Jays, and Magpies",
       "date": "2024-12-01",
-      "location": "Rocky Run Park, VA"
+      "location": "Arlington, VA"
     },
     {
       "common": "Blue Jay",
       "scientific": "Cyanocitta cristata",
       "family": "Crows, Jays, and Magpies",
       "date": "2024-12-01",
-      "location": "Rocky Run Park, VA"
+      "location": "Arlington, VA"
     },
     {
       "common": "Red-bellied Woodpecker",
       "scientific": "Melanerpes carolinus",
       "family": "Woodpeckers",
       "date": "2024-12-01",
-      "location": "Rocky Run Park, VA"
+      "location": "Arlington, VA"
     },
     {
       "common": "White-throated Sparrow",
       "scientific": "Zonotrichia albicollis",
       "family": "New World Sparrows",
       "date": "2024-11-25",
-      "location": "Arlington Park, VA"
+      "location": "Arlington, VA"
     },
     {
       "common": "European Starling",
@@ -1553,14 +1553,14 @@
       "scientific": "Passer domesticus",
       "family": "Old World Sparrows",
       "date": "2024-11-25",
-      "location": "Rocky Run Park, VA"
+      "location": "Arlington, VA"
     },
     {
       "common": "Mourning Dove",
       "scientific": "Zenaida macroura",
       "family": "Pigeons and Doves",
       "date": "2024-11-24",
-      "location": "Arlington Park, VA"
+      "location": "Arlington, VA"
     }
   ]
 }
