@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Life List | Samuel King</title>
+
+    <!-- Fonts: matching your site's feel but adding a naturalist touch -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #faf8f4;
+            --text: #2c2c2c;
+            --text-muted: #6b6b6b;
+            --accent: #3a6b4c;
+            --accent-light: #e8f0eb;
+            --accent-hover: #2d5239;
+            --border: #e2ddd5;
+            --card-bg: #ffffff;
+            --tag-bg: #f0ece4;
+            --shadow: 0 1px 3px rgba(0,0,0,0.06);
+            --shadow-hover: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        /* Simple nav bar to match your site */
+        .nav-bar {
+            background: var(--accent);
+            padding: 14px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-bar a {
+            color: rgba(255,255,255,0.85);
+            text-decoration: none;
+            font-size: 0.95rem;
+            letter-spacing: 0.02em;
+        }
+        .nav-bar a:hover { color: #fff; }
+        .nav-bar .brand {
+            font-family: 'Lora', serif;
+            font-size: 1.15rem;
+            color: #fff;
+            font-weight: 600;
+        }
+        .nav-links { display: flex; gap: 24px; }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Hero / header area */
+        .hero {
+            padding: 56px 0 40px;
+            border-bottom: 1px solid var(--border);
+        }
+        .hero-inner {
+            display: flex;
+            align-items: flex-end;
+            gap: 32px;
+            flex-wrap: wrap;
+        }
+        .hero h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.4rem;
+            font-weight: 600;
+            color: var(--text);
+            line-height: 1.2;
+        }
+        .hero p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            max-width: 560px;
+            margin-top: 8px;
+        }
+        .hero p a {
+            color: var(--accent);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        /* Stats strip */
+        .stats {
+            display: flex;
+            gap: 40px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .last-updated {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            margin-top: 14px;
+            font-style: italic;
+        }
+        .stat {
+            display: flex;
+            flex-direction: column;
+        }
+        .stat-number {
+            font-family: 'Lora', serif;
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--accent);
+            line-height: 1.1;
+        }
+        .stat-label {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-top: 2px;
+        }
+
+        /* Controls */
+        .controls {
+            padding: 24px 0;
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .search-box {
+            flex: 1;
+            min-width: 200px;
+            position: relative;
+        }
+        .search-box input {
+            width: 100%;
+            padding: 10px 14px 10px 38px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 0.95rem;
+            font-family: 'Source Sans Pro', sans-serif;
+            background: var(--card-bg);
+            color: var(--text);
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        .search-box input:focus {
+            border-color: var(--accent);
+        }
+        .search-box .search-icon {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .view-toggle {
+            display: flex;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        .sort-box {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .sort-box label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            white-space: nowrap;
+        }
+        .sort-box select {
+            padding: 9px 12px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-family: 'Source Sans Pro', sans-serif;
+            background: var(--card-bg);
+            color: var(--text);
+            outline: none;
+            cursor: pointer;
+            transition: border-color 0.2s;
+        }
+        .sort-box select:focus {
+            border-color: var(--accent);
+        }
+        .view-toggle button {
+            padding: 9px 16px;
+            border: none;
+            background: var(--card-bg);
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            font-family: 'Source Sans Pro', sans-serif;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .view-toggle button.active {
+            background: var(--accent);
+            color: #fff;
+        }
+        .view-toggle button:not(:last-child) {
+            border-right: 1px solid var(--border);
+        }
+
+        /* Family group view */
+        .family-group {
+            margin-bottom: 32px;
+        }
+        .family-header {
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 12px;
+        }
+        .family-name {
+            font-family: 'Lora', serif;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--text);
+        }
+        .family-count {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+        }
+
+        /* Bird cards in grid */
+        .bird-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        .bird-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 12px 14px;
+            transition: box-shadow 0.2s, transform 0.15s;
+            cursor: default;
+        }
+        .bird-card:hover {
+            box-shadow: var(--shadow-hover);
+            transform: translateY(-1px);
+        }
+        .bird-common {
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--text);
+            line-height: 1.3;
+        }
+        .bird-scientific {
+            font-style: italic;
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+        .bird-date {
+            font-size: 0.75rem;
+            color: var(--accent);
+            margin-top: 6px;
+        }
+        .bird-location {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        /* List view */
+        .bird-list {
+            display: none;
+        }
+        .bird-list.active {
+            display: block;
+        }
+        .bird-grid-container.active .bird-grid {
+            display: grid;
+        }
+
+        .bird-list table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .bird-list th {
+            text-align: left;
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            padding: 8px 12px;
+            border-bottom: 2px solid var(--border);
+            font-weight: 600;
+        }
+        .bird-list td {
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.92rem;
+        }
+        .bird-list tr:hover {
+            background: var(--accent-light);
+        }
+        .bird-list .common { font-weight: 600; }
+        .bird-list .scientific {
+            font-style: italic;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        /* Recent sighting highlight */
+        .recent-badge {
+            display: inline-block;
+            background: var(--accent-light);
+            color: var(--accent);
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 2px 7px;
+            border-radius: 3px;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            margin-left: 6px;
+        }
+
+        /* Footer */
+        .page-footer {
+            padding: 40px 0;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+            margin-top: 48px;
+        }
+        .page-footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        /* No results */
+        .no-results {
+            text-align: center;
+            padding: 48px 0;
+            color: var(--text-muted);
+            font-size: 1rem;
+            display: none;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 1.8rem; }
+            .stats { gap: 24px; }
+            .bird-grid { grid-template-columns: 1fr; }
+            .controls { flex-direction: column; }
+            .search-box { min-width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="nav-bar">
+        <div class="container">
+            <a href="/" class="brand">Samuel King</a>
+            <div class="nav-links">
+                <a href="/#research-anchor">Research</a>
+                <a href="/#teaching-anchor">Teaching</a>
+                <a href="/#about-anchor">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="hero">
+            <div class="hero-inner">
+                <div>
+                    <h1>Life List</h1>
+                    <p>
+                        Birds I've spotted while birding with my wife around Virginia, the mid-Atlantic, and beyond.
+                        Data exported from my <a href="https://ebird.org" target="_blank">eBird</a> account.
+                    </p>
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-number" id="total-species">—</span>
+                            <span class="stat-label">Species</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" id="total-families">—</span>
+                            <span class="stat-label">Families</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" id="total-regions">—</span>
+                            <span class="stat-label">Regions</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" id="latest-date">—</span>
+                            <span class="stat-label">Latest Sighting</span>
+                        </div>
+                    </div>
+                    <p class="last-updated" id="last-updated"></p>
+                </div>
+            </div>
+        </header>
+
+        <div class="controls">
+            <div class="search-box">
+                <span class="search-icon">&#128269;</span>
+                <input type="text" id="search" placeholder="Search by name, family, or location...">
+            </div>
+            <div class="sort-box">
+                <label for="sort-select">Sort by</label>
+                <select id="sort-select" onchange="render()">
+                    <option value="family">Family</option>
+                    <option value="name">Name (A-Z)</option>
+                    <option value="date-new">Date (newest)</option>
+                    <option value="date-old">Date (oldest)</option>
+                    <option value="location">Location</option>
+                </select>
+            </div>
+            <div class="view-toggle">
+                <button class="active" id="btn-grid" onclick="setView('grid')">Cards</button>
+                <button id="btn-list" onclick="setView('list')">List</button>
+            </div>
+        </div>
+
+        <!-- Grid view (grouped by family) -->
+        <div id="grid-view"></div>
+
+        <!-- List view -->
+        <div class="bird-list" id="list-view">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Common Name</th>
+                        <th>Scientific Name</th>
+                        <th>Family</th>
+                        <th>First Seen</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody id="list-body"></tbody>
+            </table>
+        </div>
+
+        <div class="no-results" id="no-results">
+            No birds match your search. Try a different name or family.
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <div class="container">
+            Data from <a href="https://ebird.org" target="_blank">eBird</a>.
+            <span id="footer-updated"></span>
+            <br>
+            <a href="/">&larr; Back to main site</a>
+        </div>
+    </footer>
+
+    <script>
+    // -------------------------------------------------------
+    // Load bird data from JSON file generated by convert_ebird.py
+    // -------------------------------------------------------
+    let birds = [];
+
+    const searchInput = document.getElementById('search');
+    const gridView = document.getElementById('grid-view');
+    const listView = document.getElementById('list-view');
+    const listBody = document.getElementById('list-body');
+    const noResults = document.getElementById('no-results');
+    let currentView = 'grid';
+
+    // Load data and initialize
+    fetch('life-list-data.json')
+        .then(res => res.json())
+        .then(data => {
+            birds = data.birds;
+
+            // Populate stats from JSON metadata
+            document.getElementById('total-species').textContent = data.meta.species_count;
+            document.getElementById('total-families').textContent = data.meta.family_count;
+            document.getElementById('total-regions').textContent = data.meta.region_count;
+            document.getElementById('latest-date').textContent = data.meta.latest_sighting_display;
+
+            // Format the "last updated" date
+            const gen = new Date(data.meta.generated + 'T00:00:00');
+            const opts = { month: 'long', day: 'numeric', year: 'numeric' };
+            document.getElementById('last-updated').textContent =
+                'Last updated ' + gen.toLocaleDateString('en-US', opts);
+            document.getElementById('footer-updated').textContent =
+                'Last updated ' + gen.toLocaleDateString('en-US', { month: 'long', year: 'numeric' }) + '.';
+
+            render();
+        })
+        .catch(err => {
+            console.error('Failed to load bird data:', err);
+            gridView.innerHTML = '<p style="text-align:center; color:var(--text-muted); padding:48px 0;">Could not load bird data.</p>';
+        });
+
+    // -------------------------------------------------------
+    // RENDERING
+    // -------------------------------------------------------
+    function isRecent(dateStr) {
+        const d = new Date(dateStr);
+        const now = new Date();
+        const diffDays = (now - d) / (1000 * 60 * 60 * 24);
+        return diffDays < 60;
+    }
+
+    function formatDate(dateStr) {
+        const d = new Date(dateStr + 'T00:00:00');
+        return d.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+    }
+
+    function sortBirds(birdList) {
+        const sortVal = document.getElementById('sort-select').value;
+        const sorted = [...birdList];
+        switch (sortVal) {
+            case 'name':
+                sorted.sort((a, b) => a.common.localeCompare(b.common));
+                break;
+            case 'date-new':
+                sorted.sort((a, b) => new Date(b.date) - new Date(a.date));
+                break;
+            case 'date-old':
+                sorted.sort((a, b) => new Date(a.date) - new Date(b.date));
+                break;
+            case 'location':
+                sorted.sort((a, b) => a.location.localeCompare(b.location) || a.common.localeCompare(b.common));
+                break;
+            case 'family':
+            default:
+                sorted.sort((a, b) => a.family.localeCompare(b.family) || a.common.localeCompare(b.common));
+                break;
+        }
+        return sorted;
+    }
+
+    function getGroupKey(bird) {
+        const sortVal = document.getElementById('sort-select').value;
+        switch (sortVal) {
+            case 'location': return bird.location;
+            case 'date-new':
+            case 'date-old': {
+                const d = new Date(bird.date + 'T00:00:00');
+                return d.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+            }
+            case 'name': return bird.common.charAt(0).toUpperCase();
+            case 'family':
+            default: return bird.family;
+        }
+    }
+
+    function renderGrid(filteredBirds) {
+        const sorted = sortBirds(filteredBirds);
+
+        const groups = {};
+        const groupOrder = [];
+        sorted.forEach(b => {
+            const key = getGroupKey(b);
+            if (!groups[key]) {
+                groups[key] = [];
+                groupOrder.push(key);
+            }
+            groups[key].push(b);
+        });
+
+        if (groupOrder.length === 0) {
+            gridView.innerHTML = '';
+            noResults.style.display = 'block';
+            return;
+        }
+        noResults.style.display = 'none';
+
+        let html = '';
+        groupOrder.forEach(key => {
+            const groupBirds = groups[key];
+            html += `
+                <div class="family-group">
+                    <div class="family-header">
+                        <span class="family-name">${key}</span>
+                        <span class="family-count">${groupBirds.length} species</span>
+                    </div>
+                    <div class="bird-grid">
+                        ${groupBirds.map(b => `
+                            <div class="bird-card">
+                                <div class="bird-common">
+                                    ${b.common}
+                                    ${isRecent(b.date) ? '<span class="recent-badge">New</span>' : ''}
+                                </div>
+                                <div class="bird-scientific">${b.scientific}</div>
+                                <div class="bird-date">${formatDate(b.date)}</div>
+                                <div class="bird-location">${b.location}</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            `;
+        });
+        gridView.innerHTML = html;
+    }
+
+    function renderList(filteredBirds) {
+        if (filteredBirds.length === 0) {
+            listBody.innerHTML = '';
+            noResults.style.display = 'block';
+            return;
+        }
+        noResults.style.display = 'none';
+
+        const sorted = sortBirds(filteredBirds);
+
+        listBody.innerHTML = sorted.map((b, i) => `
+            <tr>
+                <td style="color: var(--text-muted); font-size: 0.82rem;">${i + 1}</td>
+                <td>
+                    <span class="common">${b.common}</span>
+                    ${isRecent(b.date) ? '<span class="recent-badge">New</span>' : ''}
+                </td>
+                <td class="scientific">${b.scientific}</td>
+                <td>${b.family}</td>
+                <td>${formatDate(b.date)}</td>
+                <td>${b.location}</td>
+            </tr>
+        `).join('');
+    }
+
+    function render() {
+        const query = searchInput.value.toLowerCase();
+        const filtered = birds.filter(b =>
+            b.common.toLowerCase().includes(query) ||
+            b.scientific.toLowerCase().includes(query) ||
+            b.family.toLowerCase().includes(query) ||
+            b.location.toLowerCase().includes(query)
+        );
+
+        document.getElementById('total-species').textContent = filtered.length === birds.length
+            ? birds.length
+            : `${filtered.length} / ${birds.length}`;
+
+        if (currentView === 'grid') {
+            gridView.style.display = 'block';
+            listView.style.display = 'none';
+            renderGrid(filtered);
+        } else {
+            gridView.style.display = 'none';
+            listView.style.display = 'block';
+            renderList(filtered);
+        }
+    }
+
+    function setView(view) {
+        currentView = view;
+        document.getElementById('btn-grid').classList.toggle('active', view === 'grid');
+        document.getElementById('btn-list').classList.toggle('active', view === 'list');
+        render();
+    }
+
+    searchInput.addEventListener('input', render);
+    </script>
+
+</body>
+</html>
