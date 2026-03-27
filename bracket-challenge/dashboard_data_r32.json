@@ -1,18 +1,18 @@
 {
   "season": 2026,
-  "last_updated": "2026-03-27T16:20:05.369329+00:00",
+  "last_updated": "2026-03-23T14:22:31.938131+00:00",
   "tournament_status": "in_progress",
-  "rounds_completed": 3,
+  "rounds_completed": 2,
   "entries": [
     {
       "team_name": "Joshua Basketball",
       "student_names": "Joshua",
       "logo": null,
       "score": {
-        "total_score": 56,
-        "max_possible": 144,
+        "total_score": 52,
+        "max_possible": 164,
         "max_total": 192,
-        "rounds_completed": 3,
+        "rounds_completed": 2,
         "in_progress": true,
         "round_breakdown": {
           "Round of 64": {
@@ -35,9 +35,10 @@
             "round": 3,
             "points_per_game": 4,
             "total_games": 8,
-            "correct": 1,
-            "points_earned": 4,
-            "max_points": 32
+            "correct": 0,
+            "points_earned": 0,
+            "max_points": 32,
+            "still_alive": 6
           },
           "Elite 8": {
             "round": 4,
@@ -632,7 +633,7 @@
                   "loser": "(4) Nebraska",
                   "winner_prob": 0.6176,
                   "home_win_prob": 0.6176,
-                  "result": "incorrect"
+                  "result": "eliminated"
                 },
                 {
                   "round": 3,
@@ -651,7 +652,7 @@
                   "loser": "(3) Illinois",
                   "winner_prob": 0.5352,
                   "home_win_prob": 0.5352,
-                  "result": "incorrect"
+                  "result": "pending"
                 }
               ],
               [
@@ -1234,7 +1235,7 @@
                   "loser": "(4) Arkansas",
                   "winner_prob": 0.6435,
                   "home_win_prob": 0.3565,
-                  "result": "correct"
+                  "result": "pending"
                 },
                 {
                   "round": 3,
@@ -1253,7 +1254,7 @@
                   "loser": "(2) Purdue",
                   "winner_prob": 0.5955,
                   "home_win_prob": 0.5955,
-                  "result": "incorrect"
+                  "result": "eliminated"
                 }
               ],
               [
@@ -1878,7 +1879,7 @@
             "loser": "(4) Nebraska",
             "winner_prob": 0.6176,
             "home_win_prob": 0.6176,
-            "result": "incorrect"
+            "result": "eliminated"
           },
           {
             "round": 3,
@@ -1897,7 +1898,7 @@
             "loser": "(3) Illinois",
             "winner_prob": 0.5352,
             "home_win_prob": 0.5352,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 4,
@@ -2448,7 +2449,7 @@
             "loser": "(4) Arkansas",
             "winner_prob": 0.6435,
             "home_win_prob": 0.3565,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 3,
@@ -2467,7 +2468,7 @@
             "loser": "(2) Purdue",
             "winner_prob": 0.5955,
             "home_win_prob": 0.5955,
-            "result": "incorrect"
+            "result": "eliminated"
           },
           {
             "round": 4,
@@ -2548,10 +2549,10 @@
         ]
       },
       "mc": {
-        "p_first": 0.4201,
-        "p_top2": 0.5947,
-        "p_top3": 0.5947,
-        "expected_score": 97.2,
+        "p_first": 0.3633,
+        "p_top2": 0.4413,
+        "p_top3": 0.5722,
+        "expected_score": 93.28,
         "calibration_rank": 6,
         "calibration_of": 8
       }
@@ -2561,10 +2562,10 @@
       "student_names": "Juliano",
       "logo": null,
       "score": {
-        "total_score": 55,
-        "max_possible": 143,
+        "total_score": 47,
+        "max_possible": 167,
         "max_total": 192,
-        "rounds_completed": 3,
+        "rounds_completed": 2,
         "in_progress": true,
         "round_breakdown": {
           "Round of 64": {
@@ -2587,9 +2588,10 @@
             "round": 3,
             "points_per_game": 4,
             "total_games": 8,
-            "correct": 2,
-            "points_earned": 8,
-            "max_points": 32
+            "correct": 0,
+            "points_earned": 0,
+            "max_points": 32,
+            "still_alive": 6
           },
           "Elite 8": {
             "round": 4,
@@ -2598,7 +2600,7 @@
             "correct": 0,
             "points_earned": 0,
             "max_points": 32,
-            "still_alive": 3
+            "still_alive": 4
           },
           "Final Four": {
             "round": 5,
@@ -3184,7 +3186,7 @@
                   "loser": "(4) Nebraska",
                   "winner_prob": 0.5918,
                   "home_win_prob": 0.5918,
-                  "result": "incorrect"
+                  "result": "eliminated"
                 },
                 {
                   "round": 3,
@@ -3203,7 +3205,7 @@
                   "loser": "(3) Illinois",
                   "winner_prob": 0.5788,
                   "home_win_prob": 0.5788,
-                  "result": "incorrect"
+                  "result": "pending"
                 }
               ],
               [
@@ -3224,7 +3226,7 @@
                   "loser": "(1) Florida",
                   "winner_prob": 0.5906,
                   "home_win_prob": 0.5906,
-                  "result": "eliminated"
+                  "result": "pending"
                 }
               ]
             ],
@@ -3786,7 +3788,7 @@
                   "loser": "(5) Wisconsin",
                   "winner_prob": 0.8614,
                   "home_win_prob": 0.1386,
-                  "result": "correct"
+                  "result": "pending"
                 },
                 {
                   "round": 3,
@@ -3805,7 +3807,7 @@
                   "loser": "(3) Gonzaga",
                   "winner_prob": 0.5445,
                   "home_win_prob": 0.4555,
-                  "result": "correct"
+                  "result": "pending"
                 }
               ],
               [
@@ -4430,7 +4432,7 @@
             "loser": "(4) Nebraska",
             "winner_prob": 0.5918,
             "home_win_prob": 0.5918,
-            "result": "incorrect"
+            "result": "eliminated"
           },
           {
             "round": 3,
@@ -4449,7 +4451,7 @@
             "loser": "(3) Illinois",
             "winner_prob": 0.5788,
             "home_win_prob": 0.5788,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 4,
@@ -4468,7 +4470,7 @@
             "loser": "(1) Florida",
             "winner_prob": 0.5906,
             "home_win_prob": 0.5906,
-            "result": "eliminated"
+            "result": "pending"
           },
           {
             "round": 1,
@@ -5000,7 +5002,7 @@
             "loser": "(5) Wisconsin",
             "winner_prob": 0.8614,
             "home_win_prob": 0.1386,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 3,
@@ -5019,7 +5021,7 @@
             "loser": "(3) Gonzaga",
             "winner_prob": 0.5445,
             "home_win_prob": 0.4555,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 4,
@@ -5100,10 +5102,10 @@
         ]
       },
       "mc": {
-        "p_first": 0.124,
-        "p_top2": 0.3018,
-        "p_top3": 0.3455,
-        "expected_score": 90.64,
+        "p_first": 0.0855,
+        "p_top2": 0.3034,
+        "p_top3": 0.4345,
+        "expected_score": 92.52,
         "calibration_rank": 5,
         "calibration_of": 8
       }
@@ -5113,10 +5115,10 @@
       "student_names": "Kristina & Marcos",
       "logo": null,
       "score": {
-        "total_score": 55,
-        "max_possible": 143,
+        "total_score": 51,
+        "max_possible": 163,
         "max_total": 192,
-        "rounds_completed": 3,
+        "rounds_completed": 2,
         "in_progress": true,
         "round_breakdown": {
           "Round of 64": {
@@ -5139,9 +5141,10 @@
             "round": 3,
             "points_per_game": 4,
             "total_games": 8,
-            "correct": 1,
-            "points_earned": 4,
-            "max_points": 32
+            "correct": 0,
+            "points_earned": 0,
+            "max_points": 32,
+            "still_alive": 6
           },
           "Elite 8": {
             "round": 4,
@@ -5755,7 +5758,7 @@
                   "loser": "(3) Illinois",
                   "winner_prob": 0.5442,
                   "home_win_prob": 0.5442,
-                  "result": "incorrect"
+                  "result": "pending"
                 }
               ],
               [
@@ -6338,7 +6341,7 @@
                   "loser": "(4) Arkansas",
                   "winner_prob": 0.7036,
                   "home_win_prob": 0.2964,
-                  "result": "correct"
+                  "result": "pending"
                 },
                 {
                   "round": 3,
@@ -6357,7 +6360,7 @@
                   "loser": "(2) Purdue",
                   "winner_prob": 0.6737,
                   "home_win_prob": 0.6737,
-                  "result": "incorrect"
+                  "result": "eliminated"
                 }
               ],
               [
@@ -7001,7 +7004,7 @@
             "loser": "(3) Illinois",
             "winner_prob": 0.5442,
             "home_win_prob": 0.5442,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 4,
@@ -7552,7 +7555,7 @@
             "loser": "(4) Arkansas",
             "winner_prob": 0.7036,
             "home_win_prob": 0.2964,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 3,
@@ -7571,7 +7574,7 @@
             "loser": "(2) Purdue",
             "winner_prob": 0.6737,
             "home_win_prob": 0.6737,
-            "result": "incorrect"
+            "result": "eliminated"
           },
           {
             "round": 4,
@@ -7652,10 +7655,10 @@
         ]
       },
       "mc": {
-        "p_first": 0.2376,
-        "p_top2": 0.2687,
-        "p_top3": 0.4594,
-        "expected_score": 93.56,
+        "p_first": 0.2103,
+        "p_top2": 0.2522,
+        "p_top3": 0.4328,
+        "expected_score": 93.45,
         "calibration_rank": 1,
         "calibration_of": 8
       }
@@ -7665,10 +7668,10 @@
       "student_names": "Thomas & Ben",
       "logo": null,
       "score": {
-        "total_score": 54,
-        "max_possible": 142,
+        "total_score": 50,
+        "max_possible": 170,
         "max_total": 192,
-        "rounds_completed": 3,
+        "rounds_completed": 2,
         "in_progress": true,
         "round_breakdown": {
           "Round of 64": {
@@ -7691,9 +7694,10 @@
             "round": 3,
             "points_per_game": 4,
             "total_games": 8,
-            "correct": 1,
-            "points_earned": 4,
-            "max_points": 32
+            "correct": 0,
+            "points_earned": 0,
+            "max_points": 32,
+            "still_alive": 6
           },
           "Elite 8": {
             "round": 4,
@@ -7702,7 +7706,7 @@
             "correct": 0,
             "points_earned": 0,
             "max_points": 32,
-            "still_alive": 3
+            "still_alive": 4
           },
           "Final Four": {
             "round": 5,
@@ -8288,7 +8292,7 @@
                   "loser": "(1) Florida",
                   "winner_prob": 0.5119,
                   "home_win_prob": 0.4881,
-                  "result": "incorrect"
+                  "result": "pending"
                 },
                 {
                   "round": 3,
@@ -8307,7 +8311,7 @@
                   "loser": "(3) Illinois",
                   "winner_prob": 0.5406,
                   "home_win_prob": 0.5406,
-                  "result": "incorrect"
+                  "result": "pending"
                 }
               ],
               [
@@ -8328,7 +8332,7 @@
                   "loser": "(4) Nebraska",
                   "winner_prob": 0.5562,
                   "home_win_prob": 0.5562,
-                  "result": "eliminated"
+                  "result": "pending"
                 }
               ]
             ],
@@ -8890,7 +8894,7 @@
                   "loser": "(12) High Point",
                   "winner_prob": 0.7661,
                   "home_win_prob": 0.2339,
-                  "result": "correct"
+                  "result": "pending"
                 },
                 {
                   "round": 3,
@@ -8909,7 +8913,7 @@
                   "loser": "(2) Purdue",
                   "winner_prob": 0.533,
                   "home_win_prob": 0.533,
-                  "result": "incorrect"
+                  "result": "eliminated"
                 }
               ],
               [
@@ -9534,7 +9538,7 @@
             "loser": "(1) Florida",
             "winner_prob": 0.5119,
             "home_win_prob": 0.4881,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 3,
@@ -9553,7 +9557,7 @@
             "loser": "(3) Illinois",
             "winner_prob": 0.5406,
             "home_win_prob": 0.5406,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 4,
@@ -9572,7 +9576,7 @@
             "loser": "(4) Nebraska",
             "winner_prob": 0.5562,
             "home_win_prob": 0.5562,
-            "result": "eliminated"
+            "result": "pending"
           },
           {
             "round": 1,
@@ -10104,7 +10108,7 @@
             "loser": "(12) High Point",
             "winner_prob": 0.7661,
             "home_win_prob": 0.2339,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 3,
@@ -10123,7 +10127,7 @@
             "loser": "(2) Purdue",
             "winner_prob": 0.533,
             "home_win_prob": 0.533,
-            "result": "incorrect"
+            "result": "eliminated"
           },
           {
             "round": 4,
@@ -10204,10 +10208,10 @@
         ]
       },
       "mc": {
-        "p_first": 0.0,
-        "p_top2": 0.1036,
-        "p_top3": 0.2466,
-        "expected_score": 89.64,
+        "p_first": 0.2166,
+        "p_top2": 0.427,
+        "p_top3": 0.4938,
+        "expected_score": 94.97,
         "calibration_rank": 7,
         "calibration_of": 8
       }
@@ -10217,10 +10221,10 @@
       "student_names": "Will",
       "logo": null,
       "score": {
-        "total_score": 54,
-        "max_possible": 134,
+        "total_score": 50,
+        "max_possible": 154,
         "max_total": 192,
-        "rounds_completed": 3,
+        "rounds_completed": 2,
         "in_progress": true,
         "round_breakdown": {
           "Round of 64": {
@@ -10243,9 +10247,10 @@
             "round": 3,
             "points_per_game": 4,
             "total_games": 8,
-            "correct": 1,
-            "points_earned": 4,
-            "max_points": 32
+            "correct": 0,
+            "points_earned": 0,
+            "max_points": 32,
+            "still_alive": 6
           },
           "Elite 8": {
             "round": 4,
@@ -10859,7 +10864,7 @@
                   "loser": "(3) Illinois",
                   "winner_prob": 0.5075,
                   "home_win_prob": 0.5075,
-                  "result": "incorrect"
+                  "result": "pending"
                 }
               ],
               [
@@ -11442,7 +11447,7 @@
                   "loser": "(4) Arkansas",
                   "winner_prob": 0.74,
                   "home_win_prob": 0.26,
-                  "result": "correct"
+                  "result": "pending"
                 },
                 {
                   "round": 3,
@@ -11461,7 +11466,7 @@
                   "loser": "(2) Purdue",
                   "winner_prob": 0.5794,
                   "home_win_prob": 0.5794,
-                  "result": "incorrect"
+                  "result": "eliminated"
                 }
               ],
               [
@@ -12105,7 +12110,7 @@
             "loser": "(3) Illinois",
             "winner_prob": 0.5075,
             "home_win_prob": 0.5075,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 4,
@@ -12656,7 +12661,7 @@
             "loser": "(4) Arkansas",
             "winner_prob": 0.74,
             "home_win_prob": 0.26,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 3,
@@ -12675,7 +12680,7 @@
             "loser": "(2) Purdue",
             "winner_prob": 0.5794,
             "home_win_prob": 0.5794,
-            "result": "incorrect"
+            "result": "eliminated"
           },
           {
             "round": 4,
@@ -12756,10 +12761,10 @@
         ]
       },
       "mc": {
-        "p_first": 0.0437,
-        "p_top2": 0.1239,
-        "p_top3": 0.2815,
-        "expected_score": 87.22,
+        "p_first": 0.045,
+        "p_top2": 0.1133,
+        "p_top3": 0.2698,
+        "expected_score": 88.53,
         "calibration_rank": 3,
         "calibration_of": 8
       }
@@ -12769,10 +12774,10 @@
       "student_names": "Cassidy",
       "logo": null,
       "score": {
-        "total_score": 58,
-        "max_possible": 146,
+        "total_score": 50,
+        "max_possible": 158,
         "max_total": 192,
-        "rounds_completed": 3,
+        "rounds_completed": 2,
         "in_progress": true,
         "round_breakdown": {
           "Round of 64": {
@@ -12795,9 +12800,10 @@
             "round": 3,
             "points_per_game": 4,
             "total_games": 8,
-            "correct": 2,
-            "points_earned": 8,
-            "max_points": 32
+            "correct": 0,
+            "points_earned": 0,
+            "max_points": 32,
+            "still_alive": 5
           },
           "Elite 8": {
             "round": 4,
@@ -13392,7 +13398,7 @@
                   "loser": "(4) Nebraska",
                   "winner_prob": 0.587,
                   "home_win_prob": 0.587,
-                  "result": "incorrect"
+                  "result": "eliminated"
                 },
                 {
                   "round": 3,
@@ -13411,7 +13417,7 @@
                   "loser": "(2) Houston",
                   "winner_prob": 0.5319,
                   "home_win_prob": 0.4681,
-                  "result": "correct"
+                  "result": "pending"
                 }
               ],
               [
@@ -13994,7 +14000,7 @@
                   "loser": "(4) Arkansas",
                   "winner_prob": 0.698,
                   "home_win_prob": 0.302,
-                  "result": "correct"
+                  "result": "pending"
                 },
                 {
                   "round": 3,
@@ -14013,7 +14019,7 @@
                   "loser": "(2) Purdue",
                   "winner_prob": 0.5814,
                   "home_win_prob": 0.5814,
-                  "result": "incorrect"
+                  "result": "eliminated"
                 }
               ],
               [
@@ -14638,7 +14644,7 @@
             "loser": "(4) Nebraska",
             "winner_prob": 0.587,
             "home_win_prob": 0.587,
-            "result": "incorrect"
+            "result": "eliminated"
           },
           {
             "round": 3,
@@ -14657,7 +14663,7 @@
             "loser": "(2) Houston",
             "winner_prob": 0.5319,
             "home_win_prob": 0.4681,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 4,
@@ -15208,7 +15214,7 @@
             "loser": "(4) Arkansas",
             "winner_prob": 0.698,
             "home_win_prob": 0.302,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 3,
@@ -15227,7 +15233,7 @@
             "loser": "(2) Purdue",
             "winner_prob": 0.5814,
             "home_win_prob": 0.5814,
-            "result": "incorrect"
+            "result": "eliminated"
           },
           {
             "round": 4,
@@ -15308,10 +15314,10 @@
         ]
       },
       "mc": {
-        "p_first": 0.1746,
-        "p_top2": 0.208,
-        "p_top3": 0.3928,
-        "expected_score": 96.45,
+        "p_first": 0.0793,
+        "p_top2": 0.1088,
+        "p_top3": 0.2718,
+        "expected_score": 88.41,
         "calibration_rank": 4,
         "calibration_of": 8
       }
@@ -15321,10 +15327,10 @@
       "student_names": "Jonathan",
       "logo": null,
       "score": {
-        "total_score": 56,
-        "max_possible": 128,
+        "total_score": 52,
+        "max_possible": 148,
         "max_total": 192,
-        "rounds_completed": 3,
+        "rounds_completed": 2,
         "in_progress": true,
         "round_breakdown": {
           "Round of 64": {
@@ -15347,9 +15353,10 @@
             "round": 3,
             "points_per_game": 4,
             "total_games": 8,
-            "correct": 1,
-            "points_earned": 4,
-            "max_points": 32
+            "correct": 0,
+            "points_earned": 0,
+            "max_points": 32,
+            "still_alive": 6
           },
           "Elite 8": {
             "round": 4,
@@ -15944,7 +15951,7 @@
                   "loser": "(4) Nebraska",
                   "winner_prob": 0.6148,
                   "home_win_prob": 0.6148,
-                  "result": "incorrect"
+                  "result": "eliminated"
                 },
                 {
                   "round": 3,
@@ -15963,7 +15970,7 @@
                   "loser": "(3) Illinois",
                   "winner_prob": 0.5509,
                   "home_win_prob": 0.5509,
-                  "result": "incorrect"
+                  "result": "pending"
                 }
               ],
               [
@@ -16546,7 +16553,7 @@
                   "loser": "(4) Arkansas",
                   "winner_prob": 0.5196,
                   "home_win_prob": 0.4804,
-                  "result": "correct"
+                  "result": "pending"
                 },
                 {
                   "round": 3,
@@ -17190,7 +17197,7 @@
             "loser": "(4) Nebraska",
             "winner_prob": 0.6148,
             "home_win_prob": 0.6148,
-            "result": "incorrect"
+            "result": "eliminated"
           },
           {
             "round": 3,
@@ -17209,7 +17216,7 @@
             "loser": "(3) Illinois",
             "winner_prob": 0.5509,
             "home_win_prob": 0.5509,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 4,
@@ -17760,7 +17767,7 @@
             "loser": "(4) Arkansas",
             "winner_prob": 0.5196,
             "home_win_prob": 0.4804,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 3,
@@ -17861,9 +17868,9 @@
       },
       "mc": {
         "p_first": 0.0,
-        "p_top2": 0.3556,
-        "p_top3": 0.5556,
-        "expected_score": 92.35,
+        "p_top2": 0.309,
+        "p_top3": 0.4118,
+        "expected_score": 88.51,
         "calibration_rank": 8,
         "calibration_of": 8
       }
@@ -17873,10 +17880,10 @@
       "student_names": "Chris",
       "logo": null,
       "score": {
-        "total_score": 54,
-        "max_possible": 134,
+        "total_score": 50,
+        "max_possible": 154,
         "max_total": 192,
-        "rounds_completed": 3,
+        "rounds_completed": 2,
         "in_progress": true,
         "round_breakdown": {
           "Round of 64": {
@@ -17899,9 +17906,10 @@
             "round": 3,
             "points_per_game": 4,
             "total_games": 8,
-            "correct": 1,
-            "points_earned": 4,
-            "max_points": 32
+            "correct": 0,
+            "points_earned": 0,
+            "max_points": 32,
+            "still_alive": 6
           },
           "Elite 8": {
             "round": 4,
@@ -18515,7 +18523,7 @@
                   "loser": "(3) Illinois",
                   "winner_prob": 0.5075,
                   "home_win_prob": 0.5075,
-                  "result": "incorrect"
+                  "result": "pending"
                 }
               ],
               [
@@ -19098,7 +19106,7 @@
                   "loser": "(4) Arkansas",
                   "winner_prob": 0.74,
                   "home_win_prob": 0.26,
-                  "result": "correct"
+                  "result": "pending"
                 },
                 {
                   "round": 3,
@@ -19117,7 +19125,7 @@
                   "loser": "(2) Purdue",
                   "winner_prob": 0.5794,
                   "home_win_prob": 0.5794,
-                  "result": "incorrect"
+                  "result": "eliminated"
                 }
               ],
               [
@@ -19761,7 +19769,7 @@
             "loser": "(3) Illinois",
             "winner_prob": 0.5075,
             "home_win_prob": 0.5075,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 4,
@@ -20312,7 +20320,7 @@
             "loser": "(4) Arkansas",
             "winner_prob": 0.74,
             "home_win_prob": 0.26,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 3,
@@ -20331,7 +20339,7 @@
             "loser": "(2) Purdue",
             "winner_prob": 0.5794,
             "home_win_prob": 0.5794,
-            "result": "incorrect"
+            "result": "eliminated"
           },
           {
             "round": 4,
@@ -20412,10 +20420,10 @@
         ]
       },
       "mc": {
-        "p_first": 0.0437,
-        "p_top2": 0.1239,
-        "p_top3": 0.2815,
-        "expected_score": 87.22,
+        "p_first": 0.045,
+        "p_top2": 0.1133,
+        "p_top3": 0.2698,
+        "expected_score": 88.53,
         "calibration_rank": 2,
         "calibration_of": 8
       }
@@ -20423,8 +20431,8 @@
   ],
   "mc_meta": {
     "n_simulations": 10000,
-    "games_played": 52,
-    "games_remaining": 11,
+    "games_played": 48,
+    "games_remaining": 15,
     "tournament_complete": false
   }
 }
