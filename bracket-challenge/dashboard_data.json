@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "last_updated": "2026-03-29T14:27:27.480282+00:00",
+  "last_updated": "2026-03-30T01:06:01.189829+00:00",
   "tournament_status": "in_progress",
   "rounds_completed": 4,
   "entries": [
@@ -9,8 +9,8 @@
       "student_names": "Joshua",
       "logo": null,
       "score": {
-        "total_score": 76,
-        "max_possible": 140,
+        "total_score": 84,
+        "max_possible": 132,
         "max_total": 192,
         "rounds_completed": 4,
         "in_progress": true,
@@ -43,8 +43,8 @@
             "round": 4,
             "points_per_game": 8,
             "total_games": 4,
-            "correct": 1,
-            "points_earned": 8,
+            "correct": 2,
+            "points_earned": 16,
             "max_points": 32
           },
           "Final Four": {
@@ -54,7 +54,7 @@
             "correct": 0,
             "points_earned": 0,
             "max_points": 32,
-            "still_alive": 2
+            "still_alive": 1
           },
           "Championship": {
             "round": 6,
@@ -370,7 +370,7 @@
                   "loser": "(2) Connecticut",
                   "winner_prob": 0.5464,
                   "home_win_prob": 0.4536,
-                  "result": "pending"
+                  "result": "incorrect"
                 }
               ]
             ],
@@ -972,7 +972,7 @@
                   "loser": "(2) Iowa St",
                   "winner_prob": 0.6031,
                   "home_win_prob": 0.6031,
-                  "result": "pending"
+                  "result": "correct"
                 }
               ]
             ],
@@ -1301,7 +1301,7 @@
             "loser": "(1) Florida",
             "winner_prob": 0.5516,
             "home_win_prob": 0.4484,
-            "result": "pending"
+            "result": "eliminated"
           },
           {
             "round": 5,
@@ -1630,7 +1630,7 @@
             "loser": "(2) Connecticut",
             "winner_prob": 0.5464,
             "home_win_prob": 0.4536,
-            "result": "pending"
+            "result": "incorrect"
           },
           {
             "round": 1,
@@ -2200,7 +2200,7 @@
             "loser": "(2) Iowa St",
             "winner_prob": 0.6031,
             "home_win_prob": 0.6031,
-            "result": "pending"
+            "result": "correct"
           },
           {
             "round": 1,
@@ -2504,7 +2504,7 @@
             "loser": "(1) Florida",
             "winner_prob": 0.5516,
             "home_win_prob": 0.4484,
-            "result": "pending"
+            "result": "eliminated"
           },
           {
             "round": 5,
@@ -2548,9 +2548,9 @@
       },
       "mc": {
         "p_first": 0.0,
-        "p_top2": 0.4837,
-        "p_top3": 0.4837,
-        "expected_score": 111.78,
+        "p_top2": 0.4846,
+        "p_top3": 0.4846,
+        "expected_score": 101.05,
         "calibration_rank": 6,
         "calibration_of": 8
       }
@@ -2560,8 +2560,8 @@
       "student_names": "Juliano",
       "logo": null,
       "score": {
-        "total_score": 75,
-        "max_possible": 139,
+        "total_score": 83,
+        "max_possible": 99,
         "max_total": 192,
         "rounds_completed": 4,
         "in_progress": true,
@@ -2594,8 +2594,8 @@
             "round": 4,
             "points_per_game": 8,
             "total_games": 4,
-            "correct": 1,
-            "points_earned": 8,
+            "correct": 2,
+            "points_earned": 16,
             "max_points": 32
           },
           "Final Four": {
@@ -2605,7 +2605,7 @@
             "correct": 0,
             "points_earned": 0,
             "max_points": 32,
-            "still_alive": 2
+            "still_alive": 1
           },
           "Championship": {
             "round": 6,
@@ -2614,7 +2614,7 @@
             "correct": 0,
             "points_earned": 0,
             "max_points": 32,
-            "still_alive": 1
+            "still_alive": 0
           }
         },
         "brier_score": 0.124633
@@ -2921,7 +2921,7 @@
                   "loser": "(2) Connecticut",
                   "winner_prob": 0.6192,
                   "home_win_prob": 0.3808,
-                  "result": "pending"
+                  "result": "incorrect"
                 }
               ]
             ],
@@ -3523,7 +3523,7 @@
                   "loser": "(3) Virginia",
                   "winner_prob": 0.5705,
                   "home_win_prob": 0.5705,
-                  "result": "pending"
+                  "result": "correct"
                 }
               ]
             ],
@@ -3852,7 +3852,7 @@
             "loser": "(2) Houston",
             "winner_prob": 0.6237,
             "home_win_prob": 0.3763,
-            "result": "pending"
+            "result": "eliminated"
           },
           {
             "round": 5,
@@ -3891,7 +3891,7 @@
           "loser": "(1) Michigan",
           "winner_prob": 0.5234,
           "home_win_prob": 0.4766,
-          "result": "pending"
+          "result": "eliminated"
         },
         "champion": {
           "team_id": 1181,
@@ -4181,7 +4181,7 @@
             "loser": "(2) Connecticut",
             "winner_prob": 0.6192,
             "home_win_prob": 0.3808,
-            "result": "pending"
+            "result": "incorrect"
           },
           {
             "round": 1,
@@ -4751,7 +4751,7 @@
             "loser": "(3) Virginia",
             "winner_prob": 0.5705,
             "home_win_prob": 0.5705,
-            "result": "pending"
+            "result": "correct"
           },
           {
             "round": 1,
@@ -5055,7 +5055,7 @@
             "loser": "(2) Houston",
             "winner_prob": 0.6237,
             "home_win_prob": 0.3763,
-            "result": "pending"
+            "result": "eliminated"
           },
           {
             "round": 5,
@@ -5093,15 +5093,15 @@
             "loser": "(1) Michigan",
             "winner_prob": 0.5234,
             "home_win_prob": 0.4766,
-            "result": "pending"
+            "result": "eliminated"
           }
         ]
       },
       "mc": {
-        "p_first": 0.2008,
-        "p_top2": 0.5163,
-        "p_top3": 0.5163,
-        "expected_score": 104.63,
+        "p_first": 0.0,
+        "p_top2": 0.5154,
+        "p_top3": 0.5154,
+        "expected_score": 91.25,
         "calibration_rank": 5,
         "calibration_of": 8
       }
@@ -5111,8 +5111,8 @@
       "student_names": "Kristina & Marcos",
       "logo": null,
       "score": {
-        "total_score": 75,
-        "max_possible": 139,
+        "total_score": 83,
+        "max_possible": 131,
         "max_total": 192,
         "rounds_completed": 4,
         "in_progress": true,
@@ -5145,8 +5145,8 @@
             "round": 4,
             "points_per_game": 8,
             "total_games": 4,
-            "correct": 1,
-            "points_earned": 8,
+            "correct": 2,
+            "points_earned": 16,
             "max_points": 32
           },
           "Final Four": {
@@ -5156,7 +5156,7 @@
             "correct": 0,
             "points_earned": 0,
             "max_points": 32,
-            "still_alive": 2
+            "still_alive": 1
           },
           "Championship": {
             "round": 6,
@@ -5472,7 +5472,7 @@
                   "loser": "(2) Connecticut",
                   "winner_prob": 0.6128,
                   "home_win_prob": 0.3872,
-                  "result": "pending"
+                  "result": "incorrect"
                 }
               ]
             ],
@@ -6074,7 +6074,7 @@
                   "loser": "(2) Iowa St",
                   "winner_prob": 0.5909,
                   "home_win_prob": 0.5909,
-                  "result": "pending"
+                  "result": "correct"
                 }
               ]
             ],
@@ -6403,7 +6403,7 @@
             "loser": "(1) Florida",
             "winner_prob": 0.5565,
             "home_win_prob": 0.4435,
-            "result": "pending"
+            "result": "eliminated"
           },
           {
             "round": 5,
@@ -6732,7 +6732,7 @@
             "loser": "(2) Connecticut",
             "winner_prob": 0.6128,
             "home_win_prob": 0.3872,
-            "result": "pending"
+            "result": "incorrect"
           },
           {
             "round": 1,
@@ -7302,7 +7302,7 @@
             "loser": "(2) Iowa St",
             "winner_prob": 0.5909,
             "home_win_prob": 0.5909,
-            "result": "pending"
+            "result": "correct"
           },
           {
             "round": 1,
@@ -7606,7 +7606,7 @@
             "loser": "(1) Florida",
             "winner_prob": 0.5565,
             "home_win_prob": 0.4435,
-            "result": "pending"
+            "result": "eliminated"
           },
           {
             "round": 5,
@@ -7649,10 +7649,10 @@
         ]
       },
       "mc": {
-        "p_first": 0.3155,
-        "p_top2": 0.3155,
-        "p_top3": 0.3205,
-        "expected_score": 105.3,
+        "p_first": 0.5154,
+        "p_top2": 0.5154,
+        "p_top3": 0.5154,
+        "expected_score": 101.34,
         "calibration_rank": 1,
         "calibration_of": 8
       }
@@ -7662,8 +7662,8 @@
       "student_names": "Thomas & Ben",
       "logo": null,
       "score": {
-        "total_score": 74,
-        "max_possible": 138,
+        "total_score": 82,
+        "max_possible": 98,
         "max_total": 192,
         "rounds_completed": 4,
         "in_progress": true,
@@ -7696,8 +7696,8 @@
             "round": 4,
             "points_per_game": 8,
             "total_games": 4,
-            "correct": 1,
-            "points_earned": 8,
+            "correct": 2,
+            "points_earned": 16,
             "max_points": 32
           },
           "Final Four": {
@@ -7707,7 +7707,7 @@
             "correct": 0,
             "points_earned": 0,
             "max_points": 32,
-            "still_alive": 2
+            "still_alive": 1
           },
           "Championship": {
             "round": 6,
@@ -7716,7 +7716,7 @@
             "correct": 0,
             "points_earned": 0,
             "max_points": 32,
-            "still_alive": 1
+            "still_alive": 0
           }
         },
         "brier_score": 0.134115
@@ -8023,7 +8023,7 @@
                   "loser": "(2) Connecticut",
                   "winner_prob": 0.5887,
                   "home_win_prob": 0.4113,
-                  "result": "pending"
+                  "result": "incorrect"
                 }
               ]
             ],
@@ -8625,7 +8625,7 @@
                   "loser": "(3) Virginia",
                   "winner_prob": 0.563,
                   "home_win_prob": 0.563,
-                  "result": "pending"
+                  "result": "correct"
                 }
               ]
             ],
@@ -8954,7 +8954,7 @@
             "loser": "(2) Houston",
             "winner_prob": 0.6325,
             "home_win_prob": 0.3675,
-            "result": "pending"
+            "result": "eliminated"
           },
           {
             "round": 5,
@@ -8993,7 +8993,7 @@
           "loser": "(1) Michigan",
           "winner_prob": 0.5344,
           "home_win_prob": 0.4656,
-          "result": "pending"
+          "result": "eliminated"
         },
         "champion": {
           "team_id": 1181,
@@ -9283,7 +9283,7 @@
             "loser": "(2) Connecticut",
             "winner_prob": 0.5887,
             "home_win_prob": 0.4113,
-            "result": "pending"
+            "result": "incorrect"
           },
           {
             "round": 1,
@@ -9853,7 +9853,7 @@
             "loser": "(3) Virginia",
             "winner_prob": 0.563,
             "home_win_prob": 0.563,
-            "result": "pending"
+            "result": "correct"
           },
           {
             "round": 1,
@@ -10157,7 +10157,7 @@
             "loser": "(2) Houston",
             "winner_prob": 0.6325,
             "home_win_prob": 0.3675,
-            "result": "pending"
+            "result": "eliminated"
           },
           {
             "round": 5,
@@ -10195,15 +10195,15 @@
             "loser": "(1) Michigan",
             "winner_prob": 0.5344,
             "home_win_prob": 0.4656,
-            "result": "pending"
+            "result": "eliminated"
           }
         ]
       },
       "mc": {
         "p_first": 0.0,
-        "p_top2": 0.2008,
-        "p_top3": 0.5163,
-        "expected_score": 103.63,
+        "p_top2": 0.0,
+        "p_top3": 0.5154,
+        "expected_score": 90.25,
         "calibration_rank": 7,
         "calibration_of": 8
       }
@@ -10213,8 +10213,8 @@
       "student_names": "Will",
       "logo": null,
       "score": {
-        "total_score": 66,
-        "max_possible": 130,
+        "total_score": 74,
+        "max_possible": 90,
         "max_total": 192,
         "rounds_completed": 4,
         "in_progress": true,
@@ -10247,8 +10247,8 @@
             "round": 4,
             "points_per_game": 8,
             "total_games": 4,
-            "correct": 0,
-            "points_earned": 0,
+            "correct": 1,
+            "points_earned": 8,
             "max_points": 32
           },
           "Final Four": {
@@ -10258,7 +10258,7 @@
             "correct": 0,
             "points_earned": 0,
             "max_points": 32,
-            "still_alive": 2
+            "still_alive": 1
           },
           "Championship": {
             "round": 6,
@@ -10267,7 +10267,7 @@
             "correct": 0,
             "points_earned": 0,
             "max_points": 32,
-            "still_alive": 1
+            "still_alive": 0
           }
         },
         "brier_score": 0.113573
@@ -10574,7 +10574,7 @@
                   "loser": "(2) Connecticut",
                   "winner_prob": 0.6637,
                   "home_win_prob": 0.3363,
-                  "result": "pending"
+                  "result": "incorrect"
                 }
               ]
             ],
@@ -11176,7 +11176,7 @@
                   "loser": "(2) Iowa St",
                   "winner_prob": 0.5521,
                   "home_win_prob": 0.5521,
-                  "result": "pending"
+                  "result": "correct"
                 }
               ]
             ],
@@ -11505,7 +11505,7 @@
             "loser": "(1) Florida",
             "winner_prob": 0.6142,
             "home_win_prob": 0.3858,
-            "result": "pending"
+            "result": "eliminated"
           },
           {
             "round": 5,
@@ -11544,7 +11544,7 @@
           "loser": "(1) Michigan",
           "winner_prob": 0.5435,
           "home_win_prob": 0.4565,
-          "result": "pending"
+          "result": "eliminated"
         },
         "champion": {
           "team_id": 1181,
@@ -11834,7 +11834,7 @@
             "loser": "(2) Connecticut",
             "winner_prob": 0.6637,
             "home_win_prob": 0.3363,
-            "result": "pending"
+            "result": "incorrect"
           },
           {
             "round": 1,
@@ -12404,7 +12404,7 @@
             "loser": "(2) Iowa St",
             "winner_prob": 0.5521,
             "home_win_prob": 0.5521,
-            "result": "pending"
+            "result": "correct"
           },
           {
             "round": 1,
@@ -12708,7 +12708,7 @@
             "loser": "(1) Florida",
             "winner_prob": 0.6142,
             "home_win_prob": 0.3858,
-            "result": "pending"
+            "result": "eliminated"
           },
           {
             "round": 5,
@@ -12746,15 +12746,15 @@
             "loser": "(1) Michigan",
             "winner_prob": 0.5435,
             "home_win_prob": 0.4565,
-            "result": "pending"
+            "result": "eliminated"
           }
         ]
       },
       "mc": {
         "p_first": 0.0,
         "p_top2": 0.0,
-        "p_top3": 0.2008,
-        "expected_score": 95.63,
+        "p_top3": 0.0,
+        "expected_score": 82.25,
         "calibration_rank": 3,
         "calibration_of": 8
       }
@@ -12764,8 +12764,8 @@
       "student_names": "Cassidy",
       "logo": null,
       "score": {
-        "total_score": 78,
-        "max_possible": 142,
+        "total_score": 86,
+        "max_possible": 134,
         "max_total": 192,
         "rounds_completed": 4,
         "in_progress": true,
@@ -12798,8 +12798,8 @@
             "round": 4,
             "points_per_game": 8,
             "total_games": 4,
-            "correct": 1,
-            "points_earned": 8,
+            "correct": 2,
+            "points_earned": 16,
             "max_points": 32
           },
           "Final Four": {
@@ -12809,7 +12809,7 @@
             "correct": 0,
             "points_earned": 0,
             "max_points": 32,
-            "still_alive": 2
+            "still_alive": 1
           },
           "Championship": {
             "round": 6,
@@ -13125,7 +13125,7 @@
                   "loser": "(2) Connecticut",
                   "winner_prob": 0.6639,
                   "home_win_prob": 0.3361,
-                  "result": "pending"
+                  "result": "incorrect"
                 }
               ]
             ],
@@ -13727,7 +13727,7 @@
                   "loser": "(3) Virginia",
                   "winner_prob": 0.65,
                   "home_win_prob": 0.65,
-                  "result": "pending"
+                  "result": "correct"
                 }
               ]
             ],
@@ -14056,7 +14056,7 @@
             "loser": "(1) Florida",
             "winner_prob": 0.6245,
             "home_win_prob": 0.3755,
-            "result": "pending"
+            "result": "eliminated"
           },
           {
             "round": 5,
@@ -14385,7 +14385,7 @@
             "loser": "(2) Connecticut",
             "winner_prob": 0.6639,
             "home_win_prob": 0.3361,
-            "result": "pending"
+            "result": "incorrect"
           },
           {
             "round": 1,
@@ -14955,7 +14955,7 @@
             "loser": "(3) Virginia",
             "winner_prob": 0.65,
             "home_win_prob": 0.65,
-            "result": "pending"
+            "result": "correct"
           },
           {
             "round": 1,
@@ -15259,7 +15259,7 @@
             "loser": "(1) Florida",
             "winner_prob": 0.6245,
             "home_win_prob": 0.3755,
-            "result": "pending"
+            "result": "eliminated"
           },
           {
             "round": 5,
@@ -15302,10 +15302,10 @@
         ]
       },
       "mc": {
-        "p_first": 0.4837,
-        "p_top2": 0.4837,
-        "p_top3": 0.4837,
-        "expected_score": 113.78,
+        "p_first": 0.4846,
+        "p_top2": 0.4846,
+        "p_top3": 0.4846,
+        "expected_score": 103.05,
         "calibration_rank": 4,
         "calibration_of": 8
       }
@@ -15315,8 +15315,8 @@
       "student_names": "Jonathan",
       "logo": null,
       "score": {
-        "total_score": 76,
-        "max_possible": 124,
+        "total_score": 84,
+        "max_possible": 132,
         "max_total": 192,
         "rounds_completed": 4,
         "in_progress": true,
@@ -15349,8 +15349,8 @@
             "round": 4,
             "points_per_game": 8,
             "total_games": 4,
-            "correct": 1,
-            "points_earned": 8,
+            "correct": 2,
+            "points_earned": 16,
             "max_points": 32
           },
           "Final Four": {
@@ -15676,7 +15676,7 @@
                   "loser": "(2) Connecticut",
                   "winner_prob": 0.5433,
                   "home_win_prob": 0.4567,
-                  "result": "pending"
+                  "result": "incorrect"
                 }
               ]
             ],
@@ -16278,7 +16278,7 @@
                   "loser": "(2) Iowa St",
                   "winner_prob": 0.5631,
                   "home_win_prob": 0.5631,
-                  "result": "pending"
+                  "result": "correct"
                 }
               ]
             ],
@@ -16936,7 +16936,7 @@
             "loser": "(2) Connecticut",
             "winner_prob": 0.5433,
             "home_win_prob": 0.4567,
-            "result": "pending"
+            "result": "incorrect"
           },
           {
             "round": 1,
@@ -17506,7 +17506,7 @@
             "loser": "(2) Iowa St",
             "winner_prob": 0.5631,
             "home_win_prob": 0.5631,
-            "result": "pending"
+            "result": "correct"
           },
           {
             "round": 1,
@@ -17855,8 +17855,8 @@
       "mc": {
         "p_first": 0.0,
         "p_top2": 0.0,
-        "p_top3": 0.4787,
-        "expected_score": 105.75,
+        "p_top3": 0.4846,
+        "expected_score": 101.05,
         "calibration_rank": 8,
         "calibration_of": 8
       }
@@ -17866,8 +17866,8 @@
       "student_names": "Chris",
       "logo": null,
       "score": {
-        "total_score": 66,
-        "max_possible": 130,
+        "total_score": 74,
+        "max_possible": 90,
         "max_total": 192,
         "rounds_completed": 4,
         "in_progress": true,
@@ -17900,8 +17900,8 @@
             "round": 4,
             "points_per_game": 8,
             "total_games": 4,
-            "correct": 0,
-            "points_earned": 0,
+            "correct": 1,
+            "points_earned": 8,
             "max_points": 32
           },
           "Final Four": {
@@ -17911,7 +17911,7 @@
             "correct": 0,
             "points_earned": 0,
             "max_points": 32,
-            "still_alive": 2
+            "still_alive": 1
           },
           "Championship": {
             "round": 6,
@@ -17920,7 +17920,7 @@
             "correct": 0,
             "points_earned": 0,
             "max_points": 32,
-            "still_alive": 1
+            "still_alive": 0
           }
         },
         "brier_score": 0.113573
@@ -18227,7 +18227,7 @@
                   "loser": "(2) Connecticut",
                   "winner_prob": 0.6637,
                   "home_win_prob": 0.3363,
-                  "result": "pending"
+                  "result": "incorrect"
                 }
               ]
             ],
@@ -18829,7 +18829,7 @@
                   "loser": "(2) Iowa St",
                   "winner_prob": 0.5521,
                   "home_win_prob": 0.5521,
-                  "result": "pending"
+                  "result": "correct"
                 }
               ]
             ],
@@ -19158,7 +19158,7 @@
             "loser": "(1) Florida",
             "winner_prob": 0.6142,
             "home_win_prob": 0.3858,
-            "result": "pending"
+            "result": "eliminated"
           },
           {
             "round": 5,
@@ -19197,7 +19197,7 @@
           "loser": "(1) Michigan",
           "winner_prob": 0.5435,
           "home_win_prob": 0.4565,
-          "result": "pending"
+          "result": "eliminated"
         },
         "champion": {
           "team_id": 1181,
@@ -19487,7 +19487,7 @@
             "loser": "(2) Connecticut",
             "winner_prob": 0.6637,
             "home_win_prob": 0.3363,
-            "result": "pending"
+            "result": "incorrect"
           },
           {
             "round": 1,
@@ -20057,7 +20057,7 @@
             "loser": "(2) Iowa St",
             "winner_prob": 0.5521,
             "home_win_prob": 0.5521,
-            "result": "pending"
+            "result": "correct"
           },
           {
             "round": 1,
@@ -20361,7 +20361,7 @@
             "loser": "(1) Florida",
             "winner_prob": 0.6142,
             "home_win_prob": 0.3858,
-            "result": "pending"
+            "result": "eliminated"
           },
           {
             "round": 5,
@@ -20399,15 +20399,15 @@
             "loser": "(1) Michigan",
             "winner_prob": 0.5435,
             "home_win_prob": 0.4565,
-            "result": "pending"
+            "result": "eliminated"
           }
         ]
       },
       "mc": {
         "p_first": 0.0,
         "p_top2": 0.0,
-        "p_top3": 0.2008,
-        "expected_score": 95.63,
+        "p_top3": 0.0,
+        "expected_score": 82.25,
         "calibration_rank": 2,
         "calibration_of": 8
       }
@@ -20415,8 +20415,8 @@
   ],
   "mc_meta": {
     "n_simulations": 10000,
-    "games_played": 58,
-    "games_remaining": 5,
+    "games_played": 60,
+    "games_remaining": 3,
     "tournament_complete": false
   }
 }
