@@ -1,8 +1,8 @@
 {
   "season": 2026,
-  "last_updated": "2026-04-05T15:47:06.372048+00:00",
+  "last_updated": "2026-03-30T01:06:01.189829+00:00",
   "tournament_status": "in_progress",
-  "rounds_completed": 5,
+  "rounds_completed": 4,
   "entries": [
     {
       "team_name": "Joshua Basketball",
@@ -10,9 +10,9 @@
       "logo": null,
       "score": {
         "total_score": 84,
-        "max_possible": 84,
+        "max_possible": 132,
         "max_total": 192,
-        "rounds_completed": 5,
+        "rounds_completed": 4,
         "in_progress": true,
         "round_breakdown": {
           "Round of 64": {
@@ -53,7 +53,8 @@
             "total_games": 2,
             "correct": 0,
             "points_earned": 0,
-            "max_points": 32
+            "max_points": 32,
+            "still_alive": 1
           },
           "Championship": {
             "round": 6,
@@ -62,7 +63,7 @@
             "correct": 0,
             "points_earned": 0,
             "max_points": 32,
-            "still_alive": 0
+            "still_alive": 1
           }
         },
         "brier_score": 0.13369
@@ -1319,7 +1320,7 @@
             "loser": "(1) Michigan",
             "winner_prob": 0.507,
             "home_win_prob": 0.507,
-            "result": "incorrect"
+            "result": "pending"
           }
         ],
         "championship": {
@@ -1339,7 +1340,7 @@
           "loser": "(1) Duke",
           "winner_prob": 0.516,
           "home_win_prob": 0.516,
-          "result": "eliminated"
+          "result": "pending"
         },
         "champion": {
           "team_id": 1112,
@@ -2522,7 +2523,7 @@
             "loser": "(1) Michigan",
             "winner_prob": 0.507,
             "home_win_prob": 0.507,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 6,
@@ -2541,15 +2542,15 @@
             "loser": "(1) Duke",
             "winner_prob": 0.516,
             "home_win_prob": 0.516,
-            "result": "eliminated"
+            "result": "pending"
           }
         ]
       },
       "mc": {
         "p_first": 0.0,
-        "p_top2": 0.0,
-        "p_top3": 0.0,
-        "expected_score": 84.0,
+        "p_top2": 0.4846,
+        "p_top3": 0.4846,
+        "expected_score": 101.05,
         "calibration_rank": 6,
         "calibration_of": 8
       }
@@ -2559,10 +2560,10 @@
       "student_names": "Juliano",
       "logo": null,
       "score": {
-        "total_score": 99,
+        "total_score": 83,
         "max_possible": 99,
         "max_total": 192,
-        "rounds_completed": 5,
+        "rounds_completed": 4,
         "in_progress": true,
         "round_breakdown": {
           "Round of 64": {
@@ -2601,9 +2602,10 @@
             "round": 5,
             "points_per_game": 16,
             "total_games": 2,
-            "correct": 1,
-            "points_earned": 16,
-            "max_points": 32
+            "correct": 0,
+            "points_earned": 0,
+            "max_points": 32,
+            "still_alive": 1
           },
           "Championship": {
             "round": 6,
@@ -3869,7 +3871,7 @@
             "loser": "(1) Arizona",
             "winner_prob": 0.524,
             "home_win_prob": 0.476,
-            "result": "correct"
+            "result": "pending"
           }
         ],
         "championship": {
@@ -5072,7 +5074,7 @@
             "loser": "(1) Arizona",
             "winner_prob": 0.524,
             "home_win_prob": 0.476,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 6,
@@ -5097,9 +5099,9 @@
       },
       "mc": {
         "p_first": 0.0,
-        "p_top2": 1.0,
-        "p_top3": 1.0,
-        "expected_score": 99.0,
+        "p_top2": 0.5154,
+        "p_top3": 0.5154,
+        "expected_score": 91.25,
         "calibration_rank": 5,
         "calibration_of": 8
       }
@@ -5109,10 +5111,10 @@
       "student_names": "Kristina & Marcos",
       "logo": null,
       "score": {
-        "total_score": 99,
+        "total_score": 83,
         "max_possible": 131,
         "max_total": 192,
-        "rounds_completed": 5,
+        "rounds_completed": 4,
         "in_progress": true,
         "round_breakdown": {
           "Round of 64": {
@@ -5151,9 +5153,10 @@
             "round": 5,
             "points_per_game": 16,
             "total_games": 2,
-            "correct": 1,
-            "points_earned": 16,
-            "max_points": 32
+            "correct": 0,
+            "points_earned": 0,
+            "max_points": 32,
+            "still_alive": 1
           },
           "Championship": {
             "round": 6,
@@ -6419,7 +6422,7 @@
             "loser": "(1) Arizona",
             "winner_prob": 0.5108,
             "home_win_prob": 0.4892,
-            "result": "correct"
+            "result": "pending"
           }
         ],
         "championship": {
@@ -7622,7 +7625,7 @@
             "loser": "(1) Arizona",
             "winner_prob": 0.5108,
             "home_win_prob": 0.4892,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 6,
@@ -7646,10 +7649,10 @@
         ]
       },
       "mc": {
-        "p_first": 1.0,
-        "p_top2": 1.0,
-        "p_top3": 1.0,
-        "expected_score": 118.8,
+        "p_first": 0.5154,
+        "p_top2": 0.5154,
+        "p_top3": 0.5154,
+        "expected_score": 101.34,
         "calibration_rank": 1,
         "calibration_of": 8
       }
@@ -7659,10 +7662,10 @@
       "student_names": "Thomas & Ben",
       "logo": null,
       "score": {
-        "total_score": 98,
+        "total_score": 82,
         "max_possible": 98,
         "max_total": 192,
-        "rounds_completed": 5,
+        "rounds_completed": 4,
         "in_progress": true,
         "round_breakdown": {
           "Round of 64": {
@@ -7701,9 +7704,10 @@
             "round": 5,
             "points_per_game": 16,
             "total_games": 2,
-            "correct": 1,
-            "points_earned": 16,
-            "max_points": 32
+            "correct": 0,
+            "points_earned": 0,
+            "max_points": 32,
+            "still_alive": 1
           },
           "Championship": {
             "round": 6,
@@ -8969,7 +8973,7 @@
             "loser": "(1) Arizona",
             "winner_prob": 0.5495,
             "home_win_prob": 0.4505,
-            "result": "correct"
+            "result": "pending"
           }
         ],
         "championship": {
@@ -10172,7 +10176,7 @@
             "loser": "(1) Arizona",
             "winner_prob": 0.5495,
             "home_win_prob": 0.4505,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 6,
@@ -10198,8 +10202,8 @@
       "mc": {
         "p_first": 0.0,
         "p_top2": 0.0,
-        "p_top3": 1.0,
-        "expected_score": 98.0,
+        "p_top3": 0.5154,
+        "expected_score": 90.25,
         "calibration_rank": 7,
         "calibration_of": 8
       }
@@ -10209,10 +10213,10 @@
       "student_names": "Will",
       "logo": null,
       "score": {
-        "total_score": 90,
+        "total_score": 74,
         "max_possible": 90,
         "max_total": 192,
-        "rounds_completed": 5,
+        "rounds_completed": 4,
         "in_progress": true,
         "round_breakdown": {
           "Round of 64": {
@@ -10251,9 +10255,10 @@
             "round": 5,
             "points_per_game": 16,
             "total_games": 2,
-            "correct": 1,
-            "points_earned": 16,
-            "max_points": 32
+            "correct": 0,
+            "points_earned": 0,
+            "max_points": 32,
+            "still_alive": 1
           },
           "Championship": {
             "round": 6,
@@ -11519,7 +11524,7 @@
             "loser": "(3) Gonzaga",
             "winner_prob": 0.5856,
             "home_win_prob": 0.4144,
-            "result": "correct"
+            "result": "pending"
           }
         ],
         "championship": {
@@ -12722,7 +12727,7 @@
             "loser": "(3) Gonzaga",
             "winner_prob": 0.5856,
             "home_win_prob": 0.4144,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 6,
@@ -12749,7 +12754,7 @@
         "p_first": 0.0,
         "p_top2": 0.0,
         "p_top3": 0.0,
-        "expected_score": 90.0,
+        "expected_score": 82.25,
         "calibration_rank": 3,
         "calibration_of": 8
       }
@@ -12760,9 +12765,9 @@
       "logo": null,
       "score": {
         "total_score": 86,
-        "max_possible": 86,
+        "max_possible": 134,
         "max_total": 192,
-        "rounds_completed": 5,
+        "rounds_completed": 4,
         "in_progress": true,
         "round_breakdown": {
           "Round of 64": {
@@ -12803,7 +12808,8 @@
             "total_games": 2,
             "correct": 0,
             "points_earned": 0,
-            "max_points": 32
+            "max_points": 32,
+            "still_alive": 1
           },
           "Championship": {
             "round": 6,
@@ -12812,7 +12818,7 @@
             "correct": 0,
             "points_earned": 0,
             "max_points": 32,
-            "still_alive": 0
+            "still_alive": 1
           }
         },
         "brier_score": 0.117665
@@ -14069,7 +14075,7 @@
             "loser": "(1) Michigan",
             "winner_prob": 0.5621,
             "home_win_prob": 0.5621,
-            "result": "incorrect"
+            "result": "pending"
           }
         ],
         "championship": {
@@ -14089,7 +14095,7 @@
           "loser": "(1) Duke",
           "winner_prob": 0.5084,
           "home_win_prob": 0.5084,
-          "result": "eliminated"
+          "result": "pending"
         },
         "champion": {
           "team_id": 1112,
@@ -15272,7 +15278,7 @@
             "loser": "(1) Michigan",
             "winner_prob": 0.5621,
             "home_win_prob": 0.5621,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 6,
@@ -15291,15 +15297,15 @@
             "loser": "(1) Duke",
             "winner_prob": 0.5084,
             "home_win_prob": 0.5084,
-            "result": "eliminated"
+            "result": "pending"
           }
         ]
       },
       "mc": {
-        "p_first": 0.0,
-        "p_top2": 0.0,
-        "p_top3": 0.0,
-        "expected_score": 86.0,
+        "p_first": 0.4846,
+        "p_top2": 0.4846,
+        "p_top3": 0.4846,
+        "expected_score": 103.05,
         "calibration_rank": 4,
         "calibration_of": 8
       }
@@ -15310,9 +15316,9 @@
       "logo": null,
       "score": {
         "total_score": 84,
-        "max_possible": 84,
+        "max_possible": 132,
         "max_total": 192,
-        "rounds_completed": 5,
+        "rounds_completed": 4,
         "in_progress": true,
         "round_breakdown": {
           "Round of 64": {
@@ -15353,7 +15359,8 @@
             "total_games": 2,
             "correct": 0,
             "points_earned": 0,
-            "max_points": 32
+            "max_points": 32,
+            "still_alive": 1
           },
           "Championship": {
             "round": 6,
@@ -15362,7 +15369,7 @@
             "correct": 0,
             "points_earned": 0,
             "max_points": 32,
-            "still_alive": 0
+            "still_alive": 1
           }
         },
         "brier_score": 0.144383
@@ -16619,7 +16626,7 @@
             "loser": "(1) Michigan",
             "winner_prob": 0.5207,
             "home_win_prob": 0.5207,
-            "result": "incorrect"
+            "result": "pending"
           }
         ],
         "championship": {
@@ -16639,7 +16646,7 @@
           "loser": "(1) Florida",
           "winner_prob": 0.5978,
           "home_win_prob": 0.5978,
-          "result": "eliminated"
+          "result": "pending"
         },
         "champion": {
           "team_id": 1112,
@@ -17822,7 +17829,7 @@
             "loser": "(1) Michigan",
             "winner_prob": 0.5207,
             "home_win_prob": 0.5207,
-            "result": "incorrect"
+            "result": "pending"
           },
           {
             "round": 6,
@@ -17841,15 +17848,15 @@
             "loser": "(1) Florida",
             "winner_prob": 0.5978,
             "home_win_prob": 0.5978,
-            "result": "eliminated"
+            "result": "pending"
           }
         ]
       },
       "mc": {
         "p_first": 0.0,
         "p_top2": 0.0,
-        "p_top3": 0.0,
-        "expected_score": 84.0,
+        "p_top3": 0.4846,
+        "expected_score": 101.05,
         "calibration_rank": 8,
         "calibration_of": 8
       }
@@ -17859,10 +17866,10 @@
       "student_names": "Chris",
       "logo": null,
       "score": {
-        "total_score": 90,
+        "total_score": 74,
         "max_possible": 90,
         "max_total": 192,
-        "rounds_completed": 5,
+        "rounds_completed": 4,
         "in_progress": true,
         "round_breakdown": {
           "Round of 64": {
@@ -17901,9 +17908,10 @@
             "round": 5,
             "points_per_game": 16,
             "total_games": 2,
-            "correct": 1,
-            "points_earned": 16,
-            "max_points": 32
+            "correct": 0,
+            "points_earned": 0,
+            "max_points": 32,
+            "still_alive": 1
           },
           "Championship": {
             "round": 6,
@@ -19169,7 +19177,7 @@
             "loser": "(3) Gonzaga",
             "winner_prob": 0.5856,
             "home_win_prob": 0.4144,
-            "result": "correct"
+            "result": "pending"
           }
         ],
         "championship": {
@@ -20372,7 +20380,7 @@
             "loser": "(3) Gonzaga",
             "winner_prob": 0.5856,
             "home_win_prob": 0.4144,
-            "result": "correct"
+            "result": "pending"
           },
           {
             "round": 6,
@@ -20399,7 +20407,7 @@
         "p_first": 0.0,
         "p_top2": 0.0,
         "p_top3": 0.0,
-        "expected_score": 90.0,
+        "expected_score": 82.25,
         "calibration_rank": 2,
         "calibration_of": 8
       }
@@ -20407,8 +20415,8 @@
   ],
   "mc_meta": {
     "n_simulations": 10000,
-    "games_played": 62,
-    "games_remaining": 1,
+    "games_played": 60,
+    "games_remaining": 3,
     "tournament_complete": false
   }
 }
