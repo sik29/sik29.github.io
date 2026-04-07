@@ -1,8 +1,8 @@
 {
   "season": 2026,
-  "last_updated": "2026-04-07T12:19:26.333845+00:00",
-  "tournament_status": "completed",
-  "rounds_completed": 6,
+  "last_updated": "2026-04-05T15:47:06.372048+00:00",
+  "tournament_status": "in_progress",
+  "rounds_completed": 5,
   "entries": [
     {
       "team_name": "Joshua Basketball",
@@ -12,8 +12,8 @@
         "total_score": 84,
         "max_possible": 84,
         "max_total": 192,
-        "rounds_completed": 6,
-        "in_progress": false,
+        "rounds_completed": 5,
+        "in_progress": true,
         "round_breakdown": {
           "Round of 64": {
             "round": 1,
@@ -61,7 +61,8 @@
             "total_games": 1,
             "correct": 0,
             "points_earned": 0,
-            "max_points": 32
+            "max_points": 32,
+            "still_alive": 0
           }
         },
         "brier_score": 0.13369
@@ -2543,6 +2544,14 @@
             "result": "eliminated"
           }
         ]
+      },
+      "mc": {
+        "p_first": 0.0,
+        "p_top2": 0.0,
+        "p_top3": 0.0,
+        "expected_score": 84.0,
+        "calibration_rank": 6,
+        "calibration_of": 8
       }
     },
     {
@@ -2553,8 +2562,8 @@
         "total_score": 99,
         "max_possible": 99,
         "max_total": 192,
-        "rounds_completed": 6,
-        "in_progress": false,
+        "rounds_completed": 5,
+        "in_progress": true,
         "round_breakdown": {
           "Round of 64": {
             "round": 1,
@@ -2602,7 +2611,8 @@
             "total_games": 1,
             "correct": 0,
             "points_earned": 0,
-            "max_points": 32
+            "max_points": 32,
+            "still_alive": 0
           }
         },
         "brier_score": 0.124633
@@ -3879,7 +3889,7 @@
           "loser": "(1) Michigan",
           "winner_prob": 0.5234,
           "home_win_prob": 0.4766,
-          "result": "incorrect"
+          "result": "eliminated"
         },
         "champion": {
           "team_id": 1181,
@@ -5081,9 +5091,17 @@
             "loser": "(1) Michigan",
             "winner_prob": 0.5234,
             "home_win_prob": 0.4766,
-            "result": "incorrect"
+            "result": "eliminated"
           }
         ]
+      },
+      "mc": {
+        "p_first": 0.0,
+        "p_top2": 1.0,
+        "p_top3": 1.0,
+        "expected_score": 99.0,
+        "calibration_rank": 5,
+        "calibration_of": 8
       }
     },
     {
@@ -5091,11 +5109,11 @@
       "student_names": "Kristina & Marcos",
       "logo": null,
       "score": {
-        "total_score": 131,
+        "total_score": 99,
         "max_possible": 131,
         "max_total": 192,
-        "rounds_completed": 6,
-        "in_progress": false,
+        "rounds_completed": 5,
+        "in_progress": true,
         "round_breakdown": {
           "Round of 64": {
             "round": 1,
@@ -5141,9 +5159,10 @@
             "round": 6,
             "points_per_game": 32,
             "total_games": 1,
-            "correct": 1,
-            "points_earned": 32,
-            "max_points": 32
+            "correct": 0,
+            "points_earned": 0,
+            "max_points": 32,
+            "still_alive": 1
           }
         },
         "brier_score": 0.111533
@@ -6420,7 +6439,7 @@
           "loser": "(1) Duke",
           "winner_prob": 0.5217,
           "home_win_prob": 0.5217,
-          "result": "correct"
+          "result": "pending"
         },
         "champion": {
           "team_id": 1276,
@@ -7622,9 +7641,17 @@
             "loser": "(1) Duke",
             "winner_prob": 0.5217,
             "home_win_prob": 0.5217,
-            "result": "correct"
+            "result": "pending"
           }
         ]
+      },
+      "mc": {
+        "p_first": 1.0,
+        "p_top2": 1.0,
+        "p_top3": 1.0,
+        "expected_score": 118.8,
+        "calibration_rank": 1,
+        "calibration_of": 8
       }
     },
     {
@@ -7635,8 +7662,8 @@
         "total_score": 98,
         "max_possible": 98,
         "max_total": 192,
-        "rounds_completed": 6,
-        "in_progress": false,
+        "rounds_completed": 5,
+        "in_progress": true,
         "round_breakdown": {
           "Round of 64": {
             "round": 1,
@@ -7684,7 +7711,8 @@
             "total_games": 1,
             "correct": 0,
             "points_earned": 0,
-            "max_points": 32
+            "max_points": 32,
+            "still_alive": 0
           }
         },
         "brier_score": 0.134115
@@ -8961,7 +8989,7 @@
           "loser": "(1) Michigan",
           "winner_prob": 0.5344,
           "home_win_prob": 0.4656,
-          "result": "incorrect"
+          "result": "eliminated"
         },
         "champion": {
           "team_id": 1181,
@@ -10163,9 +10191,17 @@
             "loser": "(1) Michigan",
             "winner_prob": 0.5344,
             "home_win_prob": 0.4656,
-            "result": "incorrect"
+            "result": "eliminated"
           }
         ]
+      },
+      "mc": {
+        "p_first": 0.0,
+        "p_top2": 0.0,
+        "p_top3": 1.0,
+        "expected_score": 98.0,
+        "calibration_rank": 7,
+        "calibration_of": 8
       }
     },
     {
@@ -10176,8 +10212,8 @@
         "total_score": 90,
         "max_possible": 90,
         "max_total": 192,
-        "rounds_completed": 6,
-        "in_progress": false,
+        "rounds_completed": 5,
+        "in_progress": true,
         "round_breakdown": {
           "Round of 64": {
             "round": 1,
@@ -10225,7 +10261,8 @@
             "total_games": 1,
             "correct": 0,
             "points_earned": 0,
-            "max_points": 32
+            "max_points": 32,
+            "still_alive": 0
           }
         },
         "brier_score": 0.113573
@@ -11502,7 +11539,7 @@
           "loser": "(1) Michigan",
           "winner_prob": 0.5435,
           "home_win_prob": 0.4565,
-          "result": "incorrect"
+          "result": "eliminated"
         },
         "champion": {
           "team_id": 1181,
@@ -12704,9 +12741,17 @@
             "loser": "(1) Michigan",
             "winner_prob": 0.5435,
             "home_win_prob": 0.4565,
-            "result": "incorrect"
+            "result": "eliminated"
           }
         ]
+      },
+      "mc": {
+        "p_first": 0.0,
+        "p_top2": 0.0,
+        "p_top3": 0.0,
+        "expected_score": 90.0,
+        "calibration_rank": 3,
+        "calibration_of": 8
       }
     },
     {
@@ -12717,8 +12762,8 @@
         "total_score": 86,
         "max_possible": 86,
         "max_total": 192,
-        "rounds_completed": 6,
-        "in_progress": false,
+        "rounds_completed": 5,
+        "in_progress": true,
         "round_breakdown": {
           "Round of 64": {
             "round": 1,
@@ -12766,7 +12811,8 @@
             "total_games": 1,
             "correct": 0,
             "points_earned": 0,
-            "max_points": 32
+            "max_points": 32,
+            "still_alive": 0
           }
         },
         "brier_score": 0.117665
@@ -15248,6 +15294,14 @@
             "result": "eliminated"
           }
         ]
+      },
+      "mc": {
+        "p_first": 0.0,
+        "p_top2": 0.0,
+        "p_top3": 0.0,
+        "expected_score": 86.0,
+        "calibration_rank": 4,
+        "calibration_of": 8
       }
     },
     {
@@ -15258,8 +15312,8 @@
         "total_score": 84,
         "max_possible": 84,
         "max_total": 192,
-        "rounds_completed": 6,
-        "in_progress": false,
+        "rounds_completed": 5,
+        "in_progress": true,
         "round_breakdown": {
           "Round of 64": {
             "round": 1,
@@ -15307,7 +15361,8 @@
             "total_games": 1,
             "correct": 0,
             "points_earned": 0,
-            "max_points": 32
+            "max_points": 32,
+            "still_alive": 0
           }
         },
         "brier_score": 0.144383
@@ -17789,6 +17844,14 @@
             "result": "eliminated"
           }
         ]
+      },
+      "mc": {
+        "p_first": 0.0,
+        "p_top2": 0.0,
+        "p_top3": 0.0,
+        "expected_score": 84.0,
+        "calibration_rank": 8,
+        "calibration_of": 8
       }
     },
     {
@@ -17799,8 +17862,8 @@
         "total_score": 90,
         "max_possible": 90,
         "max_total": 192,
-        "rounds_completed": 6,
-        "in_progress": false,
+        "rounds_completed": 5,
+        "in_progress": true,
         "round_breakdown": {
           "Round of 64": {
             "round": 1,
@@ -17848,7 +17911,8 @@
             "total_games": 1,
             "correct": 0,
             "points_earned": 0,
-            "max_points": 32
+            "max_points": 32,
+            "still_alive": 0
           }
         },
         "brier_score": 0.113573
@@ -19125,7 +19189,7 @@
           "loser": "(1) Michigan",
           "winner_prob": 0.5435,
           "home_win_prob": 0.4565,
-          "result": "incorrect"
+          "result": "eliminated"
         },
         "champion": {
           "team_id": 1181,
@@ -20327,10 +20391,24 @@
             "loser": "(1) Michigan",
             "winner_prob": 0.5435,
             "home_win_prob": 0.4565,
-            "result": "incorrect"
+            "result": "eliminated"
           }
         ]
+      },
+      "mc": {
+        "p_first": 0.0,
+        "p_top2": 0.0,
+        "p_top3": 0.0,
+        "expected_score": 90.0,
+        "calibration_rank": 2,
+        "calibration_of": 8
       }
     }
-  ]
+  ],
+  "mc_meta": {
+    "n_simulations": 10000,
+    "games_played": 62,
+    "games_remaining": 1,
+    "tournament_complete": false
+  }
 }
