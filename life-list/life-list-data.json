@@ -1,13 +1,27 @@
 {
   "meta": {
-    "species_count": 222,
+    "species_count": 224,
     "family_count": 62,
     "region_count": 12,
-    "latest_sighting": "2026-03-01",
-    "latest_sighting_display": "Mar 2026",
-    "generated": "2026-03-24"
+    "latest_sighting": "2026-04-19",
+    "latest_sighting_display": "Apr 2026",
+    "generated": "2026-04-28"
   },
   "birds": [
+    {
+      "common": "Barn Swallow",
+      "scientific": "Hirundo rustica",
+      "family": "Swallows",
+      "date": "2026-04-19",
+      "location": "Huntley Meadows Park--Cedar Trail Loop, VA"
+    },
+    {
+      "common": "Lesser Yellowlegs",
+      "scientific": "Tringa flavipes",
+      "family": "Sandpipers and Allies",
+      "date": "2026-04-19",
+      "location": "Huntley Meadows Park--Cedar Trail Loop, VA"
+    },
     {
       "common": "Brown-headed Nuthatch",
       "scientific": "Sitta pusilla",
