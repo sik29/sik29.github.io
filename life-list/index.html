@@ -218,31 +218,43 @@
 
         /* ── Polaroid card ───────────────────────────────────── */
         .bird-card {
-            background: #fff;
-            /* uniform thin border, thick bottom for the label strip */
-            padding: 9px 9px 0 9px;
-            box-shadow: var(--shadow);
+            /* No background, padding, or shadow here — all of those live on
+               .card-inner/.card-front/.card-back so they travel with the flip */
             position: relative;
-            transition: transform 0.25s ease, box-shadow 0.25s ease;
-            cursor: default;
+            transition: transform 0.25s ease;
+            cursor: pointer;
+            perspective: 900px;
         }
         .bird-card:hover {
             transform: rotate(0deg) translateY(-7px) !important;
-            box-shadow: var(--shadow-hover);
             z-index: 10;
         }
 
-        /* Tape strip across the top */
-        .bird-card::before {
+        /* ── Flip mechanics ──────────────────────────────────── */
+        .card-inner {
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.55s ease, box-shadow 0.25s ease;
+            box-shadow: var(--shadow);
+        }
+        .bird-card:hover .card-inner {
+            box-shadow: var(--shadow-hover);
+        }
+        .bird-card.flipped .card-inner {
+            transform: rotateY(180deg);
+        }
+
+        /* Tape on the flipping element — visible on both faces (no backface-visibility)
+           translateZ(2px) keeps it in front of both faces in the 3D sort */
+        .card-inner::before {
             content: '';
             position: absolute;
             top: -13px;
             left: 50%;
-            transform: translateX(-50%);
+            transform: translateX(-50%) translateZ(2px);
             width: 60px;
             height: 24px;
             border-radius: 2px;
-            /* Translucent tape look with subtle stripe texture */
             background:
                 repeating-linear-gradient(
                     90deg,
@@ -253,8 +265,64 @@
                 );
             box-shadow: 0 1px 3px rgba(0,0,0,0.08);
         }
+        .card-front,
+        .card-back {
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+        }
+        .card-front {
+            background: #fff;
+            padding: 9px 9px 0 9px;
+            position: relative; /* needed for .new-badge absolute positioning */
+        }
+        .card-back {
+            position: absolute;
+            inset: 0;
+            transform: rotateY(180deg);
+            background: #fff;
+            padding: 9px 9px 14px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 5px;
+        }
 
-        /* Photo area — square, watercolor image fills it */
+        /* ── Card back — attribution content ─────────────────── */
+        .attr-species {
+            font-family: 'Kalam', cursive;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text);
+            line-height: 1.2;
+            margin-bottom: 4px;
+        }
+        .attr-text {
+            font-size: 0.68rem;
+            color: var(--text-muted);
+            line-height: 1.4;
+        }
+        .attr-license {
+            font-size: 0.65rem;
+            color: var(--brown);
+            font-style: italic;
+        }
+        .attr-link {
+            font-size: 0.68rem;
+            color: var(--green);
+            text-decoration: none;
+            margin-top: 2px;
+        }
+        .attr-link:hover { text-decoration: underline; }
+        .attr-none {
+            font-family: 'Kalam', cursive;
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        /* Photo area — square, image fills it */
         .bird-photo {
             width: 100%;
             aspect-ratio: 1 / 1;
@@ -438,6 +506,7 @@
 
 <script>
 let birds = [];
+let attributions = {};
 
 // Predefined tilts — deterministic by card index so re-renders are stable
 const TILTS = [-3.2, -1.4, 0.8, 2.6, -2.1, 1.7, -0.5, 3.1, -1.9, 2.3, 0.4, -2.7];
@@ -446,29 +515,30 @@ const searchInput = document.getElementById('search');
 const gridView    = document.getElementById('grid-view');
 const noResults   = document.getElementById('no-results');
 
-fetch('life-list-data.json')
-    .then(res => res.json())
-    .then(data => {
-        birds = data.birds;
+Promise.all([
+    fetch('life-list-data.json').then(r => r.json()),
+    fetch('attributions.json').then(r => r.json()).catch(() => ({})),
+]).then(([data, attrs]) => {
+    birds        = data.birds;
+    attributions = attrs;
 
-        document.getElementById('total-species').textContent  = data.meta.species_count;
-        document.getElementById('total-families').textContent = data.meta.family_count;
-        document.getElementById('total-regions').textContent  = data.meta.region_count;
-        document.getElementById('latest-date').textContent    = data.meta.latest_sighting_display;
+    document.getElementById('total-species').textContent  = data.meta.species_count;
+    document.getElementById('total-families').textContent = data.meta.family_count;
+    document.getElementById('total-regions').textContent  = data.meta.region_count;
+    document.getElementById('latest-date').textContent    = data.meta.latest_sighting_display;
 
-        const gen  = new Date(data.meta.generated + 'T00:00:00');
-        const opts = { month: 'long', day: 'numeric', year: 'numeric' };
-        document.getElementById('last-updated').textContent =
-            'Last updated ' + gen.toLocaleDateString('en-US', opts);
-        document.getElementById('footer-updated').textContent =
-            'Last updated ' + gen.toLocaleDateString('en-US', { month: 'long', year: 'numeric' }) + '.';
+    const gen  = new Date(data.meta.generated + 'T00:00:00');
+    const opts = { month: 'long', day: 'numeric', year: 'numeric' };
+    document.getElementById('last-updated').textContent =
+        'Last updated ' + gen.toLocaleDateString('en-US', opts);
+    document.getElementById('footer-updated').textContent =
+        'Last updated ' + gen.toLocaleDateString('en-US', { month: 'long', year: 'numeric' }) + '.';
 
-        render();
-    })
-    .catch(err => {
-        console.error('Failed to load bird data:', err);
-        gridView.innerHTML = '<p style="text-align:center;color:var(--text-muted);padding:72px 0;font-family:Caveat,cursive;font-size:1.3rem;">Could not load bird data.</p>';
-    });
+    render();
+}).catch(err => {
+    console.error('Failed to load bird data:', err);
+    gridView.innerHTML = '<p style="text-align:center;color:var(--text-muted);padding:72px 0;font-family:Caveat,cursive;font-size:1.3rem;">Could not load bird data.</p>';
+});
 
 // ── Helpers ──────────────────────────────────────────────────────────
 
@@ -548,21 +618,38 @@ function render() {
                 </div>
                 <div class="bird-grid">
                     ${groupBirds.map(b => {
-                        const tilt = TILTS[cardIndex % TILTS.length];
+                        const tilt   = TILTS[cardIndex % TILTS.length];
+                        const sciKey = b.scientific.toLowerCase().replace(/ /g, '_');
+                        const attr   = attributions[sciKey];
                         cardIndex++;
+
+                        const backContent = attr
+                            ? `<div class="attr-species">${b.common}</div>
+                               <div class="attr-text">${attr.attribution}</div>
+                               <div class="attr-license">${attr.license}</div>
+                               <a class="attr-link" href="${attr.source_url}" target="_blank"
+                                  onclick="event.stopPropagation()">View on iNaturalist &rarr;</a>`
+                            : `<div class="attr-species">${b.common}</div>
+                               <div class="attr-none">no photo credit on file</div>`;
+
                         return `
                             <div class="bird-card" style="transform: rotate(${tilt}deg)">
-                                ${isRecent(b.date) ? '<span class="new-badge">New</span>' : ''}
-                                <div class="bird-photo">
-                                    <img src="img/${b.scientific.toLowerCase().replace(/ /g, '_')}.jpeg"
-                                         alt="${b.common}" loading="lazy"
-                                         onerror="this.onerror=null;this.src='placeholder_birds.jpeg'">
-                                </div>
-                                <div class="bird-info">
-                                    <div class="bird-common">${b.common}</div>
-                                    <div class="bird-scientific">${b.scientific}</div>
-                                    <div class="bird-date">${formatDate(b.date)}</div>
-                                    <div class="bird-location">${b.location}</div>
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        ${isRecent(b.date) ? '<span class="new-badge">New</span>' : ''}
+                                        <div class="bird-photo">
+                                            <img src="img/${sciKey}.jpeg"
+                                                 alt="${b.common}" loading="lazy"
+                                                 onerror="this.onerror=null;this.src='placeholder_birds.jpeg'">
+                                        </div>
+                                        <div class="bird-info">
+                                            <div class="bird-common">${b.common}</div>
+                                            <div class="bird-scientific">${b.scientific}</div>
+                                            <div class="bird-date">${formatDate(b.date)}</div>
+                                            <div class="bird-location">${b.location}</div>
+                                        </div>
+                                    </div>
+                                    <div class="card-back">${backContent}</div>
                                 </div>
                             </div>
                         `;
@@ -575,6 +662,12 @@ function render() {
 }
 
 searchInput.addEventListener('input', render);
+
+// Flip card on click — event delegation so it works after re-renders
+gridView.addEventListener('click', e => {
+    const card = e.target.closest('.bird-card');
+    if (card) card.classList.toggle('flipped');
+});
 </script>
 
 </body>

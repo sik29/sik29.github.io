@@ -1,0 +1,112 @@
+{
+  "turdus_migratorius": {
+    "attribution": "(c) John D Reynolds, some rights reserved (CC BY-NC), uploaded by John D Reynolds",
+    "license": "CC-BY-NC",
+    "source_url": "https://www.inaturalist.org/taxa/12727"
+  },
+  "cardinalis_cardinalis": {
+    "attribution": "(c) Laura Keene, some rights reserved (CC BY-NC), uploaded by Laura Keene",
+    "license": "CC-BY-NC",
+    "source_url": "https://www.inaturalist.org/taxa/9083"
+  },
+  "morus_bassanus": {
+    "attribution": "(c) Keith Yates, some rights reserved (CC BY-NC)",
+    "license": "CC-BY-NC",
+    "source_url": "https://www.inaturalist.org/observations/35821705"
+  },
+  "larus_fuscus": {
+    "attribution": "(c) Antti Henttonen, some rights reserved (CC BY-NC), uploaded by Antti Henttonen",
+    "license": "CC-BY-NC",
+    "source_url": "https://www.inaturalist.org/taxa/4381"
+  },
+  "calidris_alba": {
+    "attribution": "(c) lemurtaquin, some rights reserved (CC BY-NC), uploaded by lemurtaquin",
+    "license": "CC-BY-NC",
+    "source_url": "https://www.inaturalist.org/taxa/3849"
+  },
+  "melanitta_americana": {
+    "attribution": "(c) Greg Lasley, some rights reserved (CC BY-NC), uploaded by Greg Lasley",
+    "license": "CC-BY-NC",
+    "source_url": "https://www.inaturalist.org/taxa/144220"
+  },
+  "anas_rubripes": {
+    "attribution": "(c) Vasco Valadares, some rights reserved (CC BY-NC)",
+    "license": "CC-BY-NC",
+    "source_url": "https://www.inaturalist.org/observations/258880048"
+  },
+  "larus_glaucescens": {
+    "attribution": "(c) karorem, some rights reserved (CC BY-NC), uploaded by karorem",
+    "license": "CC-BY-NC",
+    "source_url": "https://www.inaturalist.org/taxa/4399"
+  },
+  "bucephala_clangula": {
+    "attribution": "(c) brian stahls, some rights reserved (CC BY-NC), uploaded by brian stahls",
+    "license": "CC-BY-NC",
+    "source_url": "https://www.inaturalist.org/taxa/6990"
+  },
+  "poecile_rufescens": {
+    "attribution": "(c) Garth Harwood, some rights reserved (CC BY), uploaded by Garth Harwood",
+    "license": "CC-BY",
+    "source_url": "https://www.inaturalist.org/taxa/144820"
+  },
+  "bucephala_islandica": {
+    "attribution": "(c) John D Reynolds, some rights reserved (CC BY-NC), uploaded by John D Reynolds",
+    "license": "CC-BY-NC",
+    "source_url": "https://www.inaturalist.org/taxa/6994"
+  },
+  "melanitta_perspicillata": {
+    "attribution": "(c) Peter Taylor, some rights reserved (CC BY-NC), uploaded by Peter Taylor",
+    "license": "CC-BY-NC",
+    "source_url": "https://www.inaturalist.org/taxa/7036"
+  },
+  "hirundo_rustica": {
+    "attribution": "(c) Ad Konings, some rights reserved (CC BY-NC), uploaded by Ad Konings",
+    "license": "CC-BY-NC",
+    "source_url": "https://www.inaturalist.org/taxa/11901"
+  },
+  "tringa_flavipes": {
+    "attribution": "(c) Jonathan Irons, some rights reserved (CC BY-NC)",
+    "license": "CC-BY-NC",
+    "source_url": "https://www.inaturalist.org/observations/151223366"
+  },
+  "sitta_pusilla": {
+    "attribution": "(c) skitterbug, some rights reserved (CC BY)",
+    "license": "CC-BY",
+    "source_url": "https://www.inaturalist.org/observations/21984739"
+  },
+  "circus_hudsonius": {
+    "attribution": "(c) Jonathan Eisen, some rights reserved (CC BY)",
+    "license": "CC-BY",
+    "source_url": "https://www.inaturalist.org/observations/82040978"
+  },
+  "cygnus_columbianus": {
+    "attribution": "(c) Chris Rohrer, some rights reserved (CC BY-NC)",
+    "license": "CC-BY-NC",
+    "source_url": "https://www.inaturalist.org/observations/4707390"
+  },
+  "eudocimus_albus": {
+    "attribution": "(c) Greg Lasley, some rights reserved (CC BY-NC), uploaded by Greg Lasley",
+    "license": "CC-BY-NC",
+    "source_url": "https://www.inaturalist.org/taxa/3751"
+  },
+  "urile_pelagicus": {
+    "attribution": "(c) ibhappy, some rights reserved (CC BY-NC)",
+    "license": "CC-BY-NC",
+    "source_url": "https://www.inaturalist.org/observations/343339973"
+  },
+  "passerella_iliaca": {
+    "attribution": "(c) Joshua Lincoln, all rights reserved",
+    "license": "UNKNOWN",
+    "source_url": "https://www.inaturalist.org/observations/35673194"
+  },
+  "spizelloides_arborea": {
+    "attribution": "(c) Cameron Eckert, some rights reserved (CC BY-NC), uploaded by Cameron Eckert",
+    "license": "CC-BY-NC",
+    "source_url": "https://www.inaturalist.org/taxa/474210"
+  },
+  "anser_caerulescens": {
+    "attribution": "(c) Tom Field, some rights reserved (CC BY)",
+    "license": "CC-BY",
+    "source_url": "https://www.inaturalist.org/observations/127173859"
+  }
+}
