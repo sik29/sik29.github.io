@@ -108,5 +108,55 @@
     "attribution": "(c) Tom Field, some rights reserved (CC BY)",
     "license": "CC-BY",
     "source_url": "https://www.inaturalist.org/observations/127173859"
+  },
+  "cistothorus_palustris": {
+    "attribution": "(c) Sam Payne, some rights reserved (CC BY-NC)",
+    "license": "CC-BY-NC",
+    "source_url": "https://www.inaturalist.org/observations/265616659"
+  },
+  "tyrannus_vociferans": {
+    "attribution": "(c) M.R. Perry, some rights reserved (CC BY-NC)",
+    "license": "CC-BY-NC",
+    "source_url": "https://www.inaturalist.org/observations/321701897"
+  },
+  "egretta_caerulea": {
+    "attribution": "(c) MARMAR, some rights reserved (CC BY-NC), uploaded by MARMAR",
+    "license": "CC-BY-NC",
+    "source_url": "https://www.inaturalist.org/taxa/4937"
+  },
+  "nycticorax_nycticorax": {
+    "attribution": "no rights reserved, uploaded by Kyle Nessen",
+    "license": "CC0",
+    "source_url": "https://www.inaturalist.org/taxa/4981"
+  },
+  "tringa_melanoleuca": {
+    "attribution": "(c) Pablo Balduvino, some rights reserved (CC BY-NC), uploaded by Pablo Balduvino",
+    "license": "CC-BY-NC",
+    "source_url": "https://www.inaturalist.org/taxa/3892"
+  },
+  "limnodromus_scolopaceus": {
+    "attribution": "(c) cjmatheson, some rights reserved (CC BY-NC)",
+    "license": "CC-BY-NC",
+    "source_url": "https://www.inaturalist.org/observations/213984220"
+  },
+  "recurvirostra_americana": {
+    "attribution": "(c) Ad Konings, some rights reserved (CC BY-NC), uploaded by Ad Konings",
+    "license": "CC-BY-NC",
+    "source_url": "https://www.inaturalist.org/taxa/4885"
+  },
+  "himantopus_mexicanus": {
+    "attribution": "(c) Xochitl Zambrano, some rights reserved (CC BY)",
+    "license": "CC-BY",
+    "source_url": "https://www.inaturalist.org/observations/310131232"
+  },
+  "spatula_clypeata": {
+    "attribution": "(c) James N. Stuart, all rights reserved",
+    "license": "UNKNOWN",
+    "source_url": "https://www.inaturalist.org/observations/105135764"
+  },
+  "spatula_discors": {
+    "attribution": "(c) gregslak, some rights reserved (CC BY-NC), uploaded by gregslak",
+    "license": "CC-BY-NC",
+    "source_url": "https://www.inaturalist.org/taxa/558433"
   }
 }
