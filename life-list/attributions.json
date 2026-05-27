@@ -158,5 +158,55 @@
     "attribution": "(c) gregslak, some rights reserved (CC BY-NC), uploaded by gregslak",
     "license": "CC-BY-NC",
     "source_url": "https://www.inaturalist.org/taxa/558433"
+  },
+  "leiothlypis_celata": {
+    "attribution": "(c) Rich Kostecke, some rights reserved (CC BY-NC)",
+    "license": "CC-BY-NC",
+    "source_url": "https://www.inaturalist.org/observations/29360290"
+  },
+  "haemorhous_mexicanus": {
+    "attribution": "(c) Coleen Lawlor, some rights reserved (CC BY-NC)",
+    "license": "CC-BY-NC",
+    "source_url": "https://www.inaturalist.org/observations/36299406"
+  },
+  "psaltriparus_minimus": {
+    "attribution": "(c) Kevin Krebs, some rights reserved (CC BY-NC-SA)",
+    "license": "CC-BY-NC-SA",
+    "source_url": "https://www.inaturalist.org/taxa/7266"
+  },
+  "sayornis_saya": {
+    "attribution": "(c) Ad Konings, some rights reserved (CC BY-NC), uploaded by Ad Konings",
+    "license": "CC-BY-NC",
+    "source_url": "https://www.inaturalist.org/taxa/17009"
+  },
+  "pelecanus_erythrorhynchos": {
+    "attribution": "no rights reserved",
+    "license": "CC0",
+    "source_url": "https://www.inaturalist.org/observations/336732944"
+  },
+  "gavia_immer": {
+    "attribution": "(c) Jason Headley, some rights reserved (CC BY-NC)",
+    "license": "CC-BY-NC",
+    "source_url": "https://www.inaturalist.org/observations/26231904"
+  },
+  "podilymbus_podiceps": {
+    "attribution": "(c) Gordon Karre, some rights reserved (CC BY-NC)",
+    "license": "CC-BY-NC",
+    "source_url": "https://www.inaturalist.org/observations/107613279"
+  },
+  "sterna_forsteri": {
+    "attribution": "(c) mwbirdco, some rights reserved (CC BY-NC)",
+    "license": "CC-BY-NC",
+    "source_url": "https://www.inaturalist.org/observations/29998164"
+  },
+  "calidris_minutilla": {
+    "attribution": "(c) Greg Lasley, some rights reserved (CC BY-NC), uploaded by Greg Lasley",
+    "license": "CC-BY-NC",
+    "source_url": "https://www.inaturalist.org/taxa/3864"
+  },
+  "calidris_alpina": {
+    "attribution": "(c) Paul Reeves, some rights reserved (CC BY-NC-SA), uploaded by Paul Reeves",
+    "license": "CC-BY-NC-SA",
+    "source_url": "https://www.inaturalist.org/taxa/3857"
   }
 }
